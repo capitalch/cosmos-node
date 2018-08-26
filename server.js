@@ -12,11 +12,15 @@ app.use((req, res, next) => {
     next();
 });
 
-const test  = require('./api/test');
-app.use(test);
+config['api-routes'].forEach(element => {
+    const apiRoot = config['api-root'];
+    app.use(require(apiRoot.concat('/',element)));
+});
+// const test  = require('./api/test');
+// app.use(test);
 
-const tear = require('./api/tear');
-app.use(tear);
+// const tear = require('./api/tear');
+// app.use(tear);
 
 const server = app.listen(process.env.PORT || config.port, () => {
     console.log(messages.messServerRunningAtPort);
