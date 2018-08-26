@@ -3,6 +3,7 @@
     "api-root": "./api",
     "api-routes": [
         "test",
-        "tear"
+        "tear",
+        "capital"
     ]
 }
