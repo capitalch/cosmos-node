@@ -1,3 +1,4 @@
+"use strict";
 const test = require('express').Router();
 
 test.get('/api/test', (req, res) => {

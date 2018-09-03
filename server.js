@@ -1,6 +1,7 @@
 "use strict";
 const config = require('./common/config.json');
 const messages = require('./common/messages');
+const handler = require('./common/handler');
 const express = require('express');
 const app = express();
 
@@ -20,3 +21,17 @@ config['api-routes'].forEach(element => {
 const server = app.listen(process.env.PORT || config.port, () => {
     console.log(messages.messServerRunningAtPort);
 });
+
+// app.use((err, req, res, next) => {
+//     console.log('error');
+//     if (!res.finished) {
+//         res.status(err.status || 500);
+//         res.json({error:err});
+//     }
+// });
+
+// handler.domainError.run(function () {
+//     const server = app.listen(process.env.PORT || config.port, () => {
+//         console.log(messages.messServerRunningAtPort);
+//     });
+// });

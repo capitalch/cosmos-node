@@ -17,9 +17,11 @@
     "moment": "^2.22.2",
     "mssql": "^4.1.0",
     "mustache": "^2.3.2",
+    "nodemailer": "^4.6.8",
     "pg": "^7.4.3",
     "pg-format": "^1.0.4",
-    "quick-pivot": "^1.0.11"
+    "quick-pivot": "^1.0.11",
+    "rxjs": "^6.3.1"
   },
   "devDependencies": {}
 }
