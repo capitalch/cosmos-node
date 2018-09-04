@@ -2,6 +2,7 @@
 const config = require('./common/config.json');
 const messages = require('./common/messages');
 const handler = require('./common/handler');
+const logger = require('./common/logger');
 const express = require('express');
 const app = express();
 
@@ -13,25 +14,23 @@ app.use((req, res, next) => {
     next();
 });
 
-config['api-routes'].forEach(element => {
-    const apiRoot = config['api-root'];
-    app.use(require(apiRoot.concat('/',element)));
+config.api['routes'].forEach((element) => {
+    const apiRoot = config.api['root'];
+    app.use(require(apiRoot.concat('/', element)));
 });
 
-const server = app.listen(process.env.PORT || config.port, () => {
+const server = app.listen(process.env.PORT || config.common.port, () => {
     console.log(messages.messServerRunningAtPort);
 });
 
-// app.use((err, req, res, next) => {
-//     console.log('error');
-//     if (!res.finished) {
-//         res.status(err.status || 500);
-//         res.json({error:err});
-//     }
-// });
+// logger.debug({ message: 'Chisel system started....', context: 'startup'});
+logger.doLog('info','tets','jkjk',{line:10,file:'myFile'});
 
-// handler.domainError.run(function () {
-//     const server = app.listen(process.env.PORT || config.port, () => {
-//         console.log(messages.messServerRunningAtPort);
-//     });
-// });
+app.use((err, req, res, next) => {
+    console.log('error');
+    if (!res.finished) {
+        res.status(err.status || 500);
+        res.json({ error: err });
+    }
+});
+

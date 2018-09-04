@@ -1,7 +1,7 @@
 "use strict";
 const tools = require('express').Router();
-const ibuki = require('./artifacts/ibuki');
-const mailer = require('./artifacts/mailer');
+const ibuki = require('../../common/ibuki');
+// const mailer = require('./artifacts/mailer');
 
 tools.get('/api/tools', (req, res) => {
     console.log('/api/tools');

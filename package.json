@@ -21,7 +21,8 @@
     "pg": "^7.4.3",
     "pg-format": "^1.0.4",
     "quick-pivot": "^1.0.11",
-    "rxjs": "^6.3.1"
+    "rxjs": "^6.3.1",
+    "winston": "^3.0.0"
   },
   "devDependencies": {}
 }

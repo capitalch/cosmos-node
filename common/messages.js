@@ -1,6 +1,6 @@
 "use strict";
 const config = require('./config.json');
-const port = process.env.PORT || config.port;
+const port = process.env.PORT || config.common.port;
 var messages = {
     errUrlNotFound: 'Url not found',
     errDevError: 'Development error',

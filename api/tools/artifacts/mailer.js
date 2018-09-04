@@ -1,6 +1,6 @@
 "use strict";
 const nodemailer = require('nodemailer');
-const ibuki = require('./ibuki');
+const ibuki = require('../../..common/ibuki');
 const settings = require('../settings.json');
 
 const mailer = {};
@@ -32,7 +32,7 @@ mailer.sendMail = () => {
         } else {
             console.log('Email sent: ' + info.response);
         }
-        ibuki.emit('mail-response:mailer>tools-index',info);
+        ibuki.emit('mail-response:mailer>tools-index', info);
     });
 }
 
