@@ -2,7 +2,8 @@
 const config = require('./common/config.json');
 const messages = require('./common/messages');
 const handler = require('./common/handler');
-const logger = require('./common/logger');
+const logger = require('./common/logger')('general');
+const logger1 = require('./common/logger')('myModule');
 const express = require('express');
 const app = express();
 
@@ -24,7 +25,8 @@ const server = app.listen(process.env.PORT || config.common.port, () => {
 });
 
 // logger.debug({ message: 'Chisel system started....', context: 'startup'});
-logger.doLog('info','tets','jkjk',{line:10,file:'myFile'});
+logger.doLog('info', 'tets', 'push');
+logger1.doLog('info', 'tests', 'sush');
 
 app.use((err, req, res, next) => {
     console.log('error');

@@ -16,7 +16,7 @@
         "timeFormat": "YYYY-MM-DD hh:mm:ss"
     },
     "//": {
-        "common:runmodes": [
+        "common:mode": [
             "production",
             "development",
             "debug"

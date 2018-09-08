@@ -1,6 +1,9 @@
 'use strict';
 const winston = require('winston');
+const stackTrace = require('stack-trace');
 const fs = require('fs');
+const _ = require('lodash');
+const path = require('path');
 const config = require('./config.json');
 const moment = require('moment');
 
@@ -12,52 +15,61 @@ const tsFormat = () => moment().format(logging.timeFormat).trim();
 // Basically messages for <= current level are logged.
 const runModeMapping = { development: 'info', production: 'warn', debug: 'debug' }
 const level = runModeMapping[runMode];
-fs.existsSync(logging.dir) || (fs.mkdirSync(logging.dir));
+
+let moduleName = 'general';
 
 const format = winston.format.combine(
     winston.format.timestamp(tsFormat),
     winston.format.printf(info => {
-        return (`{"t":"${tsFormat()}", "mess":"${info.message}", "context":"${info.context}", "meta": ${info.meta}, "level":"${info.level}"}`)
+        return (`{"t":"${tsFormat()}", "message":"${info.message}", "file":"${info.file}", "line":"${info.line}", "method":"${info.method}" "meta": ${info.meta}, "level":"${info.level}"}`)
     })
 );
 
-const options = {
-    file: {
-        level: level,
-        filename: './logs/' + moment().format('YYYY-MM-DD') + '.log',
-        handleExceptions: true,
-        json: true,
-        timestamp: tsFormat,
-        //   maxsize: 5242880, // 5MB
-        // maxsize: 5120,
-        // maxFiles: 5,
-        colorize: false
-    },
-    console: {
-        level: level,
-        handleExceptions: true,
-        json: false,
-        colorize: true
-    }
+const constructor = (_moduleName) => {
+    _moduleName && (moduleName = _moduleName);
+    fs.existsSync(logging.dir) || (fs.mkdirSync(logging.dir));
+    const moduleDir = logging.dir.concat('/', moduleName);
+    fs.existsSync(moduleDir) || (fs.mkdirSync(moduleDir));
+    return (getLogger());
 };
 
-const transports = [new winston.transports.File(options.file)];
-transports.push(new winston.transports.Console(options.console));
-
-const logger = winston.createLogger({
-    transports: transports
-    , format: format
-});
-
-logger.doLog = (level, message, context, meta) => {
-    logger.log(
-        {
+function getLogger() {
+    const fileOption = () => {
+        const fileName = path.join('.', logging.dir, moduleName, moment().format('YYYY-MM-DD').concat('.log'));
+        const file = {
             level: level,
-            message: message,
-            context: context,
-            meta: meta && JSON.stringify(meta)
-        }
-    );
+            filename: fileName,
+            handleExceptions: true,
+            json: true,
+            timestamp: tsFormat,
+            //   maxsize: 5242880, // 5MB
+            // maxsize: 5120,
+            // maxFiles: 5,
+            colorize: false
+        };
+        return (file);
+    };
+
+    const transports = [new winston.transports.File(fileOption())];
+    const logger = winston.createLogger({
+        transports: transports
+        , format: format
+    });
+
+    logger.doLog = (level, message, meta) => {
+        const trace = stackTrace.get()[1];
+        logger.log(
+            {
+                level: level,
+                message: message,
+                file: path.basename(trace.getFileName()),
+                line: trace.getLineNumber(),
+                method: trace.getMethodName(),
+                meta: meta && JSON.stringify(meta)
+            }
+        );
+    }
+    return (logger);
 }
 
-module.exports = logger;
+module.exports = constructor;
