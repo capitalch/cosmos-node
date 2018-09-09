@@ -15,9 +15,10 @@ app.use((req, res, next) => {
     next();
 });
 
-config.api['routes'].forEach((element) => {
-    const apiRoot = config.api['root'];
-    app.use(require(apiRoot.concat('/', element)));
+config.routes.forEach((element) => {
+    // const apiRoot = config.api['root'];
+    // app.use(require(apiRoot.concat('/', element)));
+    app.use(require(element));
 });
 
 const server = app.listen(process.env.PORT || config.common.port, () => {
@@ -35,4 +36,20 @@ app.use((err, req, res, next) => {
         res.json({ error: err });
     }
 });
+
+app.use((err,mess,req,res,next) =>{
+    console.log(mess);
+})
+
+app.use((req,res,next) =>{
+    let f = res.finished;
+    res.status(200).json({status:'success'});
+    // res.status(200);
+    // res.json({status:'success'});;
+    // f = res.finished;
+    // res.json({status:'success'});
+    // f = res.finished;
+})
+
+
 

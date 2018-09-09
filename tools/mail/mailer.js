@@ -1,11 +1,11 @@
 "use strict";
 const nodemailer = require('nodemailer');
-const ibuki = require('../../..common/ibuki');
+const ibuki = require('../../common/ibuki');
 const settings = require('../settings.json');
 
 const mailer = {};
 
-ibuki.filterOn('send-mail:tools-index>mailer').subscribe(d => {
+ibuki.filterOn('send-mail:tools.index>tools.mail.mailer').subscribe(d => {
     mailer.sendMail();
 });
 
@@ -32,7 +32,7 @@ mailer.sendMail = () => {
         } else {
             console.log('Email sent: ' + info.response);
         }
-        ibuki.emit('mail-response:mailer>tools-index', info);
+        ibuki.emit('mail-response:tools.mail.mailer>tools.index', info);
     });
 }
 

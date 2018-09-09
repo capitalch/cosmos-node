@@ -1,7 +1,7 @@
 "use strict";
 const tools = require('express').Router();
 const ibuki = require('../common/ibuki');
-// const mailer = require('./artifacts/mailer');
+const mailer = require('./mail/mailer');
 
 tools.get('/tools', (req, res) => {
     console.log('/tools');
@@ -10,10 +10,14 @@ tools.get('/tools', (req, res) => {
 
 tools.get('/tools/mail', (req, res, next) => {
     try {
-        const sub1 = ibuki.filterOn('mail-response:mailer>tools-index').subscribe(d => {
+        const sub1 = ibuki.filterOn('mail-response:tools.mail.mailer>tools.index').subscribe(d => {
             // try {
             sub1.unsubscribe();
-            res.send("OK");
+            // res.status(200).send('ok');
+            // res.status(200).json({status:'success'});
+            // res.send('ok');
+            next(null);
+            // res.send("OK");
             // } catch (err) {
             //     next(err);
             // }
