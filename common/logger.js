@@ -5,7 +5,7 @@ const config = require('./config.json');
 const moment = require('moment');
 
 const logging = config.logging;
-const runMode = config.common.mode;
+const runMode = config.common.mode; // 'production', 'development', 'debug'
 const tsFormat = () => moment().format(logging.timeFormat).trim();
 // logging levels are error: 0, warn: 1, info: 2, verbose: 3, debug: 4, silly: 5 
 // for level = debug i.e 4, the error,warn, info and verbose are written to log file against command logger.error(..), logger.warn(...) and so on.
@@ -49,6 +49,7 @@ const logger = winston.createLogger({
     , format: format
 });
 
+//In meta you can keep json
 logger.doLog = (level, message, context, meta) => {
     logger.log(
         {
