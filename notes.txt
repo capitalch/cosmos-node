@@ -1,2 +1,10 @@
 //database
 pwd: VuTZhqCym1
+
+//works
+                                    1. Looger
+                                    2. Centralized error handling
+    3. mailer
+4. authentication
+5. postgres connector
+6. swagger
