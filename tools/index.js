@@ -1,7 +1,11 @@
 "use strict";
 const tools = require('express').Router();
+const catchError = require('rxjs/operators').catchError;
 const ibuki = require('../common/ibuki');
-const mailer = require('./mail/mailer');
+// const of = require('rxjs/observable').of;
+const of = require('rxjs').of;
+// const mailer = require('./mail/mailer');
+const messages = require('../common/messages');
 
 tools.get('/tools', (req, res) => {
     console.log('/tools');
@@ -10,28 +14,31 @@ tools.get('/tools', (req, res) => {
 
 tools.get('/tools/mail', (req, res, next) => {
     try {
-        const sub1 = ibuki.filterOn('mail-response:tools.mail.mailer>tools.index').subscribe(d => {
-            // try {
-            sub1.unsubscribe();
-            // res.status(200).send('ok');
-            // res.status(200).json({status:'success'});
-            // res.send('ok');
-            next(null);
-            // res.send("OK");
-            // } catch (err) {
-            //     next(err);
-            // }
-            // sub1.unsubscribe();
-        })
-        // .error(err => {
-        //     console.log(err);
-        // });
-        ibuki.emit('send-mail:tools.index>tools.mail.mailer');
+        // const mailData = {
+        //     fromId: '',
+        //     senderPwd: '',
+        //     to: '',
+        //     subject: '',
+        //     copyTo: '',
+        //     body: '',
+        //     html: ''
+        // };
+        const sub = ibuki.filterOn('mail-response:mailer>tools.index')
+            .subscribe(d => {
+                sub.unsubscribe();
+                res.locals.message = messages.messMailSuccess;
+                next();
+            }, (error) => {
+                res.locals.message = messages.messMailFail
+                next(error);
+            });
+        ibuki.emit('send-mail:tools.index>mailer', {
+            req: req, res: res, next: next
+        });
     } catch (error) {
+        res.locals.message = messages.messMailFail;
         next(error);
     }
-    // mailer.sendMail();
-    // res.send('ok');
 })
 
 tools.post('/tools/mail', (req, res, next) => {

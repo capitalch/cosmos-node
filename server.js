@@ -2,8 +2,9 @@
 const config = require('./common/config.json');
 const messages = require('./common/messages');
 const handler = require('./common/handler');
+const mailer = require('./tools/mail/mailer');
 const logger = require('./common/logger')('general');
-const logger1 = require('./common/logger')('myModule');
+// const logger1 = require('./common/logger')('myModule');
 const express = require('express');
 const app = express();
 
@@ -26,29 +27,33 @@ const server = app.listen(process.env.PORT || config.common.port, () => {
 });
 
 // logger.debug({ message: 'Chisel system started....', context: 'startup'});
-logger.doLog('info', 'tets', 'push');
-logger1.doLog('info', 'tests', 'sush');
+// logger.doLog('info', 'tets', 'push');
+// logger1.doLog('info', 'tests', 'sush');
 
+// middleware for error handling
 app.use((err, req, res, next) => {
-    console.log('error');
+    const errorObject = {
+        htmlStatusCode: err.status || 500,
+        status: 'fail',
+        message: res.locals.message || err.message,
+        error: { message: err.message }
+    }
+    logger.doLog('error', messages.messFail, errorObject);
     if (!res.finished) {
         res.status(err.status || 500);
-        res.json({ error: err });
+        res.json(errorObject);
     }
 });
 
-app.use((err,mess,req,res,next) =>{
-    console.log(mess);
-})
-
-app.use((req,res,next) =>{
-    let f = res.finished;
-    res.status(200).json({status:'success'});
-    // res.status(200);
-    // res.json({status:'success'});;
-    // f = res.finished;
-    // res.json({status:'success'});
-    // f = res.finished;
+// middleware for success
+app.use((req, res, next) => {
+    const successObject = {
+        htmlStatusCode: 200,
+        status: 'success',
+        message: res.locals.message || messages.messSuccess
+    };
+    logger.doLog('info', messages.messSuccess, successObject);
+    res.status(200).json(successObject);
 })
 
 

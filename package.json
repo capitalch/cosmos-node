@@ -22,6 +22,7 @@
     "pg-format": "^1.0.4",
     "quick-pivot": "^1.0.11",
     "rxjs": "^6.3.1",
+    "rxjs-compat": "^6.3.2",
     "stack-trace": "0.0.10",
     "winston": "^3.0.0"
   },

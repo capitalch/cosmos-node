@@ -1,0 +1,10 @@
+{
+    "default": {
+        "service": "gmail",
+        "from": "capitalch2@gmail.com",
+        "password": "c3UkaGFudDEyMw==",
+        "to": "capitalch@gmail.com",
+        "subject": "test mail",
+        "text": "This was a test mail"
+    }
+}

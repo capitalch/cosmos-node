@@ -21,7 +21,7 @@ let moduleName = 'general';
 const format = winston.format.combine(
     winston.format.timestamp(tsFormat),
     winston.format.printf(info => {
-        return (`{"t":"${tsFormat()}", "message":"${info.message}", "file":"${info.file}", "line":"${info.line}", "method":"${info.method}" "meta": ${info.meta}, "level":"${info.level}"}`)
+        return (`{"t":"${tsFormat()}", "message":"${info.message}", "file":"${info.file}", "line":"${info.line}", "method":"${info.method}" "meta": ${info.meta}, "level":"${info.level}"},`)
     })
 );
 
