@@ -5,8 +5,8 @@ const handler = {};
 
 ibuki.filterOn('error:any>handler').subscribe(
     d => {
-        d.data.res.locals.message = messages.messFail;
-        d.data.next(d.data.error || messages.messFail);
+        d.data.res.locals.message = messages.errFail;
+        d.data.next(d.data.error || messages.errFail);
     }
 )
 

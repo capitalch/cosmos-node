@@ -10,9 +10,9 @@ var messages = {
     messUrlNotFoundDetails: 'The url you are referring is not found',
     messFeaturesLoaded: 'Features are loaded successfully',
     messServerRunningAtPort: `Server is running at port: ${port}`,
-    messMailSuccess: `Mail is sent successfully`,
-    messMailFail: `There was error in sending the mail`,
+    messMailSuccess: `Mail was sent successfully`,
+    errMailFail: `There was error in sending the mail`,
     messSuccess: `Operation was done successfully`,
-    messFail: `Operation was failed`
+    errFail: `Operation was failed`
 };
 module.exports = messages;

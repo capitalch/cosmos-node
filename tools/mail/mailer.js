@@ -30,16 +30,7 @@ function getTransporter(mailData){
 }
 
 mailer.sendMail = (d) => {
-    const mailData = {
-        from: '',
-        password: '',
-        to: '',
-        subject: '',
-        copyTo: '',
-        body: '',
-        html: '',
-        service:''
-    };
+    const mailData = d.data.req.body.mailData;
     const transporter = getTransporter(mailData);
     const mailOptions = {
         from: mailData.from || settings.default.from,

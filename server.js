@@ -1,12 +1,15 @@
 "use strict";
+// const bodyParser = require('body-parser');
 const config = require('./common/config.json');
 const messages = require('./common/messages');
 const handler = require('./common/handler');
 const mailer = require('./tools/mail/mailer');
-const logger = require('./common/logger')('general');
-// const logger1 = require('./common/logger')('myModule');
+const logger = require('./common/logger')('mail');
 const express = require('express');
 const app = express();
+
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json())
 
 // CORS
 app.use((req, res, next) => {
@@ -17,18 +20,12 @@ app.use((req, res, next) => {
 });
 
 config.routes.forEach((element) => {
-    // const apiRoot = config.api['root'];
-    // app.use(require(apiRoot.concat('/', element)));
     app.use(require(element));
 });
 
 const server = app.listen(process.env.PORT || config.common.port, () => {
     console.log(messages.messServerRunningAtPort);
 });
-
-// logger.debug({ message: 'Chisel system started....', context: 'startup'});
-// logger.doLog('info', 'tets', 'push');
-// logger1.doLog('info', 'tests', 'sush');
 
 // middleware for error handling
 app.use((err, req, res, next) => {
@@ -38,7 +35,7 @@ app.use((err, req, res, next) => {
         message: res.locals.message || err.message,
         error: { message: err.message }
     }
-    logger.doLog('error', messages.messFail, errorObject);
+    logger.doLog('error', messages.errFail, errorObject);
     if (!res.finished) {
         res.status(err.status || 500);
         res.json(errorObject);
