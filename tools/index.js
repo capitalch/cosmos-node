@@ -5,10 +5,27 @@ const messages = require('../common/messages');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger/petstore.json');
 
+const options = {
+    swaggerUrl: 'http://localhost:3000/tools/swagger'
+};
+
 tools.use('/tools/doc', swaggerUi.serve);
-tools.get('/tools/doc', (req, res) => { 
-    return(swaggerUi.setup(swaggerDocument)); 
-    // res.render(f);
+tools.use('/tools/doc', swaggerUi.setup(null, options))
+
+// tools.get('/tools/doc', (req, res) => {
+//     const options = {
+//         swaggerUrl: 'http://localhost:3000/tools/swagger'
+//     }
+//     // return (swaggerUi.setup(swaggerDocument));
+//     return (swaggerUi.setup(null, options));
+//     // res.render(f);
+// });
+
+tools.get('/tools/swagger', (req, res) => {
+    console.log('/tools/swagger');
+    const path = __dirname.concat('/', 'swagger/petstore.json');
+    res.sendFile(path);
+    // res.json('tools');
 });
 
 tools.get('/tools', (req, res) => {
@@ -56,9 +73,9 @@ tools.post('/tools/mail', (req, res, next) => {
     }
 })
 
-tools.get('/tools/docs', (req, res, next) => {
+// tools.get('/tools/docs', (req, res, next) => {
 
-})
+// })
 
 module.exports = tools;
 
