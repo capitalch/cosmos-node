@@ -5,21 +5,28 @@ const messages = require('../common/messages');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger/petstore.json');
 
-const options = {
+var options = {
     swaggerUrl: 'http://localhost:3000/tools/swagger'
 };
 
 tools.use('/tools/doc', swaggerUi.serve);
-tools.use('/tools/doc', swaggerUi.setup(null, options))
-
-// tools.get('/tools/doc', (req, res) => {
-//     const options = {
-//         swaggerUrl: 'http://localhost:3000/tools/swagger'
-//     }
-//     // return (swaggerUi.setup(swaggerDocument));
-//     return (swaggerUi.setup(null, options));
-//     // res.render(f);
-// });
+tools.use('/tools/doc', (req, res, next) => {
+    options = {
+        swaggerUrl: 'http://localhost:3000/tools/swagger'
+    };
+//    options.swaggerUrl = 'http://localhost:3000/tools/swagger';
+    next();
+})
+tools.use('/tools/doc', swaggerUi.setup(null, options));
+tools.get('/tools/doc', (req, res) => {
+    const i = 0;
+    // const options = {
+    //     swaggerUrl: 'http://localhost:3000/tools/swagger'
+    // }
+    // return (swaggerUi.setup(swaggerDocument));
+    // return (swaggerUi.setup(null, options));
+    // res.render(swaggerUi.setup(null, options));
+});
 
 tools.get('/tools/swagger', (req, res) => {
     console.log('/tools/swagger');
