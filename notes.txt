@@ -8,3 +8,6 @@ pwd: VuTZhqCym1
 4. authentication
 5. postgres connector
     6. swagger
+
+//swagger tutorial for writing a swagger definition file from scratch
+https://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-2-the-basics/

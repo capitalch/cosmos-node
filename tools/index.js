@@ -9,30 +9,18 @@ var options = {
     swaggerUrl: 'http://localhost:3000/tools/swagger'
 };
 
-tools.use('/tools/doc', swaggerUi.serve);
-tools.use('/tools/doc', (req, res, next) => {
-    options = {
-        swaggerUrl: 'http://localhost:3000/tools/swagger'
-    };
-//    options.swaggerUrl = 'http://localhost:3000/tools/swagger';
+var docName = "";
+
+tools.use('/tools/doc/:id', swaggerUi.serve);
+tools.use('/tools/doc/:id', (req, res, next) => {
+    docName = req.params.id;
     next();
-})
-tools.use('/tools/doc', swaggerUi.setup(null, options));
-tools.get('/tools/doc', (req, res) => {
-    const i = 0;
-    // const options = {
-    //     swaggerUrl: 'http://localhost:3000/tools/swagger'
-    // }
-    // return (swaggerUi.setup(swaggerDocument));
-    // return (swaggerUi.setup(null, options));
-    // res.render(swaggerUi.setup(null, options));
-});
+},
+    swaggerUi.setup(null, options))
 
 tools.get('/tools/swagger', (req, res) => {
-    console.log('/tools/swagger');
-    const path = __dirname.concat('/', 'swagger/petstore.json');
-    res.sendFile(path);
-    // res.json('tools');
+    const filePath = __dirname.concat('/swagger/', docName.concat('.json')); //'swagger/petstore.json');
+    res.sendFile(filePath);
 });
 
 tools.get('/tools', (req, res) => {
