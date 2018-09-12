@@ -1,25 +1,24 @@
 "use strict";
 const tools = require('express').Router();
+const swaggerUi = require('swagger-ui-express');
 const ibuki = require('../common/ibuki');
 const messages = require('../common/messages');
-const swaggerUi = require('swagger-ui-express');
-const swaggerDocument = require('./swagger/petstore.json');
 
-var options = {
+const options = {
     swaggerUrl: 'http://localhost:3000/tools/swagger'
 };
 
-var docName = "";
+let swaggerFileName = "";
 
 tools.use('/tools/doc/:id', swaggerUi.serve);
 tools.use('/tools/doc/:id', (req, res, next) => {
-    docName = req.params.id;
+    swaggerFileName = req.params.id;
     next();
 },
     swaggerUi.setup(null, options))
 
 tools.get('/tools/swagger', (req, res) => {
-    const filePath = __dirname.concat('/swagger/', docName.concat('.json')); //'swagger/petstore.json');
+    const filePath = __dirname.concat('/swagger/', swaggerFileName.concat('.json')); //'swagger/petstore.json');
     res.sendFile(filePath);
 });
 

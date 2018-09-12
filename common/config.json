@@ -1,7 +1,11 @@
 {
     "common": {
         "port": 3000,
-        "mode": "debug"
+        "mode": "debug",
+        "host": "http://localhost:3000"
+    },
+    "swagger":{
+        "url": "/swagger"
     },
     "routes": [
         "./api/test",
