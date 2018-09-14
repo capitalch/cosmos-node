@@ -1,31 +1,35 @@
 "use strict";
 const tools = require('express').Router();
-const swaggerUi = require('swagger-ui-express');
+const path = require('path');
+const fs = require('fs');
+const express = require('express');
 const ibuki = require('../common/ibuki');
 const messages = require('../common/messages');
-
-const options = {
-    swaggerUrl: 'http://localhost:3000/tools/swagger'
-};
-
-let swaggerFileName = "";
-
-tools.use('/tools/doc/:id', swaggerUi.serve);
-tools.use('/tools/doc/:id', (req, res, next) => {
-    swaggerFileName = req.params.id;
-    next();
-},
-    swaggerUi.setup(null, options))
-
-tools.get('/tools/swagger', (req, res) => {
-    const filePath = __dirname.concat('/swagger/', swaggerFileName.concat('.json')); //'swagger/petstore.json');
-    res.sendFile(filePath);
-});
+const config = require('../common/config.json');
 
 tools.get('/tools', (req, res) => {
     console.log('/tools');
     res.json('tools');
 });
+
+//Tools/swagger folder is dist folder of swagger-ui project at github. I have replaced all instances of "./" with "/" in the index.html file, otherwise error occurs.
+const pathToSwaggerUi = path.join(__dirname, 'swagger');
+tools.use(express.static(pathToSwaggerUi));
+
+tools.get('/tools/doc/:spec', (req, res, next) => {
+    const swaggerFilename = req.params.spec;
+    const specUrl = config.common.host.concat(config.swagger.fileUrl, '/', swaggerFilename);
+    const filePath = path.join(__dirname, 'swagger', 'index.html');
+    const file = fs.readFileSync(filePath, "utf8");
+    const newFile = file.split('./').join('/').replace('{{$}}', specUrl); // for global replace in string
+    res.send(newFile);
+})
+
+tools.get('/tools/swagger/:spec', (req, res) => {
+    const swaggerFilename = req.params.spec;
+    const filePath = path.join(__dirname, 'swagger', 'swagger-files', swaggerFilename.concat('.json'));
+    res.sendFile(filePath);
+})
 
 tools.get('/tools/mail', (req, res, next) => {
     try {
@@ -67,13 +71,34 @@ tools.post('/tools/mail', (req, res, next) => {
     }
 })
 
-// tools.get('/tools/docs', (req, res, next) => {
-
-// })
-
 module.exports = tools;
 
 /* Deprecated
+
+// tools.use(express.static(path.join(__dirname, 'swagger')));
+// tools.use(bodyParser.json()); // for parsing application/json
+// tools.use(bodyParser.urlencoded({ extended: true }));
+
+// const options = {
+//     swaggerUrl: 'http://localhost:3000/tools/swagger'
+// };
+
+// let swaggerFileName = "";
+
+// tools.use(config.swagger.apiUrl.concat('/:id'), swaggerUi.serve);
+// tools.use(config.swagger.apiUrl.concat('/:id'), (req, res, next) => {
+//     swaggerFileName = req.params.id;
+//     next();
+// })
+
+// tools.get(config.swagger.apiUrl.concat('/:id'), swaggerUi.setup(null, options))
+
+// tools.get(config.swagger.fileUrl, (req, res) => {
+//     const fName = res.locals.swaggerFileName;
+//     const filePath = path.join(__dirname, 'swagger', swaggerFileName.concat('.json'));
+//     res.sendFile(filePath);
+// });
+
 const catchError = require('rxjs/operators').catchError;
 const of = require('rxjs/observable').of;
 */

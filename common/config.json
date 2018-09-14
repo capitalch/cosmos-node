@@ -5,7 +5,8 @@
         "host": "http://localhost:3000"
     },
     "swagger":{
-        "url": "/swagger"
+        "fileUrl": "/tools/swagger",
+        "apiUrl":"/tools/doc"
     },
     "routes": [
         "./api/test",
