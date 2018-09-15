@@ -6,7 +6,7 @@ const express = require('express');
 const ibuki = require('../common/ibuki');
 const messages = require('../common/messages');
 const config = require('../common/config.json');
-
+const postgres = require('./postgres/postgres');
 tools.get('/tools', (req, res) => {
     console.log('/tools');
     res.json('tools');
@@ -29,6 +29,10 @@ tools.get('/tools/swagger/:spec', (req, res) => {
     const swaggerFilename = req.params.spec;
     const filePath = path.join(__dirname, 'swagger', 'swagger-files', swaggerFilename.concat('.json'));
     res.sendFile(filePath);
+})
+
+tools.get('/tools/sql', (req, res, next) => {
+    postgres.exec({req:req,res:res,next:next},'');
 })
 
 tools.post('/tools/mail', (req, res, next) => {
