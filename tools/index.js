@@ -31,26 +31,6 @@ tools.get('/tools/swagger/:spec', (req, res) => {
     res.sendFile(filePath);
 })
 
-tools.get('/tools/mail', (req, res, next) => {
-    try {
-        const sub = ibuki.filterOn('mail-response:mailer>tools.index')
-            .subscribe(d => {
-                sub.unsubscribe();
-                res.locals.message = messages.messMailSuccess;
-                next();
-            }, (error) => {
-                res.locals.message = messages.errMailFail
-                next(error);
-            });
-        ibuki.emit('send-mail:tools.index>mailer', {
-            req: req, res: res, next: next
-        });
-    } catch (error) {
-        res.locals.message = messages.errMailFail;
-        next(error);
-    }
-})
-
 tools.post('/tools/mail', (req, res, next) => {
     try {
         const sub = ibuki.filterOn('mail-response:mailer>tools.index')
@@ -74,6 +54,26 @@ tools.post('/tools/mail', (req, res, next) => {
 module.exports = tools;
 
 /* Deprecated
+
+// tools.get('/tools/mail', (req, res, next) => {
+//     try {
+//         const sub = ibuki.filterOn('mail-response:mailer>tools.index')
+//             .subscribe(d => {
+//                 sub.unsubscribe();
+//                 res.locals.message = messages.messMailSuccess;
+//                 next();
+//             }, (error) => {
+//                 res.locals.message = messages.errMailFail
+//                 next(error);
+//             });
+//         ibuki.emit('send-mail:tools.index>mailer', {
+//             req: req, res: res, next: next
+//         });
+//     } catch (error) {
+//         res.locals.message = messages.errMailFail;
+//         next(error);
+//     }
+// })
 
 // tools.use(express.static(path.join(__dirname, 'swagger')));
 // tools.use(bodyParser.json()); // for parsing application/json

@@ -5,7 +5,7 @@ const config = require('./common/config.json');
 const messages = require('./common/messages');
 const handler = require('./common/handler');
 const mailer = require('./tools/mail/mailer');
-const logger = require('./common/logger')('mail');
+const logger = require('./common/logger')('root');
 const express = require('express');
 const app = express();
 
@@ -41,15 +41,15 @@ app.use((err, req, res, next) => {
 });
 
 // middleware for success
-app.use((req, res, next) => {
-    const successObject = {
-        htmlStatusCode: 200,
-        status: 'success',
-        message: res.locals.message || messages.messSuccess
-    };
-    logger.doLog('info', messages.messSuccess, successObject);
-    res.status(200).json(successObject);
-})
+// app.use((req, res, next) => {
+//     const successObject = {
+//         htmlStatusCode: 200,
+//         status: 'success',
+//         message: res.locals.message || messages.messSuccess
+//     };
+//     logger.doLog('info', messages.messSuccess, successObject);
+//     res.status(200).json(successObject);
+// })
 
 
 

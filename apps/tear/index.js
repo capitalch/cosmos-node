@@ -1,5 +1,8 @@
 "use strict";
 const express = require('express');
+const messages = require('../../common/messages');
+const logger = require('../../common/logger')('tear');
+const ibuki = require('../../common/ibuki');
 const compression = require('compression');
 const mustache = require('mustache');
 const path = require('path');
@@ -30,15 +33,18 @@ const pool = new sql.ConnectionPool(dbconfig);
 pool.connect(
     err => {
         if (err) {
-            console.log(err);
-        } else{
-            console.log('database connected');
+            logger.doLog('error', err.message, err);
+            ibuki.emit('error:any>handler', err);
+            // console.log(err);
+        } else {
+            logger.doLog('info', messages.messTearDatabaseConnected);
+            // console.log('database connected');
         }
     }
 )
 
 tear.get('/apps/tear', (req, res) => {
-    res.sendFile(p.concat('/','tear.html'));
+    res.sendFile(p.concat('/', 'tear.html'));
 })
 
 tear.get('/apps/tear/api/reportA', (req, res) => {
@@ -55,9 +61,11 @@ tear.get('/apps/tear/api/reportA', (req, res) => {
         request
             .query(sqlString)
             .then(function (result) {
+                logger.doLog('info', messages.messTearApiQuery);
                 res.json(result.recordsets);
             })
             .catch(function (err) {
+                ibuki.emit('error:any>handler', err);
                 console.log(err);
             });
     };
