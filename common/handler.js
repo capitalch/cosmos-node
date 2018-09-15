@@ -1,6 +1,6 @@
 "use strict";
 const messages = require('./messages');
-const logger = require('./logger')('root');
+const logger = require('./logger')('syatem');
 const ibuki = require('./ibuki');
 const handler = {};
 

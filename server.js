@@ -5,7 +5,7 @@ const config = require('./common/config.json');
 const messages = require('./common/messages');
 const handler = require('./common/handler');
 const mailer = require('./tools/mail/mailer');
-const logger = require('./common/logger')('root');
+const logger = require('./common/logger')('system');
 const express = require('express');
 const app = express();
 

@@ -17,6 +17,15 @@
         "dir": "logs",
         "timeFormat": "YYYY-MM-DD hh:mm:ss"
     },
+    "system:postgres":{
+        "user":"webadmin",
+        "database":"qx",
+        "password":"4267aF3IQN",
+        "port":"5432",
+        "host": "103.217.220.32",
+        "max":10,
+        "idleTimeoutMillis": 30000
+    },
     "//": {
         "common:mode": [
             "production",
