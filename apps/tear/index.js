@@ -1,7 +1,5 @@
 "use strict";
 const express = require('express');
-// const app = express();
-// const bodyParser = require('body-parser');
 const compression = require('compression');
 const mustache = require('mustache');
 const path = require('path');
@@ -9,12 +7,6 @@ const tear = express.Router();
 const sqlScripts = require('./sql');
 
 tear.use(compression());
-// app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(bodyParser.json());
-// app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
-
-
-
 const p = path.join(__dirname, 'public');
 tear.use(express.static(path.join(__dirname, 'public')));
 
@@ -45,11 +37,11 @@ pool.connect(
     }
 )
 
-tear.get('/api/tear', (req, res) => {
+tear.get('/apps/tear', (req, res) => {
     res.sendFile(p.concat('/','tear.html'));
 })
 
-tear.get('/api/tear/reportA', (req, res) => {
+tear.get('/apps/tear/api/reportA', (req, res) => {
     let dateFrom = req.query.dateFrom || '2018-08-01';
     let dateTo = req.query.dateTo || '2018-08-30';
     let sqlString = sqlScripts.hours;

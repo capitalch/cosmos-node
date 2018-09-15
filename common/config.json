@@ -7,11 +7,11 @@
     "swagger":{
         "fileUrl": "/tools/swagger",
         "apiUrl":"/tools/doc"
-    },
+    },   
     "routes": [
         "./api/test",
-        "./api/tear",
-        "./tools"
+        "./tools",
+        "./apps/tear"
     ],
     "logging": {
         "dir": "logs",

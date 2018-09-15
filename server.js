@@ -9,25 +9,6 @@ const logger = require('./common/logger')('mail');
 const express = require('express');
 const app = express();
 
-// const pathToSwaggerUi = require('swagger-ui-dist').absolutePath();
-// app.use(express.static(pathToSwaggerUi));
-
-// const swPath = require('swagger-ui-dist');
-// var SwaggerUIBundle = require('swagger-ui-dist').SwaggerUIBundle
-// const ui = SwaggerUIBundle({
-//     url: "https://petstore.swagger.io/v2/swagger.json",
-//     dom_id: '#swagger-ui',
-//     presets: [
-//       SwaggerUIBundle.presets.apis,
-//       SwaggerUIBundle.SwaggerUIStandalonePreset
-//     ],
-//     layout: "StandaloneLayout"
-//   })
-
-// app.use(express.static(path.join(__dirname, 'tools','swagger')));
-// app.use(bodyParser.json()); // for parsing application/json
-// app.use(bodyParser.urlencoded({ extended: true })); 
-
 // CORS
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
@@ -39,11 +20,6 @@ app.use((req, res, next) => {
 config.routes.forEach((element) => {
     app.use(require(element));
 });
-
-// app.get('/tools/swagger', (req, res, next) => {
-//     const filePath = path.join(__dirname,'tools', 'swagger', 'index1.html');
-//     res.sendfile(filePath);
-// })
 
 const server = app.listen(process.env.PORT || config.common.port, () => {
     console.log(messages.messServerRunningAtPort);

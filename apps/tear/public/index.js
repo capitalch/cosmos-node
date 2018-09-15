@@ -3,7 +3,7 @@ function showReport() {
     let dateFrom = $('#yearFrom').val() + '-' + $('#monthFrom').val() + '-' + $('#dayFrom').val();
     let dateTo = $('#yearTo').val() + '-' + $('#monthTo').val() + '-' + $('#dayTo').val();
     $.ajax({
-        url: "/api/tear/reportA",
+        url: "/apps/tear/api/reportA",
         data: { dateFrom: dateFrom, dateTo:dateTo },
         success: function (result) {            
 
