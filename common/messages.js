@@ -8,15 +8,16 @@ var messages = {
     errUnknown: 'Unknown error',
     errInternalServerError: 'Internal server error',
     errFail: `Operation was failed`,
-    errUncaught: `Uncaught severe error`,
+    errUncaught: `Uncaught server error. Server is shut down`,
     errMailFail: `There was error in sending the mail`,
     messUrlNotFoundDetails: 'The url you are referring is not found',
     messFeaturesLoaded: 'Features are loaded successfully',
     messServerRunningAtPort: `Server is running at port: ${port}`,
-    messMailSuccess: `Mail was sent successfully`,
+    messMailSuccess: (to) => `Mail was sent successfully to ${to}`,
     messSuccess: `Operation was done successfully`,
     messShutDown: `System is shutting down`,
     messTearDatabaseConnected: `Tear database connected`,
-    messTearApiQuery:'Tear api queried'
+    messTearApiQuery: 'Tear api queried',
+    messNotFound: 'Server has not found the url given by user'
 };
 module.exports = messages;

@@ -11,10 +11,7 @@ const sqlScripts = require('./sql');
 const config = require('../../common/config.json');
 
 tear.use(compression());
-// const p = path.join(__dirname, 'public');
-const basePath = config.routers.tear['basePath'];
-const staticFilesFolder = config.routers.tear['staticFilesFolder']
-tear.use(express.static(path.join(__dirname, staticFilesFolder)));
+tear.use(express.static(path.join(__dirname,'public')));
 var sql = require('mssql');
 
 let dbconfig = {
@@ -47,11 +44,11 @@ pool.connect(
     }
 )
 
-tear.get(basePath, (req, res) => {
-    res.sendfile(path.join(__dirname, staticFilesFolder, 'tear.html'));
+tear.get('/apps/tear', (req, res) => {
+    res.sendfile(path.join(__dirname, 'public', 'tear.html'));
 })
 
-tear.get(basePath.concat('/api/reportA'), (req, res) => {
+tear.get('/apps/tear/api/reportA', (req, res) => {
     let dateFrom = req.query.dateFrom || '2018-08-01';
     let dateTo = req.query.dateTo || '2018-08-30';
     let sqlString = sqlScripts.hours;

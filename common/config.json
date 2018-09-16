@@ -13,30 +13,6 @@
         "./tools",
         "./apps/tear"
     ],
-    "routers1": [
-        {
-            "name": "tear",
-            "logicalPath": "/apps/tear",
-            "physicalPath": "./apps/tear",
-            "staticFilesPath": "public"
-        },
-        {
-            "name": "tools",
-            "logicalPath": "/tools",
-            "physicalPath": "./tools"
-        }
-    ],
-    "routers": {
-        "tear": {
-            "basePath": "/apps/tear",
-            "rootFolder": "./apps/tear",
-            "staticFilesFolder": "public"
-        },
-        "tools": {
-            "basePath":"/tools",
-            "rootFolder":"./tools"
-        }
-    },
     "logging": {
         "dir": "logs",
         "timeFormat": "YYYY-MM-DD hh:mm:ss"

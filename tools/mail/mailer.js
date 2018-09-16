@@ -1,23 +1,13 @@
 "use strict";
 const nodemailer = require('nodemailer');
+// const logger = require('../../common/logger')('tools');
 const ibuki = require('../../common/ibuki');
 const settings = require('./settings.json');
+const messages = require('../../common/messages');
 
 const mailer = {};
-const sub1 = ibuki.filterOn('send-mail:tools.index>mailer')
-    .subscribe(d => {
-        try {
-            mailer.sendMail(d);
-        } catch (err) {
-            d.data.error = err;
-            ibuki.emit('error:any>handler', d.data);
-        }
-    }, error => {
-        d.data.error = error;
-        ibuki.emit('error:any>handler', d.data);
-    });
 
-function getTransporter(mailData){
+function getTransporter(mailData) {
     const buff = new Buffer(mailData.password || settings.default.password, 'base64');
     const transporter = nodemailer.createTransport({
         service: mailData.service || settings.default.service,
@@ -26,11 +16,19 @@ function getTransporter(mailData){
             pass: buff.toString('ascii')
         }
     });
-    return(transporter);
+    return (transporter);
 }
-
-mailer.sendMail = (d) => {
-    const mailData = d.data.req.body.mailData;
+/* maildata schema
+{
+    from:'abc@nnn.com',
+    to:'xyz@hhh.com',
+    subject: 'abcd',
+    text: 'body of mail',
+    password:'ggghghyu762637tyt==' sender's mail in in base64 format
+}
+*/
+mailer.sendMail = (data) => {
+    const mailData = data.req.body;
     const transporter = getTransporter(mailData);
     const mailOptions = {
         from: mailData.from || settings.default.from,
@@ -38,13 +36,16 @@ mailer.sendMail = (d) => {
         subject: mailData.subject || settings.default.subject,
         text: mailData.text || settings.default.text
     }
-
     transporter.sendMail(mailOptions, function (error, info) {
+        // const to = mailData.to;
         if (error) {
-            d.data.error = error;
-            ibuki.emit('error:any>handler', d.data);
+            data.res.locals.message = messages.errMailFail;
+            data.next(error);
+            // ibuki.emit('error:any>handler', data);
         } else {
-            ibuki.emit('mail-response:mailer>tools.index');
+            data.res.locals.status = 'ok';
+            data.res.locals.message = messages.messMailSuccess(mailData.to);
+            data.next();
         }
     });
 }
@@ -58,3 +59,16 @@ module.exports = mailer;
 // const of = require('rxjs').of;
 // const throwError = require('rxjs').throwError;
 // const of = require('rxjs/observable').of;
+
+// const sub1 = ibuki.filterOn('send-mail:tools.index>mailer')
+//     .subscribe(d => {
+//         try {
+//             mailer.sendMail(d);
+//         } catch (err) {
+//             d.data.error = err;
+//             ibuki.emit('error:any>handler', d.data);
+//         }
+//     }, error => {
+//         d.data.error = error;
+//         ibuki.emit('error:any>handler', d.data);
+//     });
