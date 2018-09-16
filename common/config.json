@@ -4,26 +4,50 @@
         "mode": "debug",
         "host": "http://localhost:3000"
     },
-    "swagger":{
+    "swagger": {
         "fileUrl": "/tools/swagger",
-        "apiUrl":"/tools/doc"
-    },   
+        "apiUrl": "/tools/doc"
+    },
     "routes": [
         "./api/test",
         "./tools",
         "./apps/tear"
     ],
+    "routers1": [
+        {
+            "name": "tear",
+            "logicalPath": "/apps/tear",
+            "physicalPath": "./apps/tear",
+            "staticFilesPath": "public"
+        },
+        {
+            "name": "tools",
+            "logicalPath": "/tools",
+            "physicalPath": "./tools"
+        }
+    ],
+    "routers": {
+        "tear": {
+            "basePath": "/apps/tear",
+            "rootFolder": "./apps/tear",
+            "staticFilesFolder": "public"
+        },
+        "tools": {
+            "basePath":"/tools",
+            "rootFolder":"./tools"
+        }
+    },
     "logging": {
         "dir": "logs",
         "timeFormat": "YYYY-MM-DD hh:mm:ss"
     },
-    "system:postgres":{
-        "user":"webadmin",
-        "database":"qx",
-        "password":"4267aF3IQN",
-        "port":"5432",
+    "system:postgres": {
+        "user": "webadmin",
+        "database": "qx",
+        "password": "4267aF3IQN",
+        "port": "5432",
         "host": "103.217.220.32",
-        "max":10,
+        "max": 10,
         "idleTimeoutMillis": 30000
     },
     "//": {

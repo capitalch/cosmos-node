@@ -17,8 +17,9 @@ app.use((req, res, next) => {
     next();
 });
 
-config.routes.forEach((element) => {
-    app.use(require(element));
+Object.keys(config.routers).forEach((key)=>{
+    let element = config.routers[key];
+    app.use(require(element.rootFolder));
 });
 
 const server = app.listen(process.env.PORT || config.common.port, () => {

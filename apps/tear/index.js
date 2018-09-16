@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 const express = require('express');
 const messages = require('../../common/messages');
 const logger = require('../../common/logger')('tear');
@@ -8,12 +8,15 @@ const mustache = require('mustache');
 const path = require('path');
 const tear = express.Router();
 const sqlScripts = require('./sql');
+const config = require('../../common/config.json');
 
 tear.use(compression());
-const p = path.join(__dirname, 'public');
-tear.use(express.static(path.join(__dirname, 'public')));
-
+// const p = path.join(__dirname, 'public');
+const basePath = config.routers.tear['basePath'];
+const staticFilesFolder = config.routers.tear['staticFilesFolder']
+tear.use(express.static(path.join(__dirname, staticFilesFolder)));
 var sql = require('mssql');
+
 let dbconfig = {
     user: 'netwovensa',
     password: 'Reallongpass1',
@@ -29,6 +32,7 @@ let dbconfig = {
         "idleTimeoutMillis": 30000
     }
 }
+
 const pool = new sql.ConnectionPool(dbconfig);
 pool.connect(
     err => {
@@ -38,16 +42,16 @@ pool.connect(
             // console.log(err);
         } else {
             logger.doLog('info', messages.messTearDatabaseConnected);
-            // console.log('database connected');
+            console.log('tear database connected');
         }
     }
 )
 
-tear.get('/apps/tear', (req, res) => {
-    res.sendFile(p.concat('/', 'tear.html'));
+tear.get(basePath, (req, res) => {
+    res.sendfile(path.join(__dirname, staticFilesFolder, 'tear.html'));
 })
 
-tear.get('/apps/tear/api/reportA', (req, res) => {
+tear.get(basePath.concat('/api/reportA'), (req, res) => {
     let dateFrom = req.query.dateFrom || '2018-08-01';
     let dateTo = req.query.dateTo || '2018-08-30';
     let sqlString = sqlScripts.hours;
