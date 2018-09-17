@@ -18,7 +18,6 @@ app.use((req, res, next) => {
     next();
 });
 
-// app.use(bodyParser);
 app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(bodyParser.json());
 
@@ -58,7 +57,7 @@ app.use((err, req, res, next) => {
 // middleware for not found / success
 app.use((req, res, next) => {
     const status = res.locals.status;
-    let x, url, tempObject;
+    let url, tempObject;
     (status)
         ? (
             tempObject = {
@@ -71,17 +70,17 @@ app.use((req, res, next) => {
             res.status(200).json(tempObject)
         )
         : (
-    url = req.protocol.concat('://', req.hostname, req.url),
-    tempObject = {
-        htmlStatuscode: 404,
-        status: 'not found',
-        url: url,
-        method: req.method
-    },
-    logger.doLog('info', messages.messNotFound, tempObject),
-    res.status(404).json(tempObject)
-);
-})
+            url = req.protocol.concat('://', req.hostname, req.url),
+            tempObject = {
+                htmlStatuscode: 404,
+                status: 'not found',
+                url: url,
+                method: req.method
+            },
+            logger.doLog('info', messages.messNotFound, tempObject),
+            res.status(404).json(tempObject)
+        );
+});
 
 
 

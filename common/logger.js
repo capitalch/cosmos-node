@@ -20,8 +20,8 @@ let moduleName = 'general';
 
 const format = winston.format.combine(
     winston.format.timestamp(tsFormat),
-    winston.format.printf(info => {
-        return (`{"t":"${tsFormat()}", "message":"${info.message}", "file":"${info.file}", "line":"${info.line}", "method":"${info.method}" "meta": ${info.meta}, "level":"${info.level}"},`)
+    winston.format.printf(info => {        
+        return (`{"t":"${tsFormat()}", "level":"${info.level}"}, "message":"${info.message}", "file":"${info.file}", "line":"${info.line}", "meta": ${info.meta}},`)
     })
 );
 
@@ -58,16 +58,14 @@ function getLogger() {
 
     logger.doLog = (level, message, meta) => {
         const trace = stackTrace.get()[1];
-        logger.log(
-            {
-                level: level,
-                message: message,
-                file: path.basename(trace.getFileName()),
-                line: trace.getLineNumber(),
-                method: trace.getMethodName(),
-                meta: meta && JSON.stringify(meta)
-            }
-        );
+        const logObject = {
+            level: level,
+            message: message,
+            file: trace.getFileName(),
+            line: trace.getLineNumber(),
+            meta: meta && JSON.stringify(meta)
+        };
+        logger.log(logObject);
     }
     return (logger);
 }

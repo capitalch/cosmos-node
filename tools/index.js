@@ -10,10 +10,6 @@ const messages = require('../common/messages');
 const config = require('../common/config.json');
 const postgres = require('./postgres/postgres');
 
-// tools.use(bodyParser);
-// tools.use(bodyParser.urlencoded({ extended: false }))
-// tools.use(bodyParser.json())
-
 tools.get('/tools', (req, res) => {
     console.log('/tools');
     res.json('tools');
@@ -47,23 +43,6 @@ tools.post('/tools/mail', (req, res, next) => {
     mailer.sendMail({
         req: req, res: res, next: next
     })
-    // try {
-    //     const sub = ibuki.filterOn('mail-response:mailer>tools.index')
-    //         .subscribe(d => {
-    //             sub.unsubscribe();
-    //             res.locals.message = messages.messMailSuccess;
-    //             next();
-    //         }, (error) => {
-    //             res.locals.message = messages.errMailFail
-    //             next(error);
-    //         });
-    //     ibuki.emit('send-mail:tools.index>mailer', {
-    //         req: req, res: res, next: next
-    //     });
-    // } catch (error) {
-    //     res.locals.message = messages.errMailFail;
-    //     next(error);
-    // }
 })
 
 module.exports = tools;

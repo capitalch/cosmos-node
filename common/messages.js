@@ -10,6 +10,7 @@ var messages = {
     errFail: `Operation was failed`,
     errUncaught: `Uncaught server error. Server is shut down`,
     errMailFail: `There was error in sending the mail`,
+    errQueryFalied: (db)=>`Execution of query failed on database ${db}`,
     messUrlNotFoundDetails: 'The url you are referring is not found',
     messFeaturesLoaded: 'Features are loaded successfully',
     messServerRunningAtPort: `Server is running at port: ${port}`,
@@ -18,6 +19,7 @@ var messages = {
     messShutDown: `System is shutting down`,
     messTearDatabaseConnected: `Tear database connected`,
     messTearApiQuery: 'Tear api queried',
-    messNotFound: 'Server has not found the url given by user'
+    messNotFound: 'Server has not found the url given by user',
+    messQueryExecuted:`database query was successfully executed`
 };
 module.exports = messages;
