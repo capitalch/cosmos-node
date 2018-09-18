@@ -19,7 +19,7 @@
     },
     "system:postgres": {
         "user": "webadmin",
-        "database": "qx",
+        "database": "postgres",
         "password": "4267aF3IQN",
         "port": "5432",
         "host": "103.217.220.32",
