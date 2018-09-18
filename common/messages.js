@@ -11,6 +11,7 @@ var messages = {
     errUncaught: `Uncaught server error. Server is shut down`,
     errMailFail: `There was error in sending the mail`,
     errQueryFalied: (db)=>`Execution of query failed on database ${db}`,
+    errQueryFormation: `There was error in formation of query at server. Contact dev team`,
     messUrlNotFoundDetails: 'The url you are referring is not found',
     messFeaturesLoaded: 'Features are loaded successfully',
     messServerRunningAtPort: `Server is running at port: ${port}`,
