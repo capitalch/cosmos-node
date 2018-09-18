@@ -44,8 +44,8 @@ function getParameterizedQuery(context, queryObject) {
         });
         return (matchet.result);
     } catch (error) {
-        context[1].locals.message = messages.errQueryFormation;
-        context[2](error.message);
+        context.res.locals.message = messages.errQueryFormation;
+        context.next(error.message);
     }
 }
 
@@ -69,8 +69,8 @@ postgres.exec = (context, queryObject) => {
             logger.doLog('info', messages.messQueryExecuted, null);
         })
         .catch(e => {
-            context[1].locals.message = messages.errQueryFalied(config['system:postgres'].database)
-            context[2].next(e.message);
+            context.res.locals.message = messages.errQueryFalied(config['system:postgres'].database)
+            context.next(e.message);
         })
 }
 module.exports = postgres;
