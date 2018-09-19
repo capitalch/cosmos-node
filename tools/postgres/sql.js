@@ -4,7 +4,7 @@ const sql = {
     and addr2 = :addr2 and :mname <> 'def'
     `,
     'id:get-all-contacts-on-table-name':`
-    select * from :table;
+    select * from contacts;
     `
 
 }

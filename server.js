@@ -1,11 +1,10 @@
 "use strict";
 // const bodyParser = require('body-parser');
-const path = require('path');
+// const path = require('path');
 const bodyParser = require('body-parser');
 const config = require('./common/config.json');
 const messages = require('./common/messages');
-const handler = require('./common/handler');
-// const mailer = require('./tools/mail/mailer');
+// const handler = require('./common/handler');
 const logger = require('./common/logger')('system');
 const express = require('express');
 const app = express();
@@ -19,12 +18,6 @@ app.use((req, res, next) => {
 });
 
 app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(bodyParser.json());
-
-// Object.keys(config.routers).forEach((key)=>{
-//     let element = config.routers[key];
-//     app.use(require(element.rootFolder));
-// });
 
 config.routes.forEach(element => {
     app.use(require(element));
@@ -34,14 +27,13 @@ process.on('uncaughtException', function (err) {
     const errorObject = {
         htmlStatusCode: err.status || 500,
         status: 'fail',
-        message: res.locals.message,
-        error: err
+        error: err.message || err
     };
     logger.doLog('error', messages.errUncaught, errorObject);
     console.log(errorObject);
 });
 
-const server = app.listen(process.env.PORT || config.common.port, () => {
+app.listen(process.env.PORT || config.common.port, () => {
     console.log(messages.messServerRunningAtPort);
 });
 
@@ -51,7 +43,7 @@ app.use((err, req, res, next) => {
         htmlStatusCode: err.status || 500,
         status: 'fail',
         message: res.locals.message,
-        error: err
+        error: err.message || err
     };
     logger.doLog('error', messages.errFail, errorObject);
     if (!res.finished) {

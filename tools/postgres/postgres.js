@@ -9,45 +9,64 @@ const postgres = {};
 
 function getParameterizedQuery(context, queryObject) {
     try {
+
         let counter = 1;
         const getParam = () => '$'.concat(counter++);
         const result = {};
-        let paramName; result.text = queryObject.query; result.values = [];
-        queryObject && Object.keys(queryObject.params).forEach(x => {
-            paramName = getParam();
-            result.values.push(queryObject.params[x]);
-            result.text = result.text.split(':'.concat(x)).join(paramName)
-        });
+        let paramName; result.text = queryObject.text; result.values = [];
+        (result.text.indexOf(':') >= 0) &&
+            queryObject && Object.keys(queryObject.values).forEach(x => {
+                paramName = getParam();
+                result.values.push(queryObject.values[x]);
+                result.text = result.text.split(':'.concat(x)).join(paramName)
+            });
         return (result);
     } catch (error) {
         context.res.locals.message = messages.errQueryFormation;
         context.next(error.message);
     }
 }
-const dbConfig = config['system:postgres'];
-const pool = new Pool(dbConfig);
+let dbConfig = config['system:postgres'];
+const poolObject = {};
+poolObject[dbConfig.database] = new Pool(dbConfig);
 /*
 context is an array of [req,res,next]. 
 quesryObject schema is 
 {
-    query:'sql command', 
-    params: parameters object
+    text:'sql command or id of sql command starting with id:xxxx', 
+    values: parameters object
 }
 if query starts with id like query is id:get:items this is treated as id of sql otherwise it is treated as sql command
 */
-postgres.exec = (context, queryObject) => {
-    const isId = queryObject.query.startsWith('id');
-    isId && (queryObject.text = sql[queryObject.text])
-    const pzQueryObject = getParameterizedQuery(context, queryObject);
-    pool.query(pzQueryObject)
-        .then(r => {
+postgres.exec = async (context, queryObject) => {
+    try {
+        const database = queryObject.database || dbConfig.database;
+        dbConfig.database = database;
+        poolObject[database] || (poolObject[database] = new Pool(dbConfig));
+        const pool = poolObject[database];
+        const isId = queryObject.text.startsWith('id');
+        isId && (queryObject.text = sql[queryObject.text])
+        const pzQueryObject = getParameterizedQuery(context, queryObject);
+        // pool.query(pzQueryObject)
+        //     .then(r => {
+        //         context.res.json(r.rows);
+        //         logger.doLog('info', messages.messQueryExecuted, { database: dbConfig.database, text: queryObject.text });
+        //     })
+        //     .catch(e => {
+        //         context.res.locals.message = messages.errQueryFalied(dbConfig.database)
+        //         context.next(e.message);
+        //     });
+        // try {
+            const r = await pool.query(pzQueryObject);
             context.res.json(r.rows);
-            logger.doLog('info', messages.messQueryExecuted, { database: dbConfig.database, text: queryObject.text });
-        })
-        .catch(e => {
-            context.res.locals.message = messages.errQueryFalied(dbConfig.database)
-            context.next(e.message);
-        })
+        // } catch (e) {
+        //     context.res.locals.message = messages.errQueryFalied(dbConfig.database)
+        //     context.next(e.message);
+        // }
+    } catch (error) {
+        context.res.locals.message = messages.errBeforeQueryFormation;
+        context.next(error.message);
+    }
 }
 module.exports = postgres;
 //
