@@ -29,8 +29,7 @@ function getParameterizedQuery(context, queryObject) {
 let dbConfig = config['system:postgres'];
 const poolObject = {};
 poolObject[dbConfig.database] = new Pool(dbConfig);
-/*
-context is an array of [req,res,next]. 
+/*. 
 quesryObject schema is 
 {
     text:'sql command or id of sql command starting with id:xxxx', 
@@ -47,28 +46,18 @@ postgres.exec = async (context, queryObject) => {
         const isId = queryObject.text.startsWith('id');
         isId && (queryObject.text = sql[queryObject.text])
         const pzQueryObject = getParameterizedQuery(context, queryObject);
-        // pool.query(pzQueryObject)
-        //     .then(r => {
-        //         context.res.json(r.rows);
-        //         logger.doLog('info', messages.messQueryExecuted, { database: dbConfig.database, text: queryObject.text });
-        //     })
-        //     .catch(e => {
-        //         context.res.locals.message = messages.errQueryFalied(dbConfig.database)
-        //         context.next(e.message);
-        //     });
-        // try {
-            const r = await pool.query(pzQueryObject);
-            context.res.json(r.rows);
-        // } catch (e) {
-        //     context.res.locals.message = messages.errQueryFalied(dbConfig.database)
-        //     context.next(e.message);
-        // }
+        
+        const r = await pool.query(pzQueryObject);
+        context.res.json(r.rows);
+        
     } catch (error) {
         context.res.locals.message = messages.errBeforeQueryFormation;
         context.next(error.message);
     }
 }
 module.exports = postgres;
+
+//deprecated
 //
 // const dbConfig = {
 //     user: config.user, // name of the user account
@@ -78,3 +67,20 @@ module.exports = postgres;
 //     max: 10, // max number of clients in the pool
 //     idleTimeoutMillis: 30000 // how long a client is allowed to remain idle before being closed
 // };
+
+
+// pool.query(pzQueryObject)
+//     .then(r => {
+//         context.res.json(r.rows);
+//         logger.doLog('info', messages.messQueryExecuted, { database: dbConfig.database, text: queryObject.text });
+//     })
+//     .catch(e => {
+//         context.res.locals.message = messages.errQueryFalied(dbConfig.database)
+//         context.next(e.message);
+//     });
+// try {
+
+// } catch (e) {
+//     context.res.locals.message = messages.errQueryFalied(dbConfig.database)
+//     context.next(e.message);
+// }

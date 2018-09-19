@@ -4,6 +4,7 @@
 const bodyParser = require('body-parser');
 const config = require('./common/config.json');
 const messages = require('./common/messages');
+const authenticate = require('./common/authenticate');
 // const handler = require('./common/handler');
 const logger = require('./common/logger')('system');
 const express = require('express');
@@ -18,6 +19,12 @@ app.use((req, res, next) => {
 });
 
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.post('/authenticate',(req,res,next) => {
+
+})
+
+app.use(['/tools','/apps/tear'], authenticate);
 
 config.routes.forEach(element => {
     app.use(require(element));
