@@ -36,7 +36,14 @@ tools.get('/tools/swagger/:spec', (req, res) => {
 })
 
 tools.get('/tools/sql', (req, res, next) => {
-    postgres.exec({req, res, next}, { query: 'id:get-contacts-on-name', params: { mname: 'sush' } });
+    postgres.exec({req, res, next}, { 
+        text: 'id:get-all-contacts-on-table-name'
+        , params: { 
+            table: 'contacts'
+            // , mname: 'sush'
+            // , addr2: '00098'
+            
+        } });
 })
 
 tools.post('/tools/mail', (req, res, next) => {

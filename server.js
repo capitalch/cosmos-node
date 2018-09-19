@@ -31,8 +31,14 @@ config.routes.forEach(element => {
 });
 
 process.on('uncaughtException', function (err) {
-    logger.doLog('error', messages.errUncaught, err);
-    console.log(err);
+    const errorObject = {
+        htmlStatusCode: err.status || 500,
+        status: 'fail',
+        message: res.locals.message,
+        error: err
+    };
+    logger.doLog('error', messages.errUncaught, errorObject);
+    console.log(errorObject);
 });
 
 const server = app.listen(process.env.PORT || config.common.port, () => {

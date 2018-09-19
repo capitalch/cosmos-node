@@ -1,55 +1,31 @@
 "use strict";
-const pg = require('pg');
-// const format = require('pg-format');
+// const pg = require('pg');
 const messages = require('../../common/messages');
-const logger = require('../../common/logger')('system');
+const logger = require('../../common/logger')('postgres');
 const { Pool } = require('pg');
 const sql = require('./sql');
 const config = require('../../common/config.json');
 const postgres = {};
 
-function getParameterizedSql(sql, paramObject) {
-    const matchet = {
-        counter: 1,
-        getParam: () => '$'.concat(matchet.counter++),
-        result: {
-            sql: sql,
-            values: []
-        }
-    };
-
-    paramObject && Object.keys(paramObject).forEach(x => {
-        let paramName = matchet.getParam();
-        matchet.result.values.push(paramName);
-        result.sql = result.sql.split(':'.concat(x)).join(paramName);
-    });
-    return (matchet.result);
-}
-
 function getParameterizedQuery(context, queryObject) {
     try {
-        const matchet = {
-            counter: 1,
-            getParam: () => '$'.concat(matchet.counter++),
-            result: {
-                query: '',
-                values: []
-            }
-        };
-        let paramName;
-        queryObject && Object.keys(queryObject).forEach(x => {
-            paramName = matchet.getParam();
-            matchet.result.values.push(paramName);
-            result.query = result.query.split(':'.concat(x)).join(paramName)
+        let counter = 1;
+        const getParam = () => '$'.concat(counter++);
+        const result = {};
+        let paramName; result.text = queryObject.query; result.values = [];
+        queryObject && Object.keys(queryObject.params).forEach(x => {
+            paramName = getParam();
+            result.values.push(queryObject.params[x]);
+            result.text = result.text.split(':'.concat(x)).join(paramName)
         });
-        return (matchet.result);
+        return (result);
     } catch (error) {
         context.res.locals.message = messages.errQueryFormation;
         context.next(error.message);
     }
 }
-
-const pool = new Pool(config['system:postgres']);
+const dbConfig = config['system:postgres'];
+const pool = new Pool(dbConfig);
 /*
 context is an array of [req,res,next]. 
 quesryObject schema is 
@@ -61,15 +37,15 @@ if query starts with id like query is id:get:items this is treated as id of sql 
 */
 postgres.exec = (context, queryObject) => {
     const isId = queryObject.query.startsWith('id');
-    isId && (queryObject.query = sql[queryObject.query])
-
-    pool.query(getParameterizedQuery(context,queryObject))
+    isId && (queryObject.text = sql[queryObject.text])
+    const pzQueryObject = getParameterizedQuery(context, queryObject);
+    pool.query(pzQueryObject)
         .then(r => {
-            context[1].json(r.rows);
-            logger.doLog('info', messages.messQueryExecuted, null);
+            context.res.json(r.rows);
+            logger.doLog('info', messages.messQueryExecuted, { database: dbConfig.database, text: queryObject.text });
         })
         .catch(e => {
-            context.res.locals.message = messages.errQueryFalied(config['system:postgres'].database)
+            context.res.locals.message = messages.errQueryFalied(dbConfig.database)
             context.next(e.message);
         })
 }
