@@ -5,9 +5,16 @@ pwd: VuTZhqCym1
                                     1. Looger
                                     2. Centralized error handling
                                     3. mailer
-4. authentication
+    4. authentication
                                     5. postgres connector
                                     6. swagger
+7. Deploy
+    eshop
+    mprobe
+    service-karao
+    capital-chowringhee
+    dynamic forms
+8. create login app
 
 //swagger tutorial for writing a swagger definition file from scratch
 https://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-2-the-basics/

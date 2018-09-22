@@ -20,11 +20,12 @@ app.use((req, res, next) => {
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.post('/authenticate',(req,res,next) => {
-
+app.post('/authenticate', (req, res, next) => {
+    console.log('auth');
+    res.json('ok');
 })
 
-app.use(['/tools','/apps/tear'], authenticate);
+app.use(['/tools', '/apps/tear'], authenticate);
 
 config.routes.forEach(element => {
     app.use(require(element));
