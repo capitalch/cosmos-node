@@ -5,6 +5,9 @@ const sql = {
     `,
     'id:get-all-contacts-on-table-name':`
     select * from contacts;
+    `,
+    'id:register-user':`
+    
     `
 
 }

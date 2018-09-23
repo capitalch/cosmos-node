@@ -9,7 +9,6 @@ const postgres = {};
 
 function getParameterizedQuery(context, queryObject) {
     try {
-
         let counter = 1;
         const getParam = () => '$'.concat(counter++);
         const result = {};
@@ -35,7 +34,7 @@ quesryObject schema is
     text:'sql command or id of sql command starting with id:xxxx', 
     values: parameters object
 }
-if query starts with id like query is id:get:items this is treated as id of sql otherwise it is treated as sql command
+if text starts with id like query is id:get:items this is treated as id of sql otherwise it is treated as sql command
 */
 postgres.exec = async (context, queryObject) => {
     try {

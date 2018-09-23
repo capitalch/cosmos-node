@@ -2,26 +2,53 @@
 // const bodyParser = require('body-parser');
 // const path = require('path');
 const bodyParser = require('body-parser');
+const crypto = require('crypto-js');
 const config = require('./common/config.json');
 const messages = require('./common/messages');
-const authenticate = require('./common/authenticate');
+const authenticate = require('./common/login');
 // const handler = require('./common/handler');
 const logger = require('./common/logger')('system');
 const express = require('express');
 const app = express();
 
-// CORS
-app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header('Access-Control-Allow-Methods', ' GET,PUT,POST,DELETE');
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
-    next();
-});
+// // CORS
+// app.use((req, res, next) => {
+//     res.header("Access-Control-Allow-Origin", "*");
+//     res.header('Access-Control-Allow-Methods', ' GET,PUT,POST,DELETE');
+//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+//     next();
+// });
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+
+var allowCrossDomain = function (req, res, next) {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+    res.header('Access-Control-Allow-Credentials', 'true');
+    res.header('Access-Control-Allow-Headers', 'Origin, Accept, Content-Type, Authorization, Content-Length, X-Requested-With, A' +
+        'ccess-Control-Allow-Origin,x-access-token');
+    if ('OPTIONS' == req.method) {
+        res.sendStatus(200);
+    } else {
+        next();
+    }
+};
+app.use(allowCrossDomain);
+
+app.post('/', (req, res, next) => {
+    res.json('ok');
+})
 
 app.post('/authenticate', (req, res, next) => {
-    console.log('auth');
+    login.authenticate(req, res, next);
+})
+
+app.post('/register', (req, res, next) => {
+    login.register(req, res, next);
+})
+
+app.get('/authenticate', (req, res, next) => {
     res.json('ok');
 })
 
