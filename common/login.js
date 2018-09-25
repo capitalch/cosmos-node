@@ -1,6 +1,7 @@
 "use strict";
 const login = {};
 const crypto = require('crypto-js');
+const postgres = require('./postgres');
 
 login.authenticate = (req,res,next) =>{
     const auth = req.body.auth;
