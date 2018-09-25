@@ -2,10 +2,9 @@
 // const bodyParser = require('body-parser');
 // const path = require('path');
 const bodyParser = require('body-parser');
-const crypto = require('crypto-js');
 const config = require('./common/config.json');
 const messages = require('./common/messages');
-const authenticate = require('./common/login');
+const login = require('./common/login');
 // const handler = require('./common/handler');
 const logger = require('./common/logger')('system');
 const express = require('express');
@@ -52,7 +51,7 @@ app.get('/authenticate', (req, res, next) => {
     res.json('ok');
 })
 
-app.use(['/tools', '/apps/tear'], authenticate);
+// app.use(['/tools', '/apps/tear'], authenticate);
 
 config.routes.forEach(element => {
     app.use(require(element));
