@@ -9,7 +9,6 @@ const postgres = {};
 
 function getParameterizedQuery(context, queryObject) {
     try {
-
         let counter = 1;
         const getParam = () => '$'.concat(counter++);
         const result = {};
@@ -29,16 +28,19 @@ function getParameterizedQuery(context, queryObject) {
 let dbConfig = config['system:postgres'];
 const poolObject = {};
 poolObject[dbConfig.database] = new Pool(dbConfig);
-/*. 
-quesryObject schema is 
+/*
+context schema is {req:{},res:{},next:{}}
+queryObject schema is 
 {
+    database: databaseName
     text:'sql command or id of sql command starting with id:xxxx', 
     values: parameters object
 }
-if query starts with id like query is id:get:items this is treated as id of sql otherwise it is treated as sql command
+if text starts with id like query is id:get:items this is treated as id of sql otherwise it is treated as sql command
 */
-postgres.exec = async (context, queryObject) => {
+postgres.exec = async (context, queryObject, type) => {
     try {
+        type = type || 'get';
         const database = queryObject.database || dbConfig.database;
         dbConfig.database = database;
         poolObject[database] || (poolObject[database] = new Pool(dbConfig));
@@ -46,10 +48,12 @@ postgres.exec = async (context, queryObject) => {
         const isId = queryObject.text.startsWith('id');
         isId && (queryObject.text = sql[queryObject.text])
         const pzQueryObject = getParameterizedQuery(context, queryObject);
-        
+
         const r = await pool.query(pzQueryObject);
-        context.res.json(r.rows);
-        
+        (context.type.toLowerCase() === 'get') 
+            ? context.res.json(r.rows) 
+            : context.res.status(200).json({ result: 'success' });
+
     } catch (error) {
         context.res.locals.message = messages.errBeforeQueryFormation;
         context.next(error.message);
