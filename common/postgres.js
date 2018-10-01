@@ -41,6 +41,7 @@ if text starts with id like query is id:get:items this is treated as id of sql o
 postgres.exec = async (context, queryObject, type) => {
     try {
         type = type || 'get';
+        type = type.toLowerCase();
         const database = queryObject.database || dbConfig.database;
         dbConfig.database = database;
         poolObject[database] || (poolObject[database] = new Pool(dbConfig));
@@ -50,10 +51,13 @@ postgres.exec = async (context, queryObject, type) => {
         const pzQueryObject = getParameterizedQuery(context, queryObject);
 
         const r = await pool.query(pzQueryObject);
-        (context.type.toLowerCase() === 'get') 
-            ? context.res.json(r.rows) 
-            : context.res.status(200).json({ result: 'success' });
-
+        if (type === 'get') {
+            context.res.json(r.rows);
+        } else if (type === 'use') {
+            return (r);
+        } else {
+            context.res.status(200).json({ result: 'success' });
+        }
     } catch (error) {
         context.res.locals.message = messages.errBeforeQueryFormation;
         context.next(error.message);

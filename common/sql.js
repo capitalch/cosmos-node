@@ -14,7 +14,9 @@ const sql = {
  		UPDATE
 			SET password = :password;
     `
-
+    , 'id:get-password':`
+    select pg_sleep(15),password from users where username = :username;
+    `
 }
 
 module.exports = sql;
