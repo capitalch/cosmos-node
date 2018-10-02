@@ -56,7 +56,7 @@ postgres.exec = async (context, queryObject, type) => {
         } else if (type === 'use') {
             return (r);
         } else {
-            context.res.status(200).json({ result: 'success' });
+            // context.res.status(200).json({ result: 'success' });
         }
     } catch (error) {
         context.res.locals.message = messages.errBeforeQueryFormation;

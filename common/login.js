@@ -34,13 +34,17 @@ login.register = (req, res, next) => {
         && (authArray.length === 2) && (userName = authArray[0], pwd = authArray[1]);
 
     const saltRounds = 10;
-    bcrypt.hash(pwd, saltRounds, function (err, hash) {
+    const doRegister = bcrypt.hash(pwd, saltRounds, function (err, hash) {
         postgres.exec({ req, res, next }
             , {
                 text: 'id:register-user'
                 , values: { username: userName, password: hash }
             }, 'post');
     });
+
+    (userName && pwd)
+        ? doRegister()
+        : null
 }
 
 module.exports = login;

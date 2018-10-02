@@ -45,6 +45,7 @@ app.post('/authenticate', (req, res, next) => {
 
 app.post('/register', (req, res, next) => {
     login.register(req, res, next);
+    const x = 0;
 })
 
 app.get('/authenticate', (req, res, next) => {
