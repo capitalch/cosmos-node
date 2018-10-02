@@ -38,28 +38,28 @@ queryObject schema is
 }
 if text starts with id like query is id:get:items this is treated as id of sql otherwise it is treated as sql command
 */
-postgres.exec = async (context, queryObject, type) => {
+postgres.exec = async (queryObject, context, isFireAndForget) => {
+    const dbConfigTemp = Object.assign({}, dbConfig);
+    const database = queryObject.database || dbConfig.database;
+    dbConfigTemp.database = database;
     try {
-        type = type || 'get';
-        type = type.toLowerCase();
-        const database = queryObject.database || dbConfig.database;
-        dbConfig.database = database;
-        poolObject[database] || (poolObject[database] = new Pool(dbConfig));
+        if(isFireAndForget === undefined){
+            isFireAndForget = true;
+        }
+        poolObject[database] || (poolObject[database] = new Pool(dbConfigTemp));
         const pool = poolObject[database];
         const isId = queryObject.text.startsWith('id');
         isId && (queryObject.text = sql[queryObject.text])
         const pzQueryObject = getParameterizedQuery(context, queryObject);
 
-        const r = await pool.query(pzQueryObject);
-        if (type === 'get') {
-            context.res.json(r.rows);
-        } else if (type === 'use') {
-            return (r);
+        if (isFireAndForget) {
+            const r = await pool.query(pzQueryObject);
+            context.res.status(200).json(r);
         } else {
-            // context.res.status(200).json({ result: 'success' });
+            return (pool.query(pzQueryObject));
         }
     } catch (error) {
-        context.res.locals.message = messages.errBeforeQueryFormation;
+        context.res.locals.message = messages.errQueryExecution(dbConfigTemp.database);
         context.next(error.message);
     }
 }

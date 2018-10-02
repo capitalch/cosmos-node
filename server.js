@@ -10,14 +10,6 @@ const logger = require('./common/logger')('system');
 const express = require('express');
 const app = express();
 
-// // CORS
-// app.use((req, res, next) => {
-//     res.header("Access-Control-Allow-Origin", "*");
-//     res.header('Access-Control-Allow-Methods', ' GET,PUT,POST,DELETE');
-//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
-//     next();
-// });
-
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
@@ -45,7 +37,6 @@ app.post('/authenticate', (req, res, next) => {
 
 app.post('/register', (req, res, next) => {
     login.register(req, res, next);
-    const x = 0;
 })
 
 app.get('/authenticate', (req, res, next) => {

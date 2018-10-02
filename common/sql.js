@@ -15,7 +15,7 @@ const sql = {
 			SET password = :password;
     `
     , 'id:get-password':`
-    select pg_sleep(15),password from users where username = :username;
+    select password, jinfo from users where username = :username;
     `
 }
 
