@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer');
 // const logger = require('../../common/logger')('tools');
 const ibuki = require('../../common/ibuki');
 const settings = require('./settings.json');
-const messages = require('../../common/messages');
+const {messages} = require('../../common/messages');
 
 const mailer = {};
 

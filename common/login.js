@@ -1,12 +1,25 @@
 "use strict";
 const login = {};
 const crypto = require('crypto-js');
-const messages = require('./messages');
-const postgres = require('./postgres');
+const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
+const util = require('./util');
+const config = require('./config.json');
+const { messages, statusCodes } = require('./messages');
+const postgres = require('./postgres');
 
-function createToken() {
-    return ('my token');
+login.verifyToken = async (req, res, next) => {
+    try {
+        const token = req.body.token || req.query.token || req.headers['x-access-token'];
+        token || util.throw(messages.errNoToken);
+        const decoded = await jwt.verify(token,config.jwt.secret);
+        req.decoded = decoded;
+        next();
+    } catch (error) {
+        res.locals.message = messages.errAuthentication;
+        res.status(statusCodes.unAuthorized);
+        next(error);
+    }
 }
 
 login.authenticate = async (req, res, next) => {
@@ -21,53 +34,59 @@ login.authenticate = async (req, res, next) => {
         let ret = await postgres.exec(
             { text: 'id:get-password', values: { username: userName } }
             , { req, res, next }, false);
-        if (ret) {
-            Array.isArray(ret.rows) && (
-                dbPassword = ret.rows[0]['password']
-                , jinfo = ret.rows[0]['jinfo']
-            );
+        ret || util.throw(messages.errQuery);
 
-            bcrypt.compare(pwd, dbPassword, function (err, result) {
-                if (err) {
-                    res.locals.message = messages.errAuthentication;
-                    next(err);
-                } else {
-                    result
-                        ? res.json({ token: createToken() })
-                        : (res.locals.message = messages.errAuthentication,
-                            next(err))
+        Array.isArray(ret.rows) && (
+            dbPassword = ret.rows[0]['password']
+            , jinfo = ret.rows[0]['jinfo']
+        );
+        const result = await bcrypt.compare(pwd, dbPassword);
+        let token;
+        result ?
+            (token = jwt.sign(
+                {
+                    name: userName,
+                    jinfo: jinfo
+                }, config.jwt.secret, {
+                    expiresIn: '1h'
                 }
-            });
-        };
+            ),
+                res.json({ "token": token })
+            )
+            : util.throw(messages.errUserNameOrPasswordNotFound)
     }
     catch (error) {
         res.locals.message = messages.errAuthentication;
+        res.status(statusCodes.unAuthorized);
         next(error);
     }
-    // res.json('ok');
 };
 
-login.register = (req, res, next) => {
-    const auth = req.body.auth;
-    const decrypted = crypto.AES.decrypt(auth, 'Secret Passphrase').toString(crypto.enc.Utf8);
-    const authArray = decrypted.split(':');
-    let userName, pwd;
-    authArray && Array.isArray(authArray)
-        && (authArray.length === 2) && (userName = authArray[0], pwd = authArray[1]);
+login.register = async (req, res, next) => {
+    try {
+        const auth = req.body.auth;
+        const decrypted = crypto.AES.decrypt(auth, 'Secret Passphrase').toString(crypto.enc.Utf8);
+        const authArray = decrypted.split(':');
+        let userName, pwd;
+        authArray && Array.isArray(authArray)
+            && (authArray.length === 2) && (userName = authArray[0], pwd = authArray[1]);
 
-    const saltRounds = 10;
-    const doRegister = () => bcrypt.hash(pwd, saltRounds, function (err, hash) {
-        err ? ((res.locals.message = err.message), next(err)) :
-            postgres.exec(
-                {
-                    text: 'id:register-user'
-                    , values: { username: userName, password: hash }
-                }, { req, res, next }, true);
-    });
+        if ((!userName) || (!pwd)) {
+            util.throw(messages.errUserNameOrPasswordNotFound);
+        }
+        const saltRounds = 10;
+        const hash = await bcrypt.hash(pwd, saltRounds);
+        hash && postgres.exec(
+            {
+                text: 'id:register-user'
+                , values: { username: userName, password: hash }
+            }, { req, res, next }, true, { message: messages.messSuccess });
 
-    (userName && pwd)
-        ? doRegister()
-        : (res.locals.message = messages.errUserNameOrPasswordNotFound, next(new Error()));
+    } catch (error) {
+        res.locals.message = messages.errRegisterUserPwd;
+        res.status(statusCodes.badRequest);
+        next(error);
+    }
 }
 
 module.exports = login;

@@ -1,5 +1,5 @@
 "use strict";
-const messages = require('./messages');
+const {messages} = require('./messages');
 const logger = require('./logger')('system');
 const ibuki = require('./ibuki');
 const handler = {};

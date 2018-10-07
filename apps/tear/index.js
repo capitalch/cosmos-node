@@ -1,6 +1,6 @@
 // "use strict";
 const express = require('express');
-const messages = require('../../common/messages');
+const {messages} = require('../../common/messages');
 const logger = require('../../common/logger')('tear');
 const ibuki = require('../../common/ibuki');
 const compression = require('compression');

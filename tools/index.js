@@ -6,7 +6,7 @@ const fs = require('fs');
 const express = require('express');
 const mailer = require('./mail/mailer');
 const ibuki = require('../common/ibuki');
-const messages = require('../common/messages');
+const {messages} = require('../common/messages');
 const config = require('../common/config.json');
 const postgres = require('../common/postgres');
 

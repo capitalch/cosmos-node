@@ -3,7 +3,8 @@
 // const path = require('path');
 const bodyParser = require('body-parser');
 const config = require('./common/config.json');
-const messages = require('./common/messages');
+// const messages = require('./common/messages');
+const { statusCodes, messages } = require('./common/messages');
 const login = require('./common/login');
 // const handler = require('./common/handler');
 const logger = require('./common/logger')('system');
@@ -35,6 +36,9 @@ app.post('/authenticate', (req, res, next) => {
     login.authenticate(req, res, next);
 })
 
+//provide urls in the config file for which you want to do authentication
+app.use(config.common.authUrls, login.verifyToken)
+
 app.post('/register', (req, res, next) => {
     login.register(req, res, next);
 })
@@ -43,7 +47,17 @@ app.get('/authenticate', (req, res, next) => {
     res.json('ok');
 })
 
-// app.use(['/tools', '/apps/tear'], authenticate);
+app.post('/test', (req, res, next) => {
+    res.json({ test: 'ok' });
+})
+
+app.get('/test', (req, res, next) => {
+    res.json({ test: 'ok' });
+})
+
+app.get('/test1', (req, res, next) => {
+    res.json({ test: 'ok' });
+})
 
 config.routes.forEach(element => {
     app.use(require(element));
@@ -65,15 +79,14 @@ app.listen(process.env.PORT || config.common.port, () => {
 
 // middleware for error handling
 app.use((err, req, res, next) => {
+    res.statusCode ? (res.statusCode === 200) && res.status(500) : res.status(500);
     const errorObject = {
-        htmlStatusCode: err.status || 500,
-        status: 'fail',
-        message: res.locals.message,
-        error: err.message || err
+        statusCode: res.statusCode,
+        message: err.message || messages.errUnknown,
+        context: res.locals.message || ''
     };
     logger.doLog('error', messages.errFail, errorObject);
     if (!res.finished) {
-        res.status(err.status || 500);
         res.json(errorObject);
     }
 });
@@ -85,24 +98,22 @@ app.use((req, res, next) => {
     (status)
         ? (
             tempObject = {
-                htmlStatusCode: 200,
-                status: 'ok',
+                statusCode: statusCodes.ok,
                 method: req.method,
                 message: res.locals.message
             },
             logger.doLog('info', messages.messSuccess, tempObject),
-            res.status(200).json(tempObject)
+            res.status(statusCodes.ok).json(tempObject)
         )
         : (
             url = req.protocol.concat('://', req.hostname, req.url),
             tempObject = {
-                htmlStatuscode: 404,
-                status: 'not found',
+               statusCode: statusCodes.notFound,
                 url: url,
                 method: req.method
             },
             logger.doLog('info', messages.messNotFound, tempObject),
-            res.status(404).json(tempObject)
+            res.status(statusCodes.notFound).json(tempObject)
         );
 });
 

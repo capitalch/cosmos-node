@@ -1,6 +1,6 @@
 "use strict";
 // const pg = require('pg');
-const messages = require('./messages');
+const { messages, statusCodes } = require('./messages');
 const logger = require('./logger')('postgres');
 const { Pool } = require('pg');
 const sql = require('./sql');
@@ -22,7 +22,7 @@ function getParameterizedQuery(context, queryObject) {
         return (result);
     } catch (error) {
         context.res.locals.message = messages.errQueryFormation;
-        context.next(error.message);
+        context.next(error);
     }
 }
 let dbConfig = config['system:postgres'];
@@ -38,12 +38,12 @@ queryObject schema is
 }
 if text starts with id like query is id:get:items this is treated as id of sql otherwise it is treated as sql command
 */
-postgres.exec = async (queryObject, context, isFireAndForget) => {
+postgres.exec = async (queryObject, context, isFireAndForget, responseOnSuccess) => {
     const dbConfigTemp = Object.assign({}, dbConfig);
     const database = queryObject.database || dbConfig.database;
     dbConfigTemp.database = database;
     try {
-        if(isFireAndForget === undefined){
+        if (isFireAndForget === undefined) {
             isFireAndForget = true;
         }
         poolObject[database] || (poolObject[database] = new Pool(dbConfigTemp));
@@ -53,14 +53,15 @@ postgres.exec = async (queryObject, context, isFireAndForget) => {
         const pzQueryObject = getParameterizedQuery(context, queryObject);
 
         if (isFireAndForget) {
-            const r = await pool.query(pzQueryObject);
-            context.res.status(200).json(r);
+            let r = await pool.query(pzQueryObject);
+            responseOnSuccess && (r = responseOnSuccess);
+            context.res.status(statusCodes.ok).json(r);
         } else {
             return (pool.query(pzQueryObject));
         }
     } catch (error) {
         context.res.locals.message = messages.errQueryExecution(dbConfigTemp.database);
-        context.next(error.message);
+        context.next(error);
     }
 }
 module.exports = postgres;

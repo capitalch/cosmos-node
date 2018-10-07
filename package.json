@@ -16,6 +16,7 @@
     "compression": "^1.7.3",
     "crypto-js": "^3.1.9-1",
     "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
     "moment": "^2.22.2",
     "mssql": "^4.1.0",
     "mustache": "^2.3.2",
