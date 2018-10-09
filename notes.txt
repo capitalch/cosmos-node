@@ -5,7 +5,7 @@ pwd: VuTZhqCym1
                                     1. Looger
                                     2. Centralized error handling
                                     3. mailer
-    4. authentication
+                                    4. authentication
                                     5. postgres connector
                                     6. swagger
 7. Deploy
@@ -15,6 +15,43 @@ pwd: VuTZhqCym1
     capital-chowringhee
     dynamic forms
 8. create login app
+9. User management
 
 //swagger tutorial for writing a swagger definition file from scratch
 https://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-2-the-basics/
+
+//Database schema user management
+bu: id, buName, jInfo, descr
+app: id, appCode, jInfo, descr
+user: id, jRule, jInfo, descr
+
+jRule:[
+    {
+        buId: 1,
+        appId: 3,
+        role: admin,
+        weight: 100
+    },
+    {
+        buId: 4,
+        appid: 4,
+        role: 'advanced'
+        weight: 10
+    },
+    {
+        buid:6,
+        appId:4,
+        role: 'medium'
+        weight: 123
+    }
+    {
+        buId: 7,
+        appid: 5,
+        role:'simple'
+        weight: 3323
+    }
+]
+//notes
+1. roles are admin(CRUD), advanced(RUD), medium(RU), simple(R).
+2. Weights are used to display secured pages at client side
+3. api end points can be designated for CRUD.
