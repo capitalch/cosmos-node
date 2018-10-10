@@ -29,29 +29,29 @@ jRule:[
     {
         buId: 1,
         appId: 3,
-        role: admin,
-        weight: 100
+        rights: 'crud',
+        weight: 1
     },
     {
         buId: 4,
         appid: 4,
-        role: 'advanced'
-        weight: 10
+        rights: 'rud'
+        weight: 2
     },
     {
         buid:6,
         appId:4,
-        role: 'medium'
-        weight: 123
+        rights: 'ud'
+        weight: 3
     }
     {
         buId: 7,
         appid: 5,
-        role:'simple'
-        weight: 3323
+        rights:'d'
+        weight: 5
     }
 ]
 //notes
-1. roles are admin(CRUD), advanced(RUD), medium(RU), simple(R).
+1. rights are CRUD operations.
 2. Weights are used to display secured pages at client side
 3. api end points can be designated for CRUD.
