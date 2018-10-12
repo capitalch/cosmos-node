@@ -9,13 +9,14 @@ const sql = {
     `
 
     , 'id:register-user': `
-    insert into users(username,password) values (:username, :password)
-	ON CONFLICT (username) DO
+    insert into "Users"("userName","password") values (:userName, :password)
+	ON CONFLICT ("userName") DO
  		UPDATE
-			SET password = :password;
+			SET "password" = :password;
     `
+
     , 'id:get-password':`
-    select password, jinfo from users where username = :username;
+    select "password", "jRule","jInfo", "weight" from "Users" where "userName" = :userName;
     `
 }
 

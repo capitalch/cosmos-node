@@ -2,7 +2,7 @@
 pwd: VuTZhqCym1
 
 //works
-                                    1. Looger
+                                    1. Logger
                                     2. Centralized error handling
                                     3. mailer
                                     4. authentication
@@ -16,6 +16,8 @@ pwd: VuTZhqCym1
     dynamic forms
 8. create login app
 9. User management
+10. Wiring up of client login, Admin and server side code
+11. Finalize Angular dynamic forms
 
 //swagger tutorial for writing a swagger definition file from scratch
 https://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-2-the-basics/
@@ -29,26 +31,22 @@ jRule:[
     {
         buId: 1,
         appId: 3,
-        rights: 'crud',
-        weight: 1
+        rights: 'crud'
     },
     {
         buId: 4,
         appid: 4,
         rights: 'rud'
-        weight: 2
     },
     {
         buid:6,
         appId:4,
         rights: 'ud'
-        weight: 3
     }
     {
         buId: 7,
         appid: 5,
         rights:'d'
-        weight: 5
     }
 ]
 //notes

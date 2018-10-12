@@ -12,7 +12,7 @@ login.verifyToken = async (req, res, next) => {
     try {
         const token = req.body.token || req.query.token || req.headers['x-access-token'];
         token || util.throw(messages.errNoToken);
-        const decoded = await jwt.verify(token,config.jwt.secret);
+        const decoded = await jwt.verify(token, config.jwt.secret);
         req.decoded = decoded;
         next();
     } catch (error) {
@@ -27,31 +27,33 @@ login.authenticate = async (req, res, next) => {
         const auth = req.body.auth;
         const decrypted = crypto.AES.decrypt(auth, 'Secret Passphrase').toString(crypto.enc.Utf8);
         const authArray = decrypted.split(':');
-        let userName, pwd, dbPassword, jinfo;
+        let userName, pwd, dbPassword, jInfo, jRule, weight;
         authArray && Array.isArray(authArray)
             && (authArray.length === 2) && (userName = authArray[0], pwd = authArray[1]);
 
         let ret = await postgres.exec(
-            { text: 'id:get-password', values: { username: userName } }
+            { text: 'id:get-password', values: { userName: userName } }
             , { req, res, next }, false);
         ret || util.throw(messages.errQuery);
 
         Array.isArray(ret.rows) && (
             dbPassword = ret.rows[0]['password']
-            , jinfo = ret.rows[0]['jinfo']
+            , jRule = ret.rows[0]['jRule']
+            , jInfo = ret.rows[0]['jInfo']
+            , weight = ret.rows[0]['weight']
         );
         const result = await bcrypt.compare(pwd, dbPassword);
         let token;
         result ?
             (token = jwt.sign(
                 {
-                    name: userName,
-                    jinfo: jinfo
+                    userName: userName,
+                    jRule: jRule
                 }, config.jwt.secret, {
                     expiresIn: '1h'
                 }
             ),
-                res.json({ "token": token })
+                res.json({ "token": token, "jInfo": jInfo, "weight": weight })
             )
             : util.throw(messages.errUserNameOrPasswordNotFound)
     }
@@ -79,7 +81,7 @@ login.register = async (req, res, next) => {
         hash && postgres.exec(
             {
                 text: 'id:register-user'
-                , values: { username: userName, password: hash }
+                , values: { userName: userName, password: hash }
             }, { req, res, next }, true, { message: messages.messSuccess });
 
     } catch (error) {
