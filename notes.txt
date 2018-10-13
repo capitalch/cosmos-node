@@ -23,33 +23,109 @@ pwd: VuTZhqCym1
 https://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-2-the-basics/
 
 //Database schema user management
-bu: id, buName, jInfo, descr
-app: id, appCode, jInfo, descr
-user: id, jRule, jInfo, descr
+BusinessUnitsu: id, buName, jInfo, descr, isActive
+Applications: id, appCode, descr, isActive
+user: id, userName, password, jRule, jInfo, email, isActive,
+jInfo: User details in JSON format
+jRule:{
+    userType: 'superAdmin', // buAdmin, buUser
+    rules:[
+        {
+            buId: 1,
+            appId: 3,
+            rights: 'crud',
+            weight: 1
+        },
+        {
+            buId: 4,
+            appid: 4,
+            rights: 'rud',
+            weight: 3
+        },
+        {
+            buid:6,
+            appId:4,
+            rights: 'ud',
+            weight: 7
+        },
+        {
+            buId: 7,
+            appId: 5,
+            rights:'d',
+            weight: 5
+        }
+    ]
+}
 
-jRule:[
-    {
-        buId: 1,
-        appId: 3,
-        rights: 'crud'
-    },
-    {
-        buId: 4,
-        appid: 4,
-        rights: 'rud'
-    },
-    {
-        buid:6,
-        appId:4,
-        rights: 'ud'
-    }
-    {
-        buId: 7,
-        appid: 5,
-        rights:'d'
-    }
-]
 //notes
-1. rights are CRUD operations.
-2. Weights are used to display secured pages at client side
-3. api end points can be designated for CRUD.
+1. Weights are used to display secured pages at client side
+2. api end points can be designated for CRUD.
+
+// Logic
+User types and their functions
+superAdmin: 
+1. Create users of type buAdmin (busines unit admin)
+2. Activates / deactivates BU's and applications
+3. Associates / Deassociates buAdmin with a business unit or application
+4. Super admin users cannot do any business transactions in any business unit or application
+5. There can be multiple super admin users
+6. Super admin users can be activated / deactivated
+7. One SuperAdmin user can create another superAdmin user from client side. The first superAdmin user is created from a console application.
+
+buAdmin:
+1. Create users of type buUser (business unit user)
+2. Activates / deactivates buUser
+3. Associates / deassociates buUser with business unit or application
+5. Carries on business transactions
+
+buUser:
+1. Carries on business transactions on applications
+
+CreateSuperAdmin console application
+1. Inputs superAdmin user name, email, activate / deactivate, key as parameters. Default is activate.
+2. Generates random password --> inserts username, email, random password, jRule:{userType:'superAdmin'} in database. Emails the user the random password with arequest to do change password.
+    The user can do change password from 'change password' link in login screen. 
+3. The first super admin user is created by this console application. Thereafter further super admin users can be created by existing super admin.
+
+Login application
+a) Provides normal login, create user, activate / deactivate user, change password. This is created as a module and can be embedded in any other Angular app.
+b) Provides a service which contains the token and user information in rules array. There may be one interceptor service which may push token with every
+    http request in header x-access-token.
+c) Change password link --> Accepts userName / email, old password, new password. At server /change endpoint password is changed in database
+    and use is sent a success mail.
+d) After login submit --> authenticate at server side and get token at client with userType + rules array
+    1. userType is superAdmin
+        a) The login screen disappears on successful login
+        b) Following links are available:
+            1) Create new super admin user'
+            2) Activate / Deactivate existing super admin user
+            3) Activate / Deactivate business unit
+            4) Activate / Deactivate application
+            5) Create new buAdmin user
+            6) Activate / Deactivate existing buAdmin user
+        c) The above links do work as per their names.
+    2. userType is buAdmin
+        a) Client has information of business units and applications the buAdmin is associated with from the rules array.
+        b) Login screen disappears
+        c) 'Create new user' link appears. The corresponding page has check box as isBuAdmin
+        d) New user can be created after associating one or many business units and applications
+        e) Submit will generate new user at server side by using /register link and post data
+    3. Create new user functionality
+        a) Rules array, new userName, email, userType is provided from client. 
+        b) At server after verifying the token and userType random password is generated.
+        c) New user is inserted in database and random password is sent to user with a request to change the password. 
+            The user can change password from login screen.
+
+//works
+1. Login app
+    a) Normal login
+    b) Service to hold token at successful login
+    c) Interceptor to inject token with every htp request
+    d) Change password
+    e) Create new super admin user / buAdmin / buUser
+    f) Activate / deactivae super admin / buAdmin / buUser
+    g) Can consider to create without routing
+
+
+
+
