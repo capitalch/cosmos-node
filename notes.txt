@@ -71,6 +71,8 @@ superAdmin:
 5. There can be multiple super admin users
 6. Super admin users can be activated / deactivated
 7. One SuperAdmin user can create another superAdmin user from client side. The first superAdmin user is created from a console application.
+8. Create new business unit, Application. Associate / deassociate business unit with one or many apps.
+    Each business unit has an array of appIds it is associated with.
 
 buAdmin:
 1. Create users of type buUser (business unit user)
@@ -93,7 +95,8 @@ b) Provides a service which contains the token and user information in rules arr
     http request in header x-access-token.
 c) Change password link --> Accepts userName / email, old password, new password. At server /change endpoint password is changed in database
     and use is sent a success mail.
-d) After login submit --> authenticate at server side and get token at client with userType + rules array
+d) Create new business unit, new application and do association between them
+e) After login submit --> authenticate at server side and get token at client with userType + rules array
     1. userType is superAdmin
         a) The login screen disappears on successful login
         b) Following links are available:
@@ -117,7 +120,7 @@ d) After login submit --> authenticate at server side and get token at client wi
             The user can change password from login screen.
 
 //works
-1. Login app
+1. Login app. Change its name as ControlPanel
     a) Normal login
     b) Service to hold token at successful login
     c) Interceptor to inject token with every htp request
@@ -125,6 +128,19 @@ d) After login submit --> authenticate at server side and get token at client wi
     e) Create new super admin user / buAdmin / buUser
     f) Activate / deactivae super admin / buAdmin / buUser
     g) Can consider to create without routing
+    h) Integrate ControlPanel application with another Angular application
+2. server
+    a) Create change password endpoint and its functionality
+    b) Create console app to create first super admin user
+    c) Activate / deactivate user, bu, application
+    d) Register superAdmin, buAdmin, buUser with corresponding rules
+    e) Each app end point is reached after authentication. At app end point the rules array is checked whether there is a matching 
+        entry for the business unit and corresponding application. If entry is not found then authorization error is sent back to client.
+3. Research
+    a) Dynamic forms. Includes completion of dynamic forms.
+    b) Interceptor and login as module
+
+
 
 
 
