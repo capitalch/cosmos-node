@@ -40,7 +40,7 @@ login.authenticate = async (req, res, next) => {
             dbPassword = ret.rows[0]['password']
             , jRule = ret.rows[0]['jRule']
             , jInfo = ret.rows[0]['jInfo']
-            , weight = ret.rows[0]['weight']
+            // , weight = ret.rows[0]['weight']
         );
         const result = await bcrypt.compare(pwd, dbPassword);
         let token;
@@ -81,7 +81,7 @@ login.register = async (req, res, next) => {
         hash && postgres.exec(
             {
                 text: 'id:register-user'
-                , values: { userName: userName, password: hash }
+                , values: { userName: userName, password: hash, email: 'capitalch@gmail.com' }
             }, { req, res, next }, true, { message: messages.messSuccess });
 
     } catch (error) {

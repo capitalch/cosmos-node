@@ -57,6 +57,8 @@ postgres.exec = async (queryObject, context, isFireAndForget, responseOnSuccess)
             responseOnSuccess && (r = responseOnSuccess);
             context.res.status(statusCodes.ok).json(r);
         } else {
+            // const r = await pool.query(pzQueryObject);
+            // return(r);
             return (pool.query(pzQueryObject));
         }
     } catch (error) {

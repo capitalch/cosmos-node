@@ -87,7 +87,9 @@ app.use((err, req, res, next) => {
     };
     logger.doLog('error', messages.errFail, errorObject);
     if (!res.finished) {
-        res.json(errorObject);
+        // Object.assign(err,errorObject)
+        // res.json(errorObject);
+        res.send(errorObject);
     }
 });
 
