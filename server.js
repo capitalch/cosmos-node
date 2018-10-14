@@ -37,7 +37,7 @@ app.post('/authenticate', (req, res, next) => {
 })
 
 //provide urls in the config file for which you want to do authentication
-app.use(config.common.authUrls, login.verifyToken)
+app.use(config.common.authUrls, login.verify)
 
 app.post('/register', (req, res, next) => {
     login.register(req, res, next);

@@ -8,7 +8,7 @@ const config = require('./config.json');
 const { messages, statusCodes } = require('./messages');
 const postgres = require('./postgres');
 
-login.verifyToken = async (req, res, next) => {
+login.verify = async (req, res, next) => {
     try {
         const token = req.body.token || req.query.token || req.headers['x-access-token'];
         token || util.throw(messages.errNoToken);
