@@ -32,6 +32,10 @@ app.post('/', (req, res, next) => {
     res.json('ok');
 })
 
+app.get('/', (req, res, next) => {
+    res.json('ok');
+})
+
 app.post('/authenticate', (req, res, next) => {
     login.authenticate(req, res, next);
 })
