@@ -1,6 +1,5 @@
 "use strict";
-// const bodyParser = require('body-parser');
-// const path = require('path');
+const path = require('path');
 const bodyParser = require('body-parser');
 const config = require('./common/config.json');
 // const messages = require('./common/messages');
@@ -29,11 +28,16 @@ var allowCrossDomain = function (req, res, next) {
 app.use(allowCrossDomain);
 
 app.post('/', (req, res, next) => {
-    res.json('ok');
+    res.json({status:'ok'});
 })
 
 app.get('/', (req, res, next) => {
-    res.json('ok');
+    res.json({status:'ok'});
+})
+
+app.get('/contacts', (req, res, next) => {
+    const path1 = path.join(__dirname,'data','contacts.json');
+    res.sendFile(path1);
 })
 
 app.post('/authenticate', (req, res, next) => {
