@@ -28,15 +28,18 @@ var allowCrossDomain = function (req, res, next) {
 app.use(allowCrossDomain);
 
 app.post('/', (req, res, next) => {
-    res.json({status:'ok'});
+    res.json({ status: 'ok' });
 })
 
 app.get('/', (req, res, next) => {
-    res.json({status:'ok'});
+    res.json({ status: 'ok' });
 })
 
-app.get('/contacts', (req, res, next) => {
-    const path1 = path.join(__dirname,'data','contacts.json');
+app.get('/contacts/:num', (req, res, next) => {
+    const num = req.params['num'];
+    let fileName;
+    num === 'short' ? fileName = 'contacts40.json' : fileName = 'contacts4000.json'
+    const path1 = path.join(__dirname, 'data', fileName);
     res.sendFile(path1);
 })
 
@@ -118,7 +121,7 @@ app.use((req, res, next) => {
         : (
             url = req.protocol.concat('://', req.hostname, req.url),
             tempObject = {
-               statusCode: statusCodes.notFound,
+                statusCode: statusCodes.notFound,
                 url: url,
                 method: req.method
             },
