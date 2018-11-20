@@ -1,0 +1,49 @@
+[{
+		"cp_date": "2018 - 11 - 03",
+		"ref_no": "Csh / 1052 / 18",
+		"cp_id": "1053",
+		"cp_amt": "400.00",
+		"remarks": "Water for 7 Days",
+		"pay_from": "Cash a / c shop",
+		"pay_to": "Showroom Expences"
+	}, {
+		"cp_date": "2018 - 11 - 03",
+		"ref_no": "Csh / 1051 / 18",
+		"cp_id": "1052",
+		"cp_amt": "300.00",
+		"remarks": "Gopal for 29 / 10 / 18.01 / 11 / 18 & 02 / 11 / 18",
+		"pay_from": "Cash a / c shop",
+		"pay_to": "Sales Commission a / c"
+	}, {
+		"cp_date": "2018 - 11 - 03",
+		"ref_no": "Csh / 1050 / 18",
+		"cp_id": "1051",
+		"cp_amt": "1173.58",
+		"remarks": "Credit Card Commision auto generation",
+		"pay_from": "Credit card Citi Bank",
+		"pay_to": "CARD COMMISSION"
+	}, {
+		"cp_date": "2018 - 11 - 03",
+		"ref_no": "Csh / 1054 / 18",
+		"cp_id": "1055",
+		"cp_amt": "100.00",
+		"remarks": "MOBILE RECHARGE M.JANA",
+		"pay_from": "Cash a / c shop",
+		"pay_to": "Telephone Charges Misc"
+	}, {
+		"cp_date": "2018 - 11 - 03",
+		"ref_no": "Csh / 1053 / 18",
+		"cp_id": "1054",
+		"cp_amt": "750.00",
+		"remarks": "Water for 7 days",
+		"pay_from": "Cash a / c shop",
+		"pay_to": "Showroom Expences"
+	}, {
+		"cp_date": "2018 - 11 - 02",
+		"ref_no": "Csh / 1048 / 18",
+		"cp_id": "1049",
+		"cp_amt": "80.00",
+		"remarks": "10 PCS RJ 45,1 PCS M / BOARD BATTERY",
+		"pay_from": "Cash a / c shop",
+		"pay_to": "Computer Maintainance A / c"
+}]

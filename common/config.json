@@ -18,7 +18,8 @@
     "routes": [
         "./api/test",
         "./tools",
-        "./apps/tear"
+        "./apps/tear",
+        "./apps/xlinkserver"
     ],
     "logging": {
         "dir": "logs",

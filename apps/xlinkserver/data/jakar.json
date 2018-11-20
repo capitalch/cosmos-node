@@ -1,0 +1,41 @@
+[{
+	"counter_code": "Accessory",
+	"total_value": "2786922.65",
+	"jakar_value": "44187.64",
+	"percent": "1.585535"
+}, {
+	"counter_code": "AUDIO",
+	"total_value": null,
+	"jakar_value": null,
+	"percent": null
+}, {
+	"counter_code": "CAMERA",
+	"total_value": "1631188.61",
+	"jakar_value": "140379.02",
+	"percent": "8.605934"
+}, {
+	"counter_code": "CELLULER",
+	"total_value": "1454262.19",
+	"jakar_value": "14505.68",
+	"percent": ".997460"
+}, {
+	"counter_code": "COMPUTER",
+	"total_value": "393613.04",
+	"jakar_value": "44588.07",
+	"percent": "11.327895"
+}, {
+	"counter_code": "MAIN",
+	"total_value": "4.85",
+	"jakar_value": null,
+	"percent": null
+}, {
+	"counter_code": "TVCOUNTER",
+	"total_value": "1194699.03",
+	"jakar_value": "206195.38",
+	"percent": "17.259190"
+}, {
+	"counter_code": "WATCH",
+	"total_value": "182273.02",
+	"jakar_value": "23058.24",
+	"percent": "12.650386"
+}]

@@ -1,0 +1,67 @@
+[{
+		"tran_date": "2018 - 10 - 09",
+		"debit_amt": "0.00",
+		"credit_amt": "2875.00",
+		"remarks": "DENA BANK",
+		"clear_date": null,
+		"mdate": "9999 - 03 - 31",
+		"cheq_no": "011715",
+		"acc_id": "165",
+		"cleared": "1",
+		"acc_name": "Cash a / c shop"
+	}, {
+		"tran_date": "2018 - 10 - 06",
+		"debit_amt": "0.00",
+		"credit_amt": "2625.00",
+		"remarks": "AXIS BANK",
+		"clear_date": null,
+		"mdate": "9999 - 03 - 31",
+		"cheq_no": "710046",
+		"acc_id": "165",
+		"cleared": "1",
+		"acc_name": "Cash a / c shop"
+	}, {
+		"tran_date": "2018 - 11 - 03",
+		"debit_amt": "5502.00",
+		"credit_amt": "0.00",
+		"remarks": "B C NAYAK OCT 2018",
+		"clear_date": null,
+		"mdate": "9999 - 03 - 31",
+		"cheq_no": "002490",
+		"acc_id": "214",
+		"cleared": "1",
+		"acc_name": "Salary Expences"
+	}, {
+		"tran_date": "2018 - 11 - 03",
+		"debit_amt": "5404.00",
+		"credit_amt": "0.00",
+		"remarks": "PRAHALAD SINGH OCT2018",
+		"clear_date": null,
+		"mdate": "9999 - 03 - 31",
+		"cheq_no": "002488",
+		"acc_id": "214",
+		"cleared": "1",
+		"acc_name": "Salary Expences"
+	}, {
+		"tran_date": "2018 - 11 - 03",
+		"debit_amt": "7958.00",
+		"credit_amt": "0.00",
+		"remarks": "Swapan Nandi, Oct 2018",
+		"clear_date": null,
+		"mdate": "9999 - 03 - 31",
+		"cheq_no": "002481",
+		"acc_id": "214",
+		"cleared": "1",
+		"acc_name": "Salary Expences"
+	}, {
+		"tran_date": "2018 - 11 - 03",
+		"debit_amt": "7369.00",
+		"credit_amt": "0.00",
+		"remarks": "Swapan Nandi, Oct 2018",
+		"clear_date": null,
+		"mdate": "9999 - 03 - 31",
+		"cheq_no": "002481",
+		"acc_id": "214",
+		"cleared": "1",
+		"acc_name": "Salary Expences"
+	}]

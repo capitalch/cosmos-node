@@ -1,0 +1,7 @@
+{
+    "key":"abcd",
+    "port": 3004,
+    "env": "development",
+    "host": "http://localhost",
+    "homePageUrl": ""
+}

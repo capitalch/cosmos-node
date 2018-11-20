@@ -1,0 +1,36 @@
+[{
+	"bill_memo_id": "3482",
+	"ref_no": "CardN / 55 / 18",
+	"descr": null,
+	"total_amt": "15200.00",
+	"gp": "581.24",
+	"cgp": "581"
+}, {
+	"bill_memo_id": "3485",
+	"ref_no": "GCOM / 263 / 18",
+	"descr": null,
+	"total_amt": "400.00",
+	"gp": "97.44",
+	"cgp": "97"
+}, {
+	"bill_memo_id": "3486",
+	"ref_no": "CardN / 56 / 18",
+	"descr": null,
+	"total_amt": "800.00",
+	"gp": "317.78",
+	"cgp": "317"
+}, {
+	"bill_memo_id": "3487",
+	"ref_no": "CardN / 57 / 18",
+	"descr": null,
+	"total_amt": "16990.00",
+	"gp": "-425.16",
+	"cgp": "-425"
+}, {
+	"bill_memo_id": "3489",
+	"ref_no": "GCOM / 264 / 18",
+	"descr": null,
+	"total_amt": "350.00",
+	"gp": "169.49",
+	"cgp": "169"
+}]

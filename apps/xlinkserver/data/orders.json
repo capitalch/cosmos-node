@@ -1,0 +1,31 @@
+[{
+	"counter": "Accessory",
+	"orderqty": "27.0",
+	"value": "518463.930",
+	"urgent": "8"
+}, {
+	"counter": "CAMERA",
+	"orderqty": "1.0",
+	"value": "6763.320",
+	"urgent": "1"
+}, {
+	"counter": "CELLULER",
+	"orderqty": "24.0",
+	"value": "68907.530",
+	"urgent": "7"
+}, {
+	"counter": "COMPUTER",
+	"orderqty": "21.0",
+	"value": "32650.600",
+	"urgent": "8"
+}, {
+	"counter": "TVCOUNTER",
+	"orderqty": "5.0",
+	"value": "15893.420",
+	"urgent": "3"
+}, {
+	"counter": "WATCH",
+	"orderqty": "16.0",
+	"value": "13496.440",
+	"urgent": "5"
+}]

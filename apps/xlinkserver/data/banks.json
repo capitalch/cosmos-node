@@ -1,0 +1,16 @@
+[{
+	"acc_id": "414",
+	"acc_code": "ALLAHABADBANK",
+	"acc_name": "Allahabad Bank",
+	"balance": "5970.00"
+}, {
+	"acc_id": "30630",
+	"acc_code": "CentraBank",
+	"acc_name": "Central Bank",
+	"balance": "10541.92"
+}, {
+	"acc_id": "37546",
+	"acc_code": "HDFCBank",
+	"acc_name": "HDFC Bank",
+	"balance": "98485.63"
+}]

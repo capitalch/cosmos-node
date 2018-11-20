@@ -1,0 +1,51 @@
+[{
+		"dc_date": "2018 - 10 - 31",
+		"ref_no": "DbN / 121 / 18",
+		"acc_name_db": "INTER FOTO INDIA PVT.LTD.",
+		"acc_name_cr": "Debit Notes",
+		"dc_id": "121",
+		"remarks": "CN KL1819 - 600015",
+		"dc_amt": "47195.00",
+		"class_db": "CREDITOR",
+		"class_cr": "PURCHASE"
+	}, {
+		"dc_date": "2018 - 10 - 31",
+		"ref_no": "DbN / 120 / 18",
+		"acc_name_db": "PASHUPATI COMMERCE PVT LTD(WATCH)",
+		"acc_name_cr": "Debit Notes",
+		"dc_id": "120",
+		"remarks": "CD 2 %" ,
+		"dc_amt": "723.00",
+		"class_db": "CREDITOR",
+		"class_cr": "PURCHASE"
+	}, {
+		"dc_date": "2018 - 10 - 27",
+		"ref_no": "DbN / 105 / 18",
+		"acc_name_db": "NANDAN SAHA STEEL PVT LTD",
+		"acc_name_cr": "Debit Notes",
+		"dc_id": "105",
+		"remarks": "CD 2 %" ,
+		"dc_amt": "282.00",
+		"class_db": "CREDITOR",
+		"class_cr": "PURCHASE"
+	}, {
+		"dc_date": "2018 - 10 - 13",
+		"ref_no": "DbN / 119 / 18",
+		"acc_name_db": "SURYA BUSINESS PVT LTD(Samsung - Mobile)",
+		"acc_name_cr": "Debit Notes",
+		"dc_id": "119",
+		"remarks": "CN 181913794",
+		"dc_amt": "485.00",
+		"class_db": "CREDITOR",
+		"class_cr": "PURCHASE"
+	}, {
+		"dc_date": "2018 - 10 - 13",
+		"ref_no": "DbN / 118 / 18",
+		"acc_name_db": "SURYA BUSINESS PVT LTD(Samsung - Mobile)",
+		"acc_name_cr": "Debit Notes",
+		"dc_id": "118",
+		"remarks": "CN 181913685",
+		"dc_amt": "1000.00",
+		"class_db": "CREDITOR",
+		"class_cr": "PURCHASE"
+}]
