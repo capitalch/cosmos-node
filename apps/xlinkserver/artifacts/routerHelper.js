@@ -5,8 +5,8 @@ let jwt = require('jsonwebtoken');
 let socketHelper = require('./socketHelper');
 let userValidation = require('./userValidation');
 let messages = require('./messages');
+// let config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 let config = require('../config.json');
-// JSON.parse(fs.readFileSync('config.json', 'utf8'));
 let routerHelper = {};
 routerHelper.getInfo = (req, res, next) => {
     let key = req.body.key;

@@ -2,8 +2,8 @@
 let Rx = require('rxjs');
 
 let fs = require('fs');
+// let config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 let config = require('../config.json');
-// JSON.parse(fs.readFileSync('config.json', 'utf8'));
 let jwt = require('jsonwebtoken');
 let _ = require('lodash');
 let messages=require('./messages');

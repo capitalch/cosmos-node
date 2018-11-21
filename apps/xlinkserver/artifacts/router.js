@@ -5,7 +5,7 @@ let crypto = require('crypto');
 let jwt = require('jsonwebtoken');
 let router = express.Router();
 let userInfo = require('./userInfo');
-// let config = JSON.parse(fs.readFileSync('../config.json', 'utf8'));
+// let config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 let config = require('../config.json');
 let userValidation = require('./userValidation');
 let def = require('./definitions');
@@ -97,8 +97,7 @@ router.use(function (req, res, next) {
 
 router.post('/api/info', (req, res, next) => {
     //to get clientInfo information look for key='clientInfo' in the body
-    try
-    {
+    try {
         let proceed = () => {
             routerHelper.getInfo(req, res, next);
         };
@@ -122,8 +121,7 @@ Fpr sql query options={type:'sql', sqlKey:'sqlKey',args:{name value pairs for sq
 sql query will only be available for post
 */
 router.post('/api/tunnel', (req, res, next) => {
-    try
-    {
+    try {
         let options;
         let proceed = () => {
             if (req.body.type == 'web') {
@@ -163,8 +161,7 @@ router.post('/api/tunnel', (req, res, next) => {
 For get calls options is not required. Query parameters are used instead.
 */
 router.get('/api/tunnel', (req, res, next) => {
-    try
-    {
+    try {
         let url = req.query && req.query.url;
         let method = (req.query && req.query.method) || 'GET';
         let json = (req.query && req.query.json) || false;
@@ -180,7 +177,7 @@ router.get('/api/tunnel', (req, res, next) => {
         } else {
             res
                 .status(404)
-                .json({error: messages.errReqParams});
+                .json({ error: messages.errReqParams });
         }
     } catch (error) {
         let err = new def.NError(500, messages.errInternalServerError, error.message);
@@ -189,12 +186,10 @@ router.get('/api/tunnel', (req, res, next) => {
 });
 
 router.post('/api/tunnel/static', (req, res, next) => {
-    try
-    {    
-        let sqlKey = req.body.sqlKey;  
-        res.header("Content-Type",'application/json');
-        switch(sqlKey)
-        {
+    try {
+        let sqlKey = req.body.sqlKey;
+        res.header("Content-Type", 'application/json');
+        switch (sqlKey) {
             case "tunnel:get:business:health":
                 res.send(getData('data/health.json'));
                 break;
@@ -234,7 +229,7 @@ router.post('/api/tunnel/static', (req, res, next) => {
             case "tunnel:get:jakar:on:days":
                 res.send(getData('data/jakar.json'));
                 break;
-        }          
+        }
         res.end();
     } catch (error) {
         let err = new def.NError(500, messages.errInternalServerError, error.message);
@@ -242,9 +237,9 @@ router.post('/api/tunnel/static', (req, res, next) => {
     }
 });
 
-var getData = function (file){
+var getData = function (file) {
     let obj = JSON.parse(fs.readFileSync(file, 'utf8'));
-    let output = JSON.stringify(obj,null,4);
+    let output = JSON.stringify(obj, null, 4);
     return output;
 }
 
