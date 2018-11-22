@@ -2,7 +2,7 @@
 const path = require('path');
 const bodyParser = require('body-parser');
 const config = require('./common/config.json');
-// const messages = require('./common/messages');
+const ibuki = require('./common/ibuki');
 const { statusCodes, messages } = require('./common/messages');
 const login = require('./common/login');
 // const handler = require('./common/handler');
@@ -84,7 +84,9 @@ process.on('uncaughtException', function (err) {
     console.log(errorObject);
 });
 
-app.listen(process.env.PORT || config.common.port, () => {
+const server = app.listen(process.env.PORT || config.common.port, () => {
+    const socketHelper = ibuki.get('socketHelper');
+    socketHelper && socketHelper.init(server);
     console.log(messages.messServerRunningAtPort);
 });
 
