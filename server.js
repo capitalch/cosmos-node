@@ -5,7 +5,6 @@ const config = require('./common/config.json');
 const ibuki = require('./common/ibuki');
 const { statusCodes, messages } = require('./common/messages');
 const login = require('./common/login');
-// const handler = require('./common/handler');
 const logger = require('./common/logger')('system');
 const express = require('express');
 const app = express();
