@@ -19,7 +19,8 @@
         "./api/test",
         "./tools",
         "./apps/tear",
-        "./apps/xlinkserver"
+        "./apps/xlinkserver",
+        "./apps/qxDemo"
     ],
     "logging": {
         "dir": "logs",
