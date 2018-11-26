@@ -17,10 +17,10 @@
     },
     "routes": [
         "./api/test",
+        "./apps/qx-demo",
         "./tools",
         "./apps/tear",
-        "./apps/xlinkserver",
-        "./apps/qxDemo"
+        "./apps/xlinkserver"
     ],
     "logging": {
         "dir": "logs",
@@ -40,6 +40,7 @@
             "production",
             "development",
             "debug"
-        ]
+        ],
+        "routes":"./apps/xlinkServer should appear at last. Otherwise it gives error"
     }
 }

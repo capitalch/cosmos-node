@@ -46,7 +46,6 @@ router.get('/api/qx', (req, res, next) => {
                 r.completedDate && (ret.qx_completed_at = r.completedDate);
                 r.status && (ret.status = r.status);
                 res.json(ret);
-                // res.json(undefined);
             } else {
                 res.json({ error: 'There is no data against this patient' });
             }
