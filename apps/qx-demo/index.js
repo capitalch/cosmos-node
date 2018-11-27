@@ -7,7 +7,7 @@ app.use(router);
 router.use(express.static(path.join(__dirname, '/public/neuroshare-questionnaire')));
 
 
-router.get('/qx', (req, res, next) => {
+router.get('/apps/qx', (req, res, next) => {
     try {
         res.sendFile(path.join(__dirname, '/public/neuroshare-questionnaire', '/index.html'));
     } catch (error) {
