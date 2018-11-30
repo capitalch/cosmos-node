@@ -79,17 +79,17 @@ router.post('/api/qx', (req, res, next) => {
                 qx.status,
                 qx.qx_code);
         }
-        pool.query(sqlString).then(result => {
-            res.status(200).json({
-                'status': 'ok'
-            });
-        }).catch(
-            e => setImmediate(
-                () => {
-                    res.status(e.status || 500);
-                    res.json({ error: e.message })
-                })
-        );
+        // pool.query(sqlString).then(result => {
+        //     res.status(200).json({
+        //         'status': 'ok'
+        //     });
+        // }).catch(
+        //     e => setImmediate(
+        //         () => {
+        //             res.status(e.status || 500);
+        //             res.json({ error: e.message })
+        //         })
+        // );
     } catch (error) {
         let err = new def.NError(500, messages.errInternalServerError, error.message);
         next(err);
