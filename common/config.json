@@ -20,6 +20,7 @@
         "./apps/qx-demo",
         "./tools",
         "./apps/tear",
+        "./apps/eshop",
         "./apps/xlinkserver"
     ],
     "logging": {

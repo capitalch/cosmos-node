@@ -1,0 +1,5 @@
+{
+	"host":"http://localhost:3000",
+	"defaultEndPoint":"db/sql/generic",
+	"post:add:sub:cart":"db/addsubcart"
+}
