@@ -1,0 +1,37 @@
+{
+    "25fw_scores": [
+      {
+        "last_updated_provider_id": "G00277",
+        "pom_id": "2",
+        "save_csn_status": "Open",
+        "walk_2_score": "1",
+        "save_csn": "865482572",
+        "score_id": "1906ea6b-3c4e-447f-983f-ef870cd4efc3",
+        "provider_id": "G00277",
+        "walk_1_score": "12",
+        "updated_instant": "2017-12-09 13:29:26.576",
+        "last_updated_instant": "2017-12-09 13:29:26.576"
+      },
+      {
+        "last_updated_provider_id": "G00277",
+        "save_csn_status1": "Closed",
+        "walk_2_score": "3",
+        "save_csn": "865482572",
+        "score_id": "8f617efe-3129-4a09-b22e-e25e484da34f",
+        "walk_1_score": "3",
+        "last_updated_instant": "2018-01-25 00:15:23.61"
+      },
+      {
+        "last_updated_provider_id": "G00277",
+        "pom_id": "2",
+        "save_csn_status1": "Open",
+        "walk_2_score": "52",
+        "save_csn": "833228164",
+        "score_id": "3ccafb08-3775-4593-9f43-5a23f4bdda71",
+        "provider_id": "G00277",
+        "walk_1_score1": "20",
+        "updated_instant": "2018-01-24 19:07:12.547",
+        "last_updated_instant": "2018-01-24 19:07:12.547"
+      }
+    ]
+  }

@@ -17,7 +17,8 @@
     },
     "routes": [
         "./api/test",
-        "./apps/qx-demo",
+        "./apps/qx-demo",        
+        "./apps/graph-demo",
         "./tools",
         "./apps/tear",
         "./apps/eshop",

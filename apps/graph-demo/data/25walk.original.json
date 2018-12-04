@@ -1,0 +1,22 @@
+{
+    "25fw_scores": [
+        {
+            "walk_1_score": "7",
+            "save_csn": "865482572",
+            "last_updated_instant": "2017-11-20 09:05:28.439",
+            "score_id": "bab5c4a6-359b-496c-ba26-0550d01046e0",
+            "last_updated_provider_id": "G00123",
+            "walk_2_score": "8",
+            "save_csn_status": "Open"
+        },
+        {
+            "walk_1_score": "7",
+            "save_csn": "865482572",
+            "last_updated_instant": "2017-11-20 08:35:11.772",
+            "score_id": "8e089552-68cc-4319-9d5d-d412d3159ab1",
+            "last_updated_provider_id": "G00123",
+            "walk_2_score": "8",
+            "save_csn_status": "Open"
+        }
+    ]
+}

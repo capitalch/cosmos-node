@@ -1,0 +1,36 @@
+{
+    "edss_scores": [
+      {
+        "score": "1.9",
+        "last_updated_provider_id": "G00123",
+        "save_csn_status": "Open",
+        "save_csn": "888883456",
+        "score_id": "1b2d4622-e566-4401-aca9-66bbfe04307a",
+        "last_updated_instant": "7/14/2017 19:03:01"
+      },
+      {
+        "score": "6",
+        "last_updated_provider_id": "G00123",
+        "save_csn_status": "Open",
+        "save_csn": "865482572",
+        "score_id": "14ba5dbd-d008-4582-b244-6e2c0b9497bb",
+        "last_updated_instant": "8/13/2017 13:02:33"
+      },
+      {
+        "score": "7",
+        "last_updated_provider_id": "G00123",
+        "save_csn_status": "Open",
+        "save_csn": "88888",
+        "score_id": "1dee78d0-6e06-4336-ab57-e8b3c6d16eed",
+        "last_updated_instant": "10/13/2017 14:57:17"
+      },
+      {
+        "score": "8.5",
+        "last_updated_provider_id": "G00123",
+        "save_csn_status": "Open",
+        "save_csn": "888886789",
+        "score_id": "42c40bf6-c5d5-4702-869f-8bf376822578",
+        "last_updated_instant": "12/13/2017 19:35:24"
+      }
+    ]
+  }

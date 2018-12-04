@@ -1,0 +1,13 @@
+[
+    [
+        {
+            "title": "25' Walk Test",
+            "label": "25fw",
+            "info": [
+                "Direct patient to one end of a clearly marked 25 foot course and instruct patient to walk 25 feet as quickly (but safely) as possible.",
+                "Immediately administer again by having the patient walk back the same distance. The average of the two tests will be automatically calculated and will appear on the graph.",
+                "Patients may use assistive devices when doing this task. Discontinue if the patient cannot complete in 3 minutes (180 seconds) or cannot complete Test 2 after a 5-minute wait period."
+            ]
+        }
+    ]
+]

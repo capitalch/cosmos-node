@@ -1,0 +1,3368 @@
+{
+    "EPIC": {
+        "recordCount": "67",
+        "errResult": null,
+        "patient": [
+            {
+                "patientName": "XXXXX, YYYYY",
+                "imagingOrders": [
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "912738295",
+                        "status": "Completed",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [
+                            "\"\""
+                        ],
+                        "orderDate": "04/26/2012",
+                        "orderTime": "06:31:00",
+                        "contactSerialNumber": "936295309",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD0165",
+                        "description": "MRA NECK WWO CONTRAST",
+                        "specimen": {
+                            "id": [
+                                "26780505309"
+                            ],
+                            "applicationID": [
+                                "HBOX"
+                            ],
+                            "takenDate": "04/26/2012",
+                            "takenTime": "06:31:00"
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=26780505309",
+                        "associatedAppointments": [],
+                        "displayName": "MRA Neck With and Without Contrast",
+                        "resultDate": "04/26/2012",
+                        "procedure": "MRA NECK WWO CONTRAST",
+                        "radStatusDescription": "Final",
+                        "resultTime": "14:32:00"
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "913839045",
+                        "status": "Completed",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [
+                            "\"\""
+                        ],
+                        "orderDate": "05/04/2012",
+                        "orderTime": "06:43:00",
+                        "contactSerialNumber": "937173587",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD0174",
+                        "description": "MRI BRAIN DURING OPEN PROC WWO CONTRAST",
+                        "specimen": {
+                            "id": [
+                                "26820435312"
+                            ],
+                            "applicationID": [
+                                "HBOX"
+                            ],
+                            "takenDate": "05/04/2012",
+                            "takenTime": "06:43:00"
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=26820435312",
+                        "associatedAppointments": [],
+                        "displayName": "MRI Brain During Open Procedure With and Without Contrast",
+                        "resultDate": "05/04/2012",
+                        "procedure": "MRI BRAIN DURING OPEN PROC WWO CONTRAST",
+                        "radStatusDescription": "Final",
+                        "resultTime": "14:59:00"
+                    },
+                    {
+                        "authorizingProvider": "JOHNSON, ANDRIA D",
+                        "resultingLab": "",
+                        "orderID": "922678553",
+                        "status": "Completed",
+                        "orderType": "RAD XRAY/GENERAL",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [
+                            "TRAUMA MIDDLE FINGER"
+                        ],
+                        "orderDate": "07/12/2012",
+                        "orderTime": "14:23:00",
+                        "contactSerialNumber": "944085369",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD0016",
+                        "description": "XR HAND 3 OR MORE VIEWS",
+                        "specimen": {
+                            "id": [
+                                "27175293130L"
+                            ],
+                            "applicationID": [
+                                "HBOX"
+                            ],
+                            "takenDate": "07/12/2012",
+                            "takenTime": "14:23:00"
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=27175293130L",
+                        "associatedAppointments": [],
+                        "displayName": "XR Hand 3 or More Views",
+                        "resultDate": "07/12/2012",
+                        "procedure": "XR HAND 3 OR MORE VIEWS BILATERAL",
+                        "radStatusDescription": "Final",
+                        "resultTime": "15:01:00"
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "978281725",
+                        "status": "",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "116793",
+                            "description": "MS (multiple sclerosis) (HCC)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "04/04/2013",
+                        "orderTime": "10:26:34",
+                        "contactSerialNumber": "970340617",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0188",
+                        "description": "MRI BRAIN WWO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "MS protocol MRI brain without and with contrast",
+                        "resultDate": "",
+                        "procedure": "MRI BRAIN WWO CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "978281726",
+                        "status": "",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "116793",
+                            "description": "MS (multiple sclerosis) (HCC)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "04/04/2013",
+                        "orderTime": "10:26:34",
+                        "contactSerialNumber": "970340617",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0182",
+                        "description": "MRI THORACIC SPINE WWO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "MRI Thoracic Spine With and Without Contrast",
+                        "resultDate": "",
+                        "procedure": "MRI THORACIC SPINE WWO CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "978281727",
+                        "status": "",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "116793",
+                            "description": "MS (multiple sclerosis) (HCC)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "04/04/2013",
+                        "orderTime": "10:26:34",
+                        "contactSerialNumber": "970340617",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0176",
+                        "description": "MRI CERVICAL SPINE WWO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "MRI C spine MS protocol, without and with contrast",
+                        "resultDate": "",
+                        "procedure": "MRI CERVICAL SPINE WWO CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "978281728",
+                        "status": "",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "116793",
+                            "description": "MS (multiple sclerosis) (HCC)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "04/04/2013",
+                        "orderTime": "10:26:34",
+                        "contactSerialNumber": "970340617",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0203",
+                        "description": "MRI LUMBAR SPINE WO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "MRI Lumbar Spine Without Contrast",
+                        "resultDate": "",
+                        "procedure": "MRI LUMBAR SPINE WO CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "979797551",
+                        "status": "Completed",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "116793",
+                            "description": "MS (multiple sclerosis) (HCC)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "05/07/2013",
+                        "orderTime": "08:28:12",
+                        "contactSerialNumber": "979216407",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD0203",
+                        "description": "MRI LUMBAR SPINE WO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "MRI Lumbar Spine Without Contrast",
+                        "resultDate": "05/01/2013",
+                        "procedure": "MRI LUMBAR SPINE WO CONTRAST",
+                        "radStatusDescription": "Final",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "979797552",
+                        "status": "Completed",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "116793",
+                            "description": "MS (multiple sclerosis) (HCC)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "05/07/2013",
+                        "orderTime": "13:11:57",
+                        "contactSerialNumber": "979216407",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD0182",
+                        "description": "MRI THORACIC SPINE WWO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "MRI Thoracic Spine With and Without Contrast",
+                        "resultDate": "05/01/2013",
+                        "procedure": "MRI THORACIC SPINE WWO CONTRAST",
+                        "radStatusDescription": "Final",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "979797553",
+                        "status": "Completed",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "116793",
+                            "description": "MS (multiple sclerosis) (HCC)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "05/13/2013",
+                        "orderTime": "09:00:20",
+                        "contactSerialNumber": "979844468",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD0188",
+                        "description": "MRI BRAIN WWO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "MS protocol MRI brain without and with contrast",
+                        "resultDate": "05/10/2013",
+                        "procedure": "MRI BRAIN WWO CONTRAST",
+                        "radStatusDescription": "Final",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "979797554",
+                        "status": "Completed",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "116793",
+                            "description": "MS (multiple sclerosis) (HCC)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "05/16/2013",
+                        "orderTime": "08:05:02",
+                        "contactSerialNumber": "980295358",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD0176",
+                        "description": "MRI CERVICAL SPINE WWO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "MRI C spine MS protocol, without and with contrast",
+                        "resultDate": "05/10/2013",
+                        "procedure": "MRI CERVICAL SPINE WWO CONTRAST",
+                        "radStatusDescription": "Final",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "",
+                        "resultingLab": "",
+                        "orderID": "981863048",
+                        "status": "",
+                        "orderType": "PR Imaging",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "04/19/2013",
+                        "orderTime": "",
+                        "contactSerialNumber": "",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "72148",
+                        "description": "PR MRI LUMBAR SP WITHOUT CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "",
+                        "resultDate": "",
+                        "procedure": "PR MRI LUMBAR SP WITHOUT CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "",
+                        "resultingLab": "",
+                        "orderID": "981864182",
+                        "status": "",
+                        "orderType": "PR Imaging",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "04/19/2013",
+                        "orderTime": "",
+                        "contactSerialNumber": "",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "72156",
+                        "description": "PR MRI CERVICAL SP W/O & W CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "",
+                        "resultDate": "",
+                        "procedure": "PR MRI CERVICAL SP W/O & W CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "",
+                        "resultingLab": "",
+                        "orderID": "981864529",
+                        "status": "",
+                        "orderType": "PR Imaging",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "04/19/2013",
+                        "orderTime": "",
+                        "contactSerialNumber": "",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "72157",
+                        "description": "PR MRI THORACIC SP W/O & W CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "",
+                        "resultDate": "",
+                        "procedure": "PR MRI THORACIC SP W/O & W CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "",
+                        "resultingLab": "",
+                        "orderID": "981864904",
+                        "status": "",
+                        "orderType": "PR Imaging",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "04/19/2013",
+                        "orderTime": "",
+                        "contactSerialNumber": "",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "70553",
+                        "description": "PR MRI BRAIN W & W/O CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "",
+                        "resultDate": "",
+                        "procedure": "PR MRI BRAIN W & W/O CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "955752911",
+                        "status": "",
+                        "orderType": "RAD MAMMOGRAPHY",
+                        "associatedDiagnosis": {
+                            "id": "116793",
+                            "description": "MS (multiple sclerosis) (HCC)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "03/13/2014",
+                        "orderTime": "09:34:33",
+                        "contactSerialNumber": "912003227",
+                        "orderingProvider": "XYZ, ABC",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0817",
+                        "description": "MAMMO SCREENING BILATERAL DIGITAL",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "Mammo Digital Screening Bilateral V76.12",
+                        "resultDate": "",
+                        "procedure": "MAMMO SCREENING BILATERAL DIGITAL",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "955752912",
+                        "status": "",
+                        "orderType": "RAD XRAY/GENERAL",
+                        "associatedDiagnosis": {
+                            "id": "116793",
+                            "description": "MS (multiple sclerosis) (HCC)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "03/13/2014",
+                        "orderTime": "09:34:33",
+                        "contactSerialNumber": "912003227",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0104",
+                        "description": "DEXA BONE DENSITY AXIAL SKELETON HIPS PELV SPINE",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "DEXA BONE DENSITY (HIPS,SPINE OR PELVIS)",
+                        "resultDate": "",
+                        "procedure": "DEXA BONE DENSITY AXIAL SKELETON HIPS PELV SPINE",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "955752917",
+                        "status": "Completed",
+                        "orderType": "RAD XRAY/GENERAL",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "04/11/2014",
+                        "orderTime": "12:08:17",
+                        "contactSerialNumber": "921980867",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "INT0018",
+                        "description": "IMAGING",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "Imaging",
+                        "resultDate": "10/17/2013",
+                        "procedure": "IMAGING",
+                        "radStatusDescription": "Final",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "",
+                        "resultingLab": "",
+                        "orderID": "965238644",
+                        "status": "",
+                        "orderType": "PR Imaging",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "03/13/2014",
+                        "orderTime": "",
+                        "contactSerialNumber": "",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "77080",
+                        "description": "PR DXA BONE DENSITY AXIAL",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "",
+                        "resultDate": "",
+                        "procedure": "PR DXA BONE DENSITY AXIAL",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "973542988",
+                        "status": "Completed",
+                        "orderType": "RAD XRAY/GENERAL",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "04/11/2014",
+                        "orderTime": "12:09:06",
+                        "contactSerialNumber": "921980867",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "INT0018",
+                        "description": "IMAGING",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "Imaging",
+                        "resultDate": "10/07/2013",
+                        "procedure": "IMAGING",
+                        "radStatusDescription": "Final",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "973542991",
+                        "status": "Canceled",
+                        "orderType": "RAD MAMMOGRAPHY",
+                        "associatedDiagnosis": {
+                            "id": "140665",
+                            "description": "Abnormal mammogram",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "793.80"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R92.8"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "04/11/2014",
+                        "orderTime": "13:51:26",
+                        "contactSerialNumber": "921999955",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0876",
+                        "description": "MAMMO DIAGNOSTIC RIGHT DIGITAL",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "Mammo Digital Diagnostic Right",
+                        "resultDate": "",
+                        "procedure": "MAMMO DIAGNOSTIC RIGHT DIGITAL",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "OUTSIDE PHYSICIAN",
+                        "resultingLab": "",
+                        "orderID": "973542992",
+                        "status": "Completed",
+                        "orderType": "RAD MAMMOGRAPHY",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "04/14/2014",
+                        "orderTime": "10:32:38",
+                        "contactSerialNumber": "922163269",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD0817",
+                        "description": "MAMMO SCREENING BILATERAL DIGITAL",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "Mammo Digital Screening Bilateral",
+                        "resultDate": "10/07/2013",
+                        "procedure": "MAMMO SCREENING BILATERAL DIGITAL",
+                        "radStatusDescription": "Final",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "OUTSIDE PHYSICIAN",
+                        "resultingLab": "",
+                        "orderID": "973542993",
+                        "status": "Completed",
+                        "orderType": "RAD MAMMOGRAPHY",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "04/14/2014",
+                        "orderTime": "10:33:40",
+                        "contactSerialNumber": "922163269",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD0818",
+                        "description": "MAMMO DIAGNOSTIC BILATERAL DIGITAL",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "Mammo Digital Diagnostic Bilateral",
+                        "resultDate": "10/07/2013",
+                        "procedure": "MAMMO DIAGNOSTIC BILATERAL DIGITAL",
+                        "radStatusDescription": "Final",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "MAGNANO, MOLLY",
+                        "resultingLab": "",
+                        "orderID": "982083386",
+                        "status": "",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "694248",
+                            "description": "Knee instability, left",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "M25.362"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "718.86"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "09/30/2014",
+                        "orderTime": "09:06:29",
+                        "contactSerialNumber": "939218998",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD1085",
+                        "description": "MRI KNEE LEFT WO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "MRI Knee Left Without Contrast",
+                        "resultDate": "",
+                        "procedure": "MRI KNEE LEFT WO CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "MAGNANO, MOLLY",
+                        "resultingLab": "",
+                        "orderID": "982083387",
+                        "status": "",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "81404",
+                            "description": "Internal derangement of knee",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "717.9"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "M23.90"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "10/08/2014",
+                        "orderTime": "13:32:35",
+                        "contactSerialNumber": "944896205",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD1085",
+                        "description": "MRI KNEE LEFT WO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "MRI Knee Left Without Contrast",
+                        "resultDate": "",
+                        "procedure": "MRI KNEE LEFT WO CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "MAGNANO, MOLLY",
+                        "resultingLab": "",
+                        "orderID": "982083388",
+                        "status": "Completed",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "81404",
+                            "description": "Internal derangement of knee",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "717.9"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "M23.90"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "11/10/2014",
+                        "orderTime": "14:36:30",
+                        "contactSerialNumber": "950052825",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD1085",
+                        "description": "MRI KNEE LEFT WO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "10/31/2014",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "MRI Knee Left Without Contrast",
+                        "resultDate": "10/31/2014",
+                        "procedure": "MRI KNEE LEFT WO CONTRAST",
+                        "radStatusDescription": "Final",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "",
+                        "resultingLab": "",
+                        "orderID": "923069664",
+                        "status": "",
+                        "orderType": "PR Imaging",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "10/07/2014",
+                        "orderTime": "",
+                        "contactSerialNumber": "",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "73721",
+                        "description": "PR MRI LOWER EXTREMITY JOINT ANY",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "",
+                        "resultDate": "",
+                        "procedure": "PR MRI LOWER EXTREMITY JOINT ANY",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "",
+                        "resultingLab": "",
+                        "orderID": "924122674",
+                        "status": "",
+                        "orderType": "PR Imaging",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "10/10/2014",
+                        "orderTime": "",
+                        "contactSerialNumber": "",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "73721",
+                        "description": "PR MRI LOWER EXTREMITY JOINT ANY",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "",
+                        "resultDate": "",
+                        "procedure": "PR MRI LOWER EXTREMITY JOINT ANY",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "933712772",
+                        "status": "",
+                        "orderType": "RAD XRAY/GENERAL",
+                        "associatedDiagnosis": {
+                            "id": "147415",
+                            "description": "Screening for osteoporosis",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "V82.81"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "Z13.820"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "11/13/2014",
+                        "orderTime": "08:38:41",
+                        "contactSerialNumber": "944752345",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0104",
+                        "description": "DEXA BONE DENSITY AXIAL SKELETON HIPS PELV SPINE",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "DEXA BONE DENSITY (HIPS,SPINE OR PELVIS)",
+                        "resultDate": "",
+                        "procedure": "DEXA BONE DENSITY AXIAL SKELETON HIPS PELV SPINE",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "933712773",
+                        "status": "Completed",
+                        "orderType": "RAD XRAY/GENERAL",
+                        "associatedDiagnosis": {
+                            "id": "147415",
+                            "description": "Screening for osteoporosis",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "V82.81"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "Z13.820"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [
+                            "A copy of this report will be found in EPIC.  A copy will be sent",
+                            "to the referring physician.",
+                            "",
+                            "Electronically signed by Less Chafen, MD on 11/13/2014 1:18 PM",
+                            ""
+                        ],
+                        "orderDate": "11/13/2014",
+                        "orderTime": "08:38:41",
+                        "contactSerialNumber": "944752345",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD0104",
+                        "description": "DEXA BONE DENSITY AXIAL SKELETON HIPS PELV SPINE",
+                        "specimen": {
+                            "id": [
+                                "SMX14001570263"
+                            ],
+                            "applicationID": [],
+                            "takenDate": "11/13/2014",
+                            "takenTime": "13:18:31"
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=SMX14001570263",
+                        "associatedAppointments": [
+                            {
+                                "appointmentDate": "11/13/2014",
+                                "appointmentTime": "08:30AM",
+                                "appointmentStatus": "Completed",
+                                "contactSerialNumber": "944752345"
+                            }
+                        ],
+                        "displayName": "DEXA BONE DENSITY (HIPS,SPINE OR PELVIS)",
+                        "resultDate": "11/13/2014",
+                        "procedure": "DEXA BONE DENSITY AXIAL SKELETON HIPS PELV SPINE",
+                        "radStatusDescription": "Final",
+                        "resultTime": "13:18:38"
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "933712774",
+                        "status": "",
+                        "orderType": "RAD MAMMOGRAPHY",
+                        "associatedDiagnosis": {
+                            "id": "148183",
+                            "description": "Breast cancer screening",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "V76.10"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "Z12.39"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "Z12.31"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "11/13/2014",
+                        "orderTime": "08:39:29",
+                        "contactSerialNumber": "944753140",
+                        "orderingProvider": "XYZ, ABC",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0817",
+                        "description": "MAMMO SCREENING BILATERAL DIGITAL",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "Mammo Digital Screening Bilateral V76.12",
+                        "resultDate": "",
+                        "procedure": "MAMMO SCREENING BILATERAL DIGITAL",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "933712775",
+                        "status": "Completed",
+                        "orderType": "RAD MAMMOGRAPHY",
+                        "associatedDiagnosis": {
+                            "id": "148183",
+                            "description": "Breast cancer screening",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "V76.10"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "Z12.39"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "Z12.31"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [
+                            "IMPRESSION:",
+                            "No significant abnormality is seen.",
+                            " ",
+                            "Recommend screening mammogram in 1 year.",
+                            " ",
+                            "Negative (ACR BI-RADS 1)",
+                            " ",
+                            "The patient will be notified of these results and recommendations.",
+                            " ",
+                            " ",
+                            " "
+                        ],
+                        "narrative": [
+                            "BILATERAL DIGITAL SCREENING MAMMOGRAM",
+                            " ",
+                            "EXAM DATE: 11/13/2014",
+                            " ",
+                            "COMPARISON:",
+                            "The present examination has been compared to prior imaging studies performed at",
+                            "Nor Cal Imaging-Oakland on 10/07/2013 and 10/17/2013.",
+                            " ",
+                            "REASON FOR EXAM:",
+                            "Screening.",
+                            " ",
+                            "RISK FACTORS:",
+                            "The patient has no personal history of cancer. The patient has the following",
+                            "family history of breast cancer:  maternal aunt, at age 55.",
+                            " ",
+                            "MAMMOGRAM FINDINGS:",
+                            "Bilateral craniocaudal, bilateral mediolateral oblique views were taken. This",
+                            "exam was read by the radiologist with the assistance of CAD.",
+                            " ",
+                            "The breasts are heterogeneously dense.  This may lower the sensitivity of",
+                            "mammography.",
+                            " ",
+                            "No suspicious masses, suspicious calcifications or suspicious areas of",
+                            "architectural distortion are seen.  There has been no significant interval",
+                            "change.",
+                            " "
+                        ],
+                        "orderDate": "11/13/2014",
+                        "orderTime": "08:39:29",
+                        "contactSerialNumber": "944753140",
+                        "orderingProvider": "XYZ, ABC",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD0817",
+                        "description": "MAMMO SCREENING BILATERAL DIGITAL",
+                        "specimen": {
+                            "id": [
+                                "SMB14001570300"
+                            ],
+                            "applicationID": [],
+                            "takenDate": "11/13/2014",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=SMB14001570300",
+                        "associatedAppointments": [
+                            {
+                                "appointmentDate": "11/13/2014",
+                                "appointmentTime": "09:05AM",
+                                "appointmentStatus": "Completed",
+                                "contactSerialNumber": "944753140"
+                            }
+                        ],
+                        "displayName": "Mammo Digital Screening Bilateral V76.12",
+                        "resultDate": "11/13/2014",
+                        "procedure": "MAMMO SCREENING BILATERAL DIGITAL",
+                        "radStatusDescription": "Final",
+                        "resultTime": "12:56:53"
+                    },
+                    {
+                        "authorizingProvider": "HISTORICAL ORDERS, RADIOLOGY",
+                        "resultingLab": "",
+                        "orderID": "933712776",
+                        "status": "",
+                        "orderType": "RAD MAMMOGRAPHY",
+                        "associatedDiagnosis": {
+                            "id": "16487",
+                            "description": "RAD HISTORICAL IMAGE (NO BILL)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "11/13/2014",
+                        "orderTime": "09:24:30",
+                        "contactSerialNumber": "950532159",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD1187",
+                        "description": "MAMMO COMPARISON FILMS",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "Mammo Comparison Films",
+                        "resultDate": "",
+                        "procedure": "MAMMO COMPARISON FILMS",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "HISTORICAL ORDERS, RADIOLOGY",
+                        "resultingLab": "",
+                        "orderID": "933712777",
+                        "status": "",
+                        "orderType": "RAD MAMMOGRAPHY",
+                        "associatedDiagnosis": {
+                            "id": "16487",
+                            "description": "RAD HISTORICAL IMAGE (NO BILL)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "11/13/2014",
+                        "orderTime": "09:24:46",
+                        "contactSerialNumber": "950532279",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD1187",
+                        "description": "MAMMO COMPARISON FILMS",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "Mammo Comparison Films",
+                        "resultDate": "",
+                        "procedure": "MAMMO COMPARISON FILMS",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "HISTORICAL ORDERS, RADIOLOGY",
+                        "resultingLab": "",
+                        "orderID": "933712778",
+                        "status": "Completed",
+                        "orderType": "RAD MAMMOGRAPHY",
+                        "associatedDiagnosis": {
+                            "id": "16487",
+                            "description": "RAD HISTORICAL IMAGE (NO BILL)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [
+                            "This is a historical imaging order for reference images."
+                        ],
+                        "orderDate": "11/13/2014",
+                        "orderTime": "09:24:47",
+                        "contactSerialNumber": "950532279",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD1187",
+                        "description": "MAMMO COMPARISON FILMS",
+                        "specimen": {
+                            "id": [
+                                "SMZ14001866036"
+                            ],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=SMZ14001866036",
+                        "associatedAppointments": [
+                            {
+                                "appointmentDate": "11/13/2014",
+                                "appointmentTime": "09:25AM",
+                                "appointmentStatus": "Completed",
+                                "contactSerialNumber": "950532279"
+                            }
+                        ],
+                        "displayName": "Mammo Comparison Films",
+                        "resultDate": "11/13/2014",
+                        "procedure": "MAMMO COMPARISON FILMS",
+                        "radStatusDescription": "Final",
+                        "resultTime": "09:24:47"
+                    },
+                    {
+                        "authorizingProvider": "HISTORICAL ORDERS, RADIOLOGY",
+                        "resultingLab": "",
+                        "orderID": "933712779",
+                        "status": "",
+                        "orderType": "RAD MAMMOGRAPHY",
+                        "associatedDiagnosis": {
+                            "id": "16487",
+                            "description": "RAD HISTORICAL IMAGE (NO BILL)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "11/13/2014",
+                        "orderTime": "09:25:10",
+                        "contactSerialNumber": "950532159",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD1187",
+                        "description": "MAMMO COMPARISON FILMS",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "Mammo Comparison Films",
+                        "resultDate": "",
+                        "procedure": "MAMMO COMPARISON FILMS",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "HISTORICAL ORDERS, RADIOLOGY",
+                        "resultingLab": "",
+                        "orderID": "934159661",
+                        "status": "",
+                        "orderType": "RAD MAMMOGRAPHY",
+                        "associatedDiagnosis": {
+                            "id": "16487",
+                            "description": "RAD HISTORICAL IMAGE (NO BILL)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "11/13/2014",
+                        "orderTime": "09:26:47",
+                        "contactSerialNumber": "950532522",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD1187",
+                        "description": "MAMMO COMPARISON FILMS",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "Mammo Comparison Films",
+                        "resultDate": "",
+                        "procedure": "MAMMO COMPARISON FILMS",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "HISTORICAL ORDERS, RADIOLOGY",
+                        "resultingLab": "",
+                        "orderID": "934159662",
+                        "status": "Completed",
+                        "orderType": "RAD MAMMOGRAPHY",
+                        "associatedDiagnosis": {
+                            "id": "16487",
+                            "description": "RAD HISTORICAL IMAGE (NO BILL)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [
+                            "This is a historical imaging order for reference images."
+                        ],
+                        "orderDate": "11/13/2014",
+                        "orderTime": "09:26:47",
+                        "contactSerialNumber": "950532522",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD1187",
+                        "description": "MAMMO COMPARISON FILMS",
+                        "specimen": {
+                            "id": [
+                                "SMZ14001866050"
+                            ],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=SMZ14001866050",
+                        "associatedAppointments": [
+                            {
+                                "appointmentDate": "11/13/2014",
+                                "appointmentTime": "09:30AM",
+                                "appointmentStatus": "Completed",
+                                "contactSerialNumber": "950532522"
+                            }
+                        ],
+                        "displayName": "Mammo Comparison Films",
+                        "resultDate": "11/13/2014",
+                        "procedure": "MAMMO COMPARISON FILMS",
+                        "radStatusDescription": "Final",
+                        "resultTime": "09:26:47"
+                    },
+                    {
+                        "authorizingProvider": "MAGNANO, MOLLY",
+                        "resultingLab": "",
+                        "orderID": "934159668",
+                        "status": "Completed",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "694248",
+                            "description": "Knee instability, left",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "M25.362"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "718.86"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "12/04/2014",
+                        "orderTime": "10:36:59",
+                        "contactSerialNumber": "953371770",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD1085",
+                        "description": "MRI KNEE LEFT WO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "10/31/2014",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "MRI Knee Left Without Contrast",
+                        "resultDate": "10/31/2014",
+                        "procedure": "MRI KNEE LEFT WO CONTRAST",
+                        "radStatusDescription": "Final",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "934159676",
+                        "status": "Canceled",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "116793",
+                            "description": "MS (multiple sclerosis) (HCC)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "02/03/2015",
+                        "orderTime": "09:33:59",
+                        "contactSerialNumber": "962245984",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0188",
+                        "description": "MRI BRAIN WWO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "MRI Brain With and Without Contrast",
+                        "resultDate": "",
+                        "procedure": "MRI BRAIN WWO CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "934159677",
+                        "status": "Canceled",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "116793",
+                            "description": "MS (multiple sclerosis) (HCC)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "02/03/2015",
+                        "orderTime": "09:33:59",
+                        "contactSerialNumber": "962245984",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0176",
+                        "description": "MRI CERVICAL SPINE WWO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "MRI Cervical Spine With and Without Contrast",
+                        "resultDate": "",
+                        "procedure": "MRI CERVICAL SPINE WWO CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "934159682",
+                        "status": "",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "116793",
+                            "description": "MS (multiple sclerosis) (HCC)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "02/09/2015",
+                        "orderTime": "21:29:31",
+                        "contactSerialNumber": "963238576",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0188",
+                        "description": "MRI BRAIN WWO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "MRI Brain With and Without Contrast",
+                        "resultDate": "",
+                        "procedure": "MRI BRAIN WWO CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "934159687",
+                        "status": "Completed",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "116793",
+                            "description": "MS (multiple sclerosis) (HCC)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "03/16/2015",
+                        "orderTime": "09:51:07",
+                        "contactSerialNumber": "968041018",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD0188",
+                        "description": "MRI BRAIN WWO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "MRI Brain With and Without Contrast",
+                        "resultDate": "03/11/2015",
+                        "procedure": "MRI BRAIN WWO CONTRAST",
+                        "radStatusDescription": "Final",
+                        "resultTime": "09:51:00"
+                    },
+                    {
+                        "authorizingProvider": "HISTORICAL ORDERS, RADIOLOGY",
+                        "resultingLab": "",
+                        "orderID": "934159689",
+                        "status": "",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "16487",
+                            "description": "RAD HISTORICAL IMAGE (NO BILL)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "03/17/2015",
+                        "orderTime": "12:12:06",
+                        "contactSerialNumber": "968292276",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0188",
+                        "description": "MRI BRAIN WWO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "MRI Brain With and Without Contrast",
+                        "resultDate": "",
+                        "procedure": "MRI BRAIN WWO CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "HISTORICAL ORDERS, RADIOLOGY",
+                        "resultingLab": "",
+                        "orderID": "934159690",
+                        "status": "",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "16487",
+                            "description": "RAD HISTORICAL IMAGE (NO BILL)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "03/17/2015",
+                        "orderTime": "12:14:35",
+                        "contactSerialNumber": "968292930",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0188",
+                        "description": "MRI BRAIN WWO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "MRI Brain With and Without Contrast",
+                        "resultDate": "",
+                        "procedure": "MRI BRAIN WWO CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "HISTORICAL ORDERS, RADIOLOGY",
+                        "resultingLab": "",
+                        "orderID": "934159691",
+                        "status": "Completed",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "16487",
+                            "description": "RAD HISTORICAL IMAGE (NO BILL)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [
+                            "This is a historical imaging order for reference images."
+                        ],
+                        "orderDate": "03/17/2015",
+                        "orderTime": "12:14:35",
+                        "contactSerialNumber": "968292930",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD0188",
+                        "description": "MRI BRAIN WWO CONTRAST",
+                        "specimen": {
+                            "id": [
+                                "ABZ15000627422"
+                            ],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=ABZ15000627422",
+                        "associatedAppointments": [
+                            {
+                                "appointmentDate": "03/17/2015",
+                                "appointmentTime": "12:15PM",
+                                "appointmentStatus": "Completed",
+                                "contactSerialNumber": "968292930"
+                            }
+                        ],
+                        "displayName": "MRI Brain With and Without Contrast",
+                        "resultDate": "03/17/2015",
+                        "procedure": "MRI BRAIN WWO CONTRAST",
+                        "radStatusDescription": "Final",
+                        "resultTime": "12:14:35"
+                    },
+                    {
+                        "authorizingProvider": "",
+                        "resultingLab": "",
+                        "orderID": "957857849",
+                        "status": "",
+                        "orderType": "PR Imaging",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "02/03/2015",
+                        "orderTime": "",
+                        "contactSerialNumber": "",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "70553",
+                        "description": "PR MRI BRAIN W & W/O CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "",
+                        "resultDate": "",
+                        "procedure": "PR MRI BRAIN W & W/O CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "",
+                        "resultingLab": "",
+                        "orderID": "957859114",
+                        "status": "",
+                        "orderType": "PR Imaging",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "02/03/2015",
+                        "orderTime": "",
+                        "contactSerialNumber": "",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "72156",
+                        "description": "PR MRI CERVICAL SP W/O & W CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "",
+                        "resultDate": "",
+                        "procedure": "PR MRI CERVICAL SP W/O & W CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "",
+                        "resultingLab": "",
+                        "orderID": "962863505",
+                        "status": "",
+                        "orderType": "PR Imaging",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "02/18/2015",
+                        "orderTime": "",
+                        "contactSerialNumber": "",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "70553",
+                        "description": "PR MRI BRAIN W & W/O CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "",
+                        "resultDate": "",
+                        "procedure": "PR MRI BRAIN W & W/O CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "923005931",
+                        "status": "",
+                        "orderType": "RAD XRAY/GENERAL",
+                        "associatedDiagnosis": {
+                            "id": "167067",
+                            "description": "Well woman exam",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "V70.0"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "Z00.00"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "V72.31"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "Z01.419"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "02/01/2016",
+                        "orderTime": "09:06:32",
+                        "contactSerialNumber": "973997957",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0104",
+                        "description": "DEXA BONE DENSITY AXIAL SKELETON HIPS PELV SPINE",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "DEXA BONE DENSITY (HIPS,SPINE OR PELVIS)",
+                        "resultDate": "",
+                        "procedure": "DEXA BONE DENSITY AXIAL SKELETON HIPS PELV SPINE",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "923005932",
+                        "status": "",
+                        "orderType": "RAD ULTRASOUND",
+                        "associatedDiagnosis": {
+                            "id": "167067",
+                            "description": "Well woman exam",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "V70.0"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "Z00.00"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "V72.31"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "Z01.419"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "02/01/2016",
+                        "orderTime": "09:06:32",
+                        "contactSerialNumber": "973997957",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0494",
+                        "description": "US HEAD AND OR NECK SOFT TISSUE",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "US HEAD/NECK",
+                        "resultDate": "",
+                        "procedure": "US HEAD AND OR NECK SOFT TISSUE",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "923005946",
+                        "status": "",
+                        "orderType": "RAD ULTRASOUND",
+                        "associatedDiagnosis": {
+                            "id": "32479",
+                            "description": "Thyromegaly",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "240.9"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "E04.9"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "E01.0"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "03/04/2016",
+                        "orderTime": "15:32:00",
+                        "contactSerialNumber": "928384605",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0494",
+                        "description": "US HEAD AND OR NECK SOFT TISSUE",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "US HEAD/NECK",
+                        "resultDate": "",
+                        "procedure": "US HEAD AND OR NECK SOFT TISSUE",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "923005947",
+                        "status": "Completed",
+                        "orderType": "RAD ULTRASOUND",
+                        "associatedDiagnosis": {
+                            "id": "32479",
+                            "description": "Thyromegaly",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "240.9"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "E04.9"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "E01.0"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [
+                            "IMPRESSION: Goitrous thyroid with diffuse uneven echogenicity.",
+                            "Small smooth solitary smooth nodules bilaterally as described.",
+                            "These are below the criteria for biopsy but can be done if there",
+                            "is strong clinical suspicion for malignancy.",
+                            "",
+                            "Electronically signed by Eric Tao on 3/4/2016 4:15 PM",
+                            ""
+                        ],
+                        "narrative": [
+                            "HISTORY: Thyromegaly and multinodular thyroid",
+                            "",
+                            "COMPARISON: None",
+                            "",
+                            "FINDINGS: Both the left and right lobes are within upper limits",
+                            "of normal in size.",
+                            "",
+                            "The right lobe measures 4.9 x 2.0 x 1.2 cm. Diffuse inhomogeneous",
+                            "echogenicity is seen throughout the right lobe. There is a smooth",
+                            "well defined isoechoic oval solid nodule without calcifications",
+                            "located at the upper right lobe. It measures 1.1 x 0.8 x 0.6 cm.",
+                            "Slight diffuse increase in vascularity is seen with Doppler.",
+                            "",
+                            "The left lobe measures 4.6 x 2.0 x 1.4 cm. Similar diffuse",
+                            "inhomogeneous echogenicity is also seen throughout the left lobe.",
+                            "There is a similar smooth oval isoechoic solid nodule without",
+                            "calcifications at the mid left lobe. This nodule measures 1.3 x",
+                            "1.1 x 0.9 cm. Similar slight diffuse increase in vascularity is",
+                            "seen with Doppler.",
+                            "",
+                            "Isthmus thickness is normal at 2 mm. Incidental finding of small",
+                            "nodules inferior to the thyroid measuring well less than 1 cm.",
+                            "These are probably nonspecific lymph nodes.",
+                            ""
+                        ],
+                        "orderDate": "03/04/2016",
+                        "orderTime": "15:32:00",
+                        "contactSerialNumber": "928384605",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD0494",
+                        "description": "US HEAD AND OR NECK SOFT TISSUE",
+                        "specimen": {
+                            "id": [
+                                "SMU16000461392"
+                            ],
+                            "applicationID": [],
+                            "takenDate": "03/04/2016",
+                            "takenTime": "16:07:12"
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=SMU16000461392",
+                        "associatedAppointments": [
+                            {
+                                "appointmentDate": "03/04/2016",
+                                "appointmentTime": "03:45PM",
+                                "appointmentStatus": "Completed",
+                                "contactSerialNumber": "928384605"
+                            }
+                        ],
+                        "displayName": "US HEAD/NECK",
+                        "resultDate": "03/04/2016",
+                        "procedure": "US HEAD AND OR NECK SOFT TISSUE",
+                        "radStatusDescription": "Final",
+                        "resultTime": "16:15:53"
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "923005953",
+                        "status": "Canceled",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "116793",
+                            "description": "MS (multiple sclerosis) (HCC)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "03/21/2016",
+                        "orderTime": "09:43:36",
+                        "contactSerialNumber": "925434331",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0188",
+                        "description": "MRI BRAIN WWO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "MRI Brain With and Without Contrast",
+                        "resultDate": "",
+                        "procedure": "MRI BRAIN WWO CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "923005954",
+                        "status": "Canceled",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "116793",
+                            "description": "MS (multiple sclerosis) (HCC)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "03/21/2016",
+                        "orderTime": "09:43:36",
+                        "contactSerialNumber": "925434331",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0176",
+                        "description": "MRI CERVICAL SPINE WWO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "MRI Cervical Spine With and Without Contrast",
+                        "resultDate": "",
+                        "procedure": "MRI CERVICAL SPINE WWO CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "OUTSIDE PHYSICIAN",
+                        "resultingLab": "",
+                        "orderID": "923005964",
+                        "status": "Completed",
+                        "orderType": "RAD XRAY/GENERAL",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "05/16/2016",
+                        "orderTime": "15:15:33",
+                        "contactSerialNumber": "908344437",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "INT0018",
+                        "description": "IMAGING",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "Imaging",
+                        "resultDate": "05/13/2016",
+                        "procedure": "IMAGING",
+                        "radStatusDescription": "Final",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "",
+                        "resultingLab": "",
+                        "orderID": "985344535",
+                        "status": "",
+                        "orderType": "PR Imaging",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "02/01/2016",
+                        "orderTime": "",
+                        "contactSerialNumber": "",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "77080",
+                        "description": "PR DXA BONE DENSITY AXIAL",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "",
+                        "resultDate": "",
+                        "procedure": "PR DXA BONE DENSITY AXIAL",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "",
+                        "resultingLab": "",
+                        "orderID": "909358890",
+                        "status": "",
+                        "orderType": "PR Imaging",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "04/01/2016",
+                        "orderTime": "",
+                        "contactSerialNumber": "",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "70553",
+                        "description": "PR MRI BRAIN W & W/O CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "",
+                        "resultDate": "",
+                        "procedure": "PR MRI BRAIN W & W/O CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "",
+                        "resultingLab": "",
+                        "orderID": "909359208",
+                        "status": "",
+                        "orderType": "PR Imaging",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "04/01/2016",
+                        "orderTime": "",
+                        "contactSerialNumber": "",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "72156",
+                        "description": "PR MRI CERVICAL SP W/O & W CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "",
+                        "resultDate": "",
+                        "procedure": "PR MRI CERVICAL SP W/O & W CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "966881485",
+                        "status": "Canceled",
+                        "orderType": "RAD MAMMOGRAPHY",
+                        "associatedDiagnosis": {
+                            "id": "1237676",
+                            "description": "Encounter for screening mammogram for breast cancer",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "V76.12"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "Z12.31"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "10/25/2016",
+                        "orderTime": "10:25:34",
+                        "contactSerialNumber": "931869930",
+                        "orderingProvider": "XYZ, ABC",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0817",
+                        "description": "MAMMO SCREENING BILATERAL DIGITAL",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "Mammo Digital Screening Bilateral",
+                        "resultDate": "",
+                        "procedure": "MAMMO SCREENING BILATERAL DIGITAL",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "966881486",
+                        "status": "",
+                        "orderType": "RAD MAMMOGRAPHY",
+                        "associatedDiagnosis": {
+                            "id": "1237676",
+                            "description": "Encounter for screening mammogram for breast cancer",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "V76.12"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "Z12.31"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "10/25/2016",
+                        "orderTime": "10:36:10",
+                        "contactSerialNumber": "931874182",
+                        "orderingProvider": "XYZ, ABC",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0817",
+                        "description": "MAMMO SCREENING BILATERAL DIGITAL",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "Mammo Digital Screening Bilateral",
+                        "resultDate": "",
+                        "procedure": "MAMMO SCREENING BILATERAL DIGITAL",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "996119658",
+                        "status": "",
+                        "orderType": "RAD MAMMOGRAPHY",
+                        "associatedDiagnosis": {
+                            "id": "1237676",
+                            "description": "Encounter for screening mammogram for breast cancer",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "V76.12"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "Z12.31"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "11/18/2016",
+                        "orderTime": "08:35:01",
+                        "contactSerialNumber": "931875228",
+                        "orderingProvider": "XYZ, ABC",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0817",
+                        "description": "MAMMO SCREENING BILATERAL DIGITAL",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "Mammo Digital Screening Bilateral",
+                        "resultDate": "",
+                        "procedure": "MAMMO SCREENING BILATERAL DIGITAL",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "996119659",
+                        "status": "Completed",
+                        "orderType": "RAD MAMMOGRAPHY",
+                        "associatedDiagnosis": {
+                            "id": "1237676",
+                            "description": "Encounter for screening mammogram for breast cancer",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "V76.12"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "Z12.31"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [
+                            "IMPRESSION:",
+                            "Recommend screening mammogram in 1 year",
+                            " ",
+                            "Negative (ACR BI-RADS 1)",
+                            " ",
+                            "The patient will be notified of these results and recommendations.",
+                            " ",
+                            " ",
+                            " "
+                        ],
+                        "narrative": [
+                            "BILATERAL DIGITAL SCREENING MAMMOGRAM",
+                            " ",
+                            "EXAM DATE: 11/18/2016",
+                            " ",
+                            "COMPARISON:",
+                            "The present examination has been compared to prior imaging studies performed at",
+                            "Carol Ann Read Breast Health Center on 11/13/2014, and at Nor Cal",
+                            "Imaging-Oakland on 10/07/2013 and 10/17/2013.",
+                            " ",
+                            "REASON FOR EXAM:",
+                            "Screening.",
+                            " ",
+                            "RISK FACTORS:",
+                            "The patient has no personal history of cancer. The patient has the following",
+                            "family history of breast cancer:  maternal aunt, at age 55.",
+                            " ",
+                            "MAMMOGRAM FINDINGS:",
+                            "Bilateral craniocaudal, bilateral mediolateral oblique views were taken. This",
+                            "exam was read by the radiologist with the assistance of CAD.",
+                            " ",
+                            "The breasts are heterogeneously dense.  This may lower the sensitivity of",
+                            "mammography.",
+                            " ",
+                            "No suspicious masses, suspicious calcifications or suspicious areas of",
+                            "architectural distortion are seen.  There has been no significant interval",
+                            "change.",
+                            " "
+                        ],
+                        "orderDate": "11/18/2016",
+                        "orderTime": "08:35:01",
+                        "contactSerialNumber": "931875228",
+                        "orderingProvider": "XYZ, ABC",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD0817",
+                        "description": "MAMMO SCREENING BILATERAL DIGITAL",
+                        "specimen": {
+                            "id": [
+                                "SMB16002782366"
+                            ],
+                            "applicationID": [],
+                            "takenDate": "11/18/2016",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=SMB16002782366",
+                        "associatedAppointments": [
+                            {
+                                "appointmentDate": "11/18/2016",
+                                "appointmentTime": "08:50AM",
+                                "appointmentStatus": "Completed",
+                                "contactSerialNumber": "931875228"
+                            }
+                        ],
+                        "displayName": "Mammo Digital Screening Bilateral",
+                        "resultDate": "11/18/2016",
+                        "procedure": "MAMMO SCREENING BILATERAL DIGITAL",
+                        "radStatusDescription": "Final",
+                        "resultTime": "09:04:03"
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "996119660",
+                        "status": "",
+                        "orderType": "RAD XRAY/GENERAL",
+                        "associatedDiagnosis": {
+                            "id": "97460",
+                            "description": "Osteoporosis",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "733.00"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "M81.0"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "11/18/2016",
+                        "orderTime": "09:02:11",
+                        "contactSerialNumber": "931875229",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0104",
+                        "description": "DEXA BONE DENSITY AXIAL SKELETON HIPS PELV SPINE",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "DEXA BONE DENSITY (HIPS,SPINE OR PELVIS)",
+                        "resultDate": "",
+                        "procedure": "DEXA BONE DENSITY AXIAL SKELETON HIPS PELV SPINE",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "XYZ, ABC",
+                        "resultingLab": "",
+                        "orderID": "996119661",
+                        "status": "Completed",
+                        "orderType": "RAD XRAY/GENERAL",
+                        "associatedDiagnosis": {
+                            "id": "97460",
+                            "description": "Osteoporosis",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "733.00"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "M81.0"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [
+                            "A copy of this report will be found in EPIC.  A copy will be sent",
+                            "to the referring physician.",
+                            "",
+                            "Electronically signed by Less Chafen, MD on 11/18/2016 3:28 PM",
+                            ""
+                        ],
+                        "orderDate": "11/18/2016",
+                        "orderTime": "09:02:11",
+                        "contactSerialNumber": "931875229",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD0104",
+                        "description": "DEXA BONE DENSITY AXIAL SKELETON HIPS PELV SPINE",
+                        "specimen": {
+                            "id": [
+                                "SMX16002782099"
+                            ],
+                            "applicationID": [],
+                            "takenDate": "11/18/2016",
+                            "takenTime": "15:28:02"
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=SMX16002782099",
+                        "associatedAppointments": [
+                            {
+                                "appointmentDate": "11/18/2016",
+                                "appointmentTime": "09:30AM",
+                                "appointmentStatus": "Completed",
+                                "contactSerialNumber": "931875229"
+                            }
+                        ],
+                        "displayName": "DEXA BONE DENSITY (HIPS,SPINE OR PELVIS)",
+                        "resultDate": "11/18/2016",
+                        "procedure": "DEXA BONE DENSITY AXIAL SKELETON HIPS PELV SPINE",
+                        "radStatusDescription": "Final",
+                        "resultTime": "15:28:07"
+                    },
+                    {
+                        "authorizingProvider": "HISTORICAL ORDERS, RADIOLOGY",
+                        "resultingLab": "",
+                        "orderID": "996119696",
+                        "status": "",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "16487",
+                            "description": "RAD HISTORICAL IMAGE (NO BILL)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "09/25/2017",
+                        "orderTime": "09:17:20",
+                        "contactSerialNumber": "981887751",
+                        "orderingProvider": "HISTORICAL ORDERS, RADIOLOGY",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0188",
+                        "description": "MRI BRAIN WWO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "",
+                        "associatedAppointments": [],
+                        "displayName": "MRI Brain With and Without Contrast",
+                        "resultDate": "",
+                        "procedure": "MRI BRAIN WWO CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "HISTORICAL ORDERS, RADIOLOGY",
+                        "resultingLab": "",
+                        "orderID": "996119697",
+                        "status": "Completed",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "16487",
+                            "description": "RAD HISTORICAL IMAGE (NO BILL)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "000.17"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "XYZ, ABC",
+                        "impression": [],
+                        "narrative": [
+                            "This is a historical imaging order for reference images."
+                        ],
+                        "orderDate": "09/25/2017",
+                        "orderTime": "09:17:29",
+                        "contactSerialNumber": "981888954",
+                        "orderingProvider": "HISTORICAL ORDERS, RADIOLOGY",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD0188",
+                        "description": "MRI BRAIN WWO CONTRAST",
+                        "specimen": {
+                            "id": [
+                                "EBZ17002554452"
+                            ],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=EBZ17002554452",
+                        "associatedAppointments": [
+                            {
+                                "appointmentDate": "09/25/2017",
+                                "appointmentTime": "09:20AM",
+                                "appointmentStatus": "Completed",
+                                "contactSerialNumber": "981888954"
+                            }
+                        ],
+                        "displayName": "MRI Brain With and Without Contrast",
+                        "resultDate": "09/25/2017",
+                        "procedure": "MRI BRAIN WWO CONTRAST",
+                        "radStatusDescription": "Final",
+                        "resultTime": "09:17:29"
+                    }
+                ],
+                "patientIdentifier": "11111111"
+            }
+        ],
+        "pagingPointer": ""
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "relapses": [
+        {
+            "relapse_id": "105",
+            "relapse_month": "August",
+            "relapse_year": "2017",
+            "last_updated_provider_id": "G00123",
+            "save_csn": "865482572",
+            "save_csn_status": "Open",
+            "last_updated_instant": "08/31/2017 10:41:05",
+            "patient_reported": false,
+            "qx_id": "",
+            "clinician_confirmed1": true
+        },
+        {
+            "relapse_id": "101",
+            "relapse_month": "July",
+            "relapse_year": "2017",
+            "last_updated_provider_id": "",
+            "save_csn": "865482572",
+            "save_csn_status": "oPen",
+            "last_updated_instant": "08/17/2017 12:52:57",
+            "patient_reported": true,
+            "qx_id": "8010",
+            "clinician_confirmed": false
+        },
+        {
+            "relapse_id": "100",
+            "relapse_month": "May",
+            "relapse_year": "2017",
+            "last_updated_provider_id": "G00123",
+            "save_csn": "865482572",
+            "save_csn_status": "Open",
+            "last_updated_instant": "08/31/2017 10:41:05",
+            "patient_qx_reported": true,
+            "qx_id": "8010",
+            "clinician_confirmed": true
+        },
+        {
+            "relapse_id": "97",
+            "relapse_month": "March",
+            "relapse_year": "2017",
+            "last_updated_provider_id": "",
+            "save_csn": "865482572",
+            "save_csn_status": "Open",
+            "last_updated_instant": "08/17/2017 12:52:57",
+            "patient_reported": true,
+            "qx_id": "8010",
+            "clinician_confirmed": false
+        },
+        {
+            "relapse_id": "86",
+            "relapse_month": "December",
+            "relapse_year": "2016",
+            "last_updated_provider_id": "",
+            "save_csn": "710119378",
+            "save_csn_status": "Open",
+            "last_updated_instant": "02/15/2017 12:52:57",
+            "patient_reported": true,
+            "qx_id": "7625",
+            "clinician_confirmed": false
+        },
+        {
+            "relapse_id": "72",
+            "relapse_month": "February",
+            "relapse_year": "2016",
+            "last_updated_provider_id": "",
+            "save_csn": "642945505",
+            "save_csn_status": "Closed",
+            "last_updated_instant": "08/01/2016 12:52:57",
+            "patient_reported": true,
+            "qx_id": "5081",
+            "clinician_confirmed": false
+        },
+        {
+            "relapse_id": "71",
+            "relapse_month": "April",
+            "relapse_year": "2016",
+            "last_updated_provider_id": "",
+            "save_csn": "642945505",
+            "save_csn_status": "Closed",
+            "last_updated_instant": "08/01/2016 12:52:57",
+            "patient_reported": true,
+            "qx_id": "5081",
+            "clinician_confirmed": false
+        }
+    ]
+}

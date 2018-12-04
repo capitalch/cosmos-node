@@ -58,18 +58,6 @@ app.get('/authenticate', (req, res, next) => {
     res.json('ok');
 })
 
-app.post('/test', (req, res, next) => {
-    res.json({ test: 'ok' });
-})
-
-app.get('/test', (req, res, next) => {
-    res.json({ test: 'ok' });
-})
-
-app.get('/test1', (req, res, next) => {
-    res.json({ test: 'ok' });
-})
-
 config.routes.forEach(element => {
     app.use(require(element));
 });

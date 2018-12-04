@@ -1,0 +1,95 @@
+{
+    "cds": [
+      {
+        "learn_more": "",
+        "publication": "",
+        "label": "review_relapses",
+        "title": "Review Relapses",
+        "info": [
+          "The AAN anticipates that by monitoring disease progression, clinicians will be able to offer timely interventions, thereby reducing MS progression. The relapse rate and disability progression are also important objective determinants for changing MS therapy."
+        ]
+      },
+      {
+        "learn_more": "",
+        "publication": "http://www.google.com",
+        "label": "review_mri_images",
+        "title": "Review MRI Images",
+        "info": [
+          "MRI is being used in the diagnosis of MS, as well as as a sensitive biomarker of disease activity to help guide the use of disease modifying therapies. In addition to the baseline MRI, the AAN recommends a comparison MRI within 24 months of MS diagnosis."
+        ]
+      },
+      {
+        "learn_more": "",
+        "publication": "",
+        "label": "review_symptom_status",
+        "title": "Review Symptom Status",
+        "info": [
+          "The AAN recommends tailoring the comprehensive symptoms review to the specific needs of the person with MS."
+        ]
+      },
+      {
+        "learn_more": "http://www.google.com",
+        "publication": "http://www.google.com",
+        "label": "review_ms_type_status",
+        "title": "Review MS Status",
+        "info": [
+          "Accurate phenotypes MS are important for communication and prognostication, treatment decision\u2010making, as well as for research (design and recruitment of clinical trials). These capture whether the disease is active (relapses, new MRI lesions) and/or progressive (increase in disability or in brain atrophy)."
+        ]
+      },
+      {
+        "learn_more": "",
+        "publication": "http://www.google.com",
+        "label": "review_dmts",
+        "title": "Review DMTs",
+        "info": [
+          "Guidelines for MS treatment initiation, switch and cessation are being updated by the AAN in light of ongoing research into long\u2010term outcomes, and emerging evidence of a beneficial effect of earlier initiation of more effective therapies."
+        ]
+      },
+      {
+        "learn_more": "",
+        "publication": "",
+        "label": "review_monitoring_labs",
+        "title": "Review Monitoring Labs",
+        "info": [
+          "Most MS treatments require ongoing monitoring of safety labs."
+        ]
+      },
+      {
+        "learn_more": "",
+        "publication": "",
+        "label": "review_vitamin_d",
+        "title": "Review Vitamin D",
+        "info": [
+          "Observational studies have reported a relationship between low vitamin D levels and relapses. While awaiting results from ongoing interventional clinical trials, it seems reasonable to aim for Mid to High levels in the normal range. Patients require varying dosages to achieve this."
+        ]
+      },
+      {
+        "learn_more": "",
+        "publication": "",
+        "label": "review_other_meds",
+        "title": "Review Other Related Meds",
+        "info": [
+          "The AAN recommends that clinicians ensure all people with MS have a comprehensive and tailored review of all aspects of their care at least once a year."
+        ]
+      },
+      {
+        "learn_more": "",
+        "publication": "",
+        "label": "review_symptoms_referrals",
+        "title": "Review Symptoms Referrals",
+        "info": [
+          "The AAN recommends that clinicians ensure all people with MS have a comprehensive and tailored review of all aspects of their care at least once a year."
+        ]
+      },
+      {
+        "learn_more": "",
+        "publication": "http://www.google.com",
+        "label": "review_vaccinations",
+        "title": "Review Vaccinations",
+        "info": [
+          "For most patients with MS, annual injectable influenza vaccines are recommended, along with other ageappropriate inactivated vaccines. Caution is recommended with live attenuated vaccines (varicella, zoster, MMR, yellow fever), which should typically be administered prior to starting immunosuppressant medications.",
+          "People who are experiencing a serious relapse that affects their ability to carry out activities of daily living should defer vaccination until 4\u20106 weeks after the onset of the relapse."
+        ]
+      }
+    ]
+  }

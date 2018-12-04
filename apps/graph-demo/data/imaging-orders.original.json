@@ -1,0 +1,1935 @@
+{
+    "EPIC": {
+        "recordCount": "38",
+        "errResult": null,
+        "patient": [
+            {
+                "patientName": "Buster, Zztest",
+                "imagingOrders": [
+                    {
+                        "authorizingProvider": "MILLER, MARY LYNN",
+                        "resultingLab": "",
+                        "orderID": "689801310",
+                        "status": "",
+                        "orderType": "RAD XRAY/GENERAL",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "11/14/2016",
+                        "orderTime": "10:41:01",
+                        "contactSerialNumber": "833179432",
+                        "orderingProvider": "MILLER, MARY LYNN",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0575",
+                        "description": "XR CHEST 1 VIEW AP OR PA",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380",
+                        "associatedAppointments": [],
+                        "displayName": "XR Chest 1 View AP or PA",
+                        "resultDate": "",
+                        "procedure": "XR CHEST 1 VIEW AP OR PA",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "AMBULATORY, EBR MD",
+                        "resultingLab": "",
+                        "orderID": "689824510",
+                        "status": "",
+                        "orderType": "RAD ULTRASOUND",
+                        "associatedDiagnosis": {
+                            "id": "6731",
+                            "description": "Hypertension secondary to renal disease, with delivery, with current postpartum complication",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "642.12"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "642.12"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "O10.43",
+                                        "I15.0"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "O10.43",
+                                        "I15.1"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "12/07/2016",
+                        "orderTime": "10:25:02",
+                        "contactSerialNumber": "833188155",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0459",
+                        "description": "US ABDOMEN COMPLETE",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380",
+                        "associatedAppointments": [],
+                        "displayName": "US ABDOMEN COMPLETE",
+                        "resultDate": "",
+                        "procedure": "US ABDOMEN COMPLETE",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "MULLEN, WILLIAM L",
+                        "resultingLab": "",
+                        "orderID": "689830615",
+                        "status": "Completed",
+                        "orderType": "RAD MRI",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [
+                            "PROCEDURE: MRA HEAD WO CONTRAST - , 7/9/2014 2:48 PM",
+                            "ACCESSION NUMBER(S): AFM14001638",
+                            "LOCATION: OPLOC",
+                            " ",
+                            "COMPARISON: None",
+                            " ",
+                            "CLINICAL INDICATION: CRAO right, CVA.",
+                            " ",
+                            "TECHNIQUE:",
+                            "Noncontrast 3-D time-of-flight MRA of the intracranial",
+                            "circulation performed with maximum intensity projections in",
+                            "multiple projections.",
+                            " ",
+                            "FINDINGS:",
+                            "Mild narrowing of the left greater than right supraclinoid ICAs.",
+                            "Otherwise no significant large vessel stenosis or occlusion. No",
+                            "aneurysms or vascular malformation.",
+                            " ",
+                            "IMPRESSION:",
+                            "Mild stenosis of the supraclinoid internal carotid arteries left",
+                            "greater than right.",
+                            " ",
+                            "Otherwise normal MRI of the intracranial circulation.",
+                            " "
+                        ],
+                        "orderDate": "11/13/2016",
+                        "orderTime": "11:56:33",
+                        "contactSerialNumber": "833188528",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD0171",
+                        "description": "MRA HEAD W CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380",
+                        "associatedAppointments": [],
+                        "displayName": "MRA Head With Contrast",
+                        "resultDate": "12/13/2016",
+                        "procedure": "MRA HEAD W CONTRAST",
+                        "radStatusDescription": "Final",
+                        "resultTime": "11:56:00"
+                    },
+                    {
+                        "authorizingProvider": "MULLEN, WILLIAM L",
+                        "resultingLab": "",
+                        "orderID": "689830616",
+                        "status": "Completed",
+                        "orderType": "RAD CT",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [
+                            "CLINICAL INDICATION:  Chest pressure when supine.",
+                            "",
+                            "DICTATION TIME: 03/06/09, 1326 hours",
+                            "",
+                            "TECHNIQUE:  Helical acquisition through the chest and abdomen.",
+                            "Images reconstructed at 1.25 and 2.5-mm collimation in soft",
+                            "tissue windows as well as 5-mm collimation for lung windows.",
+                            "Sagittal and coronal reformatted images were obtained.",
+                            "",
+                            "FINDINGS:  Shotty axillary lymph nodes. Shotty mediastinal lymph",
+                            "nodes. Cardiomegaly is present. No definite axillary, hilar, or",
+                            "mediastinal adenopathy. No pleural or pericardial fluid",
+                            "collection. There is good opacification of pulmonary",
+                            "vasculature. The examination is somewhat by patient motion",
+                            "artifact through the chest. No definite pulmonary embolism or",
+                            "dissection. Lung windows reveal subpleural emphysematous",
+                            "changes. A partially calcified nodule is indeterminate. Follow",
+                            "up is recommended. Scattered areas of pleural parenchymal",
+                            "scarring. No nodule or endobronchial lesion. No definite",
+                            "abdominal aortic aneurysm or dissection. Patulous origin of the",
+                            "common origin of the superior mesenteric and celiac arteries.",
+                            "Small hiatal hernia with elevation of the left hemidiaphragm. A",
+                            "small accessory splenic nodule measuring in the range of 8-mm is",
+                            "noted at the level of the splenic hilum. Remainder of the",
+                            "visualized solid abdominal viscera appear intact. Scattered",
+                            "colonic diverticula without signs of diverticulitis. No biliary",
+                            "tree dilation. Sagittal and coronal reformatted images were",
+                            "reviewed. Bone windows reveal scoliotic curvature and",
+                            "degenerative disk disease. There are mild sclerotic endplate",
+                            "changes present. No aggressive lytic or sclerotic lesion",
+                            "appreciated.",
+                            "",
+                            "IMPRESSION:",
+                            "",
+                            "1.     No definite pulmonary embolism or dissection.",
+                            "2.     Faint calcification is noted within a right lower lobe",
+                            "pulmonary nodule, which measures 6-mm. This is likely",
+                            "granulomatous in nature though would recommend six month",
+                            "follow up.",
+                            "3.     Scoliotic curvature and degenerative disk disease.",
+                            "4.     No abdominal aortic aneurysm.",
+                            "5.     Diverticulosis without signs of diverticulitis.",
+                            "6.     Hiatal hernia.",
+                            "7.     Facts report was sent to the emergency department at the",
+                            "time of dictation.",
+                            ""
+                        ],
+                        "orderDate": "06/13/2016",
+                        "orderTime": "11:58:26",
+                        "contactSerialNumber": "833188528",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD2007",
+                        "description": "CT LOW DOSE LUNG CANCER SCREENING",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380",
+                        "associatedAppointments": [],
+                        "displayName": "CT Low Dose Lung Cancer Screening",
+                        "resultDate": "12/13/2016",
+                        "procedure": "CT LOW DOSE LUNG CANCER SCREENING",
+                        "radStatusDescription": "Final",
+                        "resultTime": "11:58:00"
+                    },
+                    {
+                        "authorizingProvider": "AMBULATORY, SSR MD",
+                        "resultingLab": "",
+                        "orderID": "689842796",
+                        "status": "",
+                        "orderType": "RAD XRAY/GENERAL",
+                        "associatedDiagnosis": {
+                            "id": "281423",
+                            "description": "Mild intermittent asthma with status asthmaticus",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "493.91"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "J45.22"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "01/18/2017",
+                        "orderTime": "10:26:21",
+                        "contactSerialNumber": "833189927",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0576",
+                        "description": "XR CHEST 2 VIEWS PA LATERAL",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380",
+                        "associatedAppointments": [],
+                        "displayName": "XR Chest 2 Views PA Lateral",
+                        "resultDate": "",
+                        "procedure": "XR CHEST 2 VIEWS PA LATERAL",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "AMBULATORY, SSR MD",
+                        "resultingLab": "",
+                        "orderID": "689850408",
+                        "status": "",
+                        "orderType": "RAD XRAY/GENERAL",
+                        "associatedDiagnosis": {
+                            "id": "97182",
+                            "description": "SOB (shortness of breath)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.05"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R06.02"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "02/28/2017",
+                        "orderTime": "10:31:05",
+                        "contactSerialNumber": "833192049",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0709",
+                        "description": "XR STERNOCLAVICULAR JOINTS",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380",
+                        "associatedAppointments": [],
+                        "displayName": "XR Sternoclavicular Joints",
+                        "resultDate": "",
+                        "procedure": "XR STERNOCLAVICULAR JOINTS",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "AMBULATORY, SSR MD",
+                        "resultingLab": "",
+                        "orderID": "689850409",
+                        "status": "Completed",
+                        "orderType": "RAD XRAY/GENERAL",
+                        "associatedDiagnosis": {
+                            "id": "97182",
+                            "description": "SOB (shortness of breath)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.05"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R06.02"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "02/28/2017",
+                        "orderTime": "10:36:32",
+                        "contactSerialNumber": "833192054",
+                        "orderingProvider": "",
+                        "isAbnormal": "No",
+                        "radStatusID": "62",
+                        "procedureCPTCode": "RAD0709",
+                        "description": "XR STERNOCLAVICULAR JOINTS",
+                        "specimen": {
+                            "id": [
+                                "YUD17000000139"
+                            ],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139",
+                        "associatedAppointments": [
+                            {
+                                "appointmentDate": "02/28/2017",
+                                "appointmentTime": "10:40AM",
+                                "appointmentStatus": "Completed",
+                                "contactSerialNumber": "833192054"
+                            }
+                        ],
+                        "displayName": "XR Sternoclavicular Joints",
+                        "resultDate": "02/28/2017",
+                        "procedure": "XR STERNOCLAVICULAR JOINTS",
+                        "radStatusDescription": "ED Wet Read",
+                        "resultTime": "10:37:58"
+                    },
+                    {
+                        "authorizingProvider": "SEHMBEY, KULWINDER",
+                        "resultingLab": "",
+                        "orderID": "689872483",
+                        "status": "",
+                        "orderType": "RAD CT",
+                        "associatedDiagnosis": {
+                            "id": "14754",
+                            "description": "Bone donor",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "V59.2"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "V59.2"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "Z52.20"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "03/08/2017",
+                        "orderTime": "10:53:36",
+                        "contactSerialNumber": "833192462",
+                        "orderingProvider": "SEHMBEY, KULWINDER",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD1378",
+                        "description": "CT BONE BIOPSY DEEP",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139",
+                        "associatedAppointments": [],
+                        "displayName": "CT Bone Biopsy Deep",
+                        "resultDate": "",
+                        "procedure": "CT BONE BIOPSY DEEP",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "SEHMBEY, KULWINDER",
+                        "resultingLab": "",
+                        "orderID": "689878159",
+                        "status": "",
+                        "orderType": "RAD CT",
+                        "associatedDiagnosis": {
+                            "id": "14754",
+                            "description": "Bone donor",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "V59.2"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "V59.2"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "Z52.20"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "05/10/2017",
+                        "orderTime": "16:41:24",
+                        "contactSerialNumber": "833195243",
+                        "orderingProvider": "SEHMBEY, KULWINDER",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD1378",
+                        "description": "CT BONE BIOPSY DEEP",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139",
+                        "associatedAppointments": [],
+                        "displayName": "CT Bone Biopsy Deep",
+                        "resultDate": "",
+                        "procedure": "CT BONE BIOPSY DEEP",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "SEHMBEY, KULWINDER",
+                        "resultingLab": "",
+                        "orderID": "689878160",
+                        "status": "",
+                        "orderType": "RAD CT",
+                        "associatedDiagnosis": {
+                            "id": "14754",
+                            "description": "Bone donor",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "V59.2"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "V59.2"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "Z52.20"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "05/10/2017",
+                        "orderTime": "16:41:24",
+                        "contactSerialNumber": "833195243",
+                        "orderingProvider": "SEHMBEY, KULWINDER",
+                        "isAbnormal": "",
+                        "radStatusID": "7",
+                        "procedureCPTCode": "RAD1378",
+                        "description": "CT BONE BIOPSY DEEP",
+                        "specimen": {
+                            "id": [
+                                "MMC17000000228"
+                            ],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228",
+                        "associatedAppointments": [
+                            {
+                                "appointmentDate": "05/10/2017",
+                                "appointmentTime": "04:45PM",
+                                "appointmentStatus": "Completed",
+                                "contactSerialNumber": "833195243"
+                            }
+                        ],
+                        "displayName": "CT Bone Biopsy Deep",
+                        "resultDate": "",
+                        "procedure": "CT BONE BIOPSY DEEP",
+                        "radStatusDescription": "Arrived",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "ZZPHYSICIANMD, COMMUNITY",
+                        "resultingLab": "",
+                        "orderID": "689878161",
+                        "status": "",
+                        "orderType": "RAD CT",
+                        "associatedDiagnosis": {
+                            "id": "914964",
+                            "description": "Asthma with status asthmaticus, unspecified asthma severity",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "J45.902"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "493.91"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "05/16/2017",
+                        "orderTime": "12:20:01",
+                        "contactSerialNumber": "833195414",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0897",
+                        "description": "CT ABDOMEN PELVIS W CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228",
+                        "associatedAppointments": [],
+                        "displayName": "CT Abdomen Pelvis With Contrast",
+                        "resultDate": "",
+                        "procedure": "CT ABDOMEN PELVIS W CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "MILLER, MARY LYNN",
+                        "resultingLab": "",
+                        "orderID": "689878162",
+                        "status": "",
+                        "orderType": "RAD CT",
+                        "associatedDiagnosis": {
+                            "id": "97182",
+                            "description": "SOB (shortness of breath)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.05"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R06.02"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "05/19/2017",
+                        "orderTime": "13:18:21",
+                        "contactSerialNumber": "833195659",
+                        "orderingProvider": "WBR TRANSPLANT INP NURSE",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0900",
+                        "description": "CT ABDOMEN WWO CHEST PELVIS W CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228",
+                        "associatedAppointments": [],
+                        "displayName": "CT Abdomen With and Without Chest and Pelvis With Contrast",
+                        "resultDate": "",
+                        "procedure": "CT ABDOMEN WWO CHEST PELVIS W CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "MILLER, MARY LYNN",
+                        "resultingLab": "",
+                        "orderID": "689878163",
+                        "status": "",
+                        "orderType": "RAD CT",
+                        "associatedDiagnosis": {
+                            "id": "97182",
+                            "description": "SOB (shortness of breath)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.05"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R06.02"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "05/19/2017",
+                        "orderTime": "13:22:21",
+                        "contactSerialNumber": "833195659",
+                        "orderingProvider": "WBR TRANSPLANT INP NURSE",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0902",
+                        "description": "CT ABDOMEN WWO NECK CHEST PELVIS W CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228",
+                        "associatedAppointments": [],
+                        "displayName": "CT Abdomen With and Without Neck Chest and Pelvis With Contrast",
+                        "resultDate": "",
+                        "procedure": "CT ABDOMEN WWO NECK CHEST PELVIS W CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "AMBULATORY, SSR NP",
+                        "resultingLab": "",
+                        "orderID": "689902978",
+                        "status": "",
+                        "orderType": "RAD XRAY/GENERAL",
+                        "associatedDiagnosis": {
+                            "id": "9809",
+                            "description": "Cough",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.2"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.2"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R05"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "05/23/2017",
+                        "orderTime": "08:05:40",
+                        "contactSerialNumber": "833195759",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0575",
+                        "description": "XR CHEST 1 VIEW AP OR PA",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228",
+                        "associatedAppointments": [],
+                        "displayName": "XR Chest 1 View AP or PA",
+                        "resultDate": "",
+                        "procedure": "XR CHEST 1 VIEW AP OR PA",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "AMBULATORY, SSR NP",
+                        "resultingLab": "",
+                        "orderID": "689902979",
+                        "status": "",
+                        "orderType": "RAD XRAY/GENERAL",
+                        "associatedDiagnosis": {
+                            "id": "78723",
+                            "description": "Depressive disorder",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "311"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "F32.9"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "05/23/2017",
+                        "orderTime": "10:37:15",
+                        "contactSerialNumber": "833195751",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0575",
+                        "description": "XR CHEST 1 VIEW AP OR PA",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228",
+                        "associatedAppointments": [],
+                        "displayName": "XR Chest 1 View AP or PA",
+                        "resultDate": "",
+                        "procedure": "XR CHEST 1 VIEW AP OR PA",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "AMBULATORY, SSR NP",
+                        "resultingLab": "",
+                        "orderID": "689902981",
+                        "status": "",
+                        "orderType": "RAD CT",
+                        "associatedDiagnosis": {
+                            "id": "78723",
+                            "description": "Depressive disorder",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "311"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "F32.9"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "05/23/2017",
+                        "orderTime": "11:02:29",
+                        "contactSerialNumber": "833195751",
+                        "orderingProvider": "",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0897",
+                        "description": "CT ABDOMEN PELVIS W CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228",
+                        "associatedAppointments": [],
+                        "displayName": "CT ABDOMEN PELVIS W CONTRAST",
+                        "resultDate": "",
+                        "procedure": "CT ABDOMEN PELVIS W CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "LANE, STEVEN R",
+                        "resultingLab": "",
+                        "orderID": "689905336",
+                        "status": "Canceled",
+                        "orderType": "RAD XRAY/GENERAL",
+                        "associatedDiagnosis": {
+                            "id": "97182",
+                            "description": "SOB (shortness of breath)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.05"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R06.02"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "06/01/2017",
+                        "orderTime": "10:39:11",
+                        "contactSerialNumber": "833196353",
+                        "orderingProvider": "LANE, STEVEN R",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0577",
+                        "description": "XR CHEST 4 VIEWS",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228",
+                        "associatedAppointments": [],
+                        "displayName": "XR Chest 4 Views",
+                        "resultDate": "",
+                        "procedure": "XR CHEST 4 VIEWS",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "LANE, STEVEN R",
+                        "resultingLab": "",
+                        "orderID": "689905337",
+                        "status": "",
+                        "orderType": "RAD ULTRASOUND",
+                        "associatedDiagnosis": {
+                            "id": "97182",
+                            "description": "SOB (shortness of breath)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.05"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R06.02"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "06/01/2017",
+                        "orderTime": "10:39:11",
+                        "contactSerialNumber": "833196353",
+                        "orderingProvider": "LANE, STEVEN R",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0460",
+                        "description": "US ABDOMEN LIMITED",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228",
+                        "associatedAppointments": [],
+                        "displayName": "US Abdomen Limited",
+                        "resultDate": "",
+                        "procedure": "US ABDOMEN LIMITED",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "LANE, STEVEN R",
+                        "resultingLab": "",
+                        "orderID": "689905338",
+                        "status": "Completed",
+                        "orderType": "RAD ULTRASOUND",
+                        "associatedDiagnosis": {
+                            "id": "97182",
+                            "description": "SOB (shortness of breath)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.05"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R06.02"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [
+                            "2017 Upgrade"
+                        ],
+                        "narrative": [
+                            "RR 2017 "
+                        ],
+                        "orderDate": "06/01/2017",
+                        "orderTime": "10:41:09",
+                        "contactSerialNumber": "833196358",
+                        "orderingProvider": "LANE, STEVEN R",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD0460",
+                        "description": "US ABDOMEN LIMITED",
+                        "specimen": {
+                            "id": [
+                                "SFU17000000260"
+                            ],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260",
+                        "associatedAppointments": [
+                            {
+                                "appointmentDate": "06/01/2017",
+                                "appointmentTime": "10:45AM",
+                                "appointmentStatus": "Completed",
+                                "contactSerialNumber": "833196358"
+                            }
+                        ],
+                        "displayName": "US Abdomen Limited",
+                        "resultDate": "06/01/2017",
+                        "procedure": "US ABDOMEN LIMITED",
+                        "radStatusDescription": "Final",
+                        "resultTime": "10:42:00"
+                    },
+                    {
+                        "authorizingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "resultingLab": "",
+                        "orderID": "689905339",
+                        "status": "",
+                        "orderType": "RAD ULTRASOUND",
+                        "associatedDiagnosis": {
+                            "id": "97182",
+                            "description": "SOB (shortness of breath)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.05"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R06.02"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "06/01/2017",
+                        "orderTime": "10:55:39",
+                        "contactSerialNumber": "833196365",
+                        "orderingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0465",
+                        "description": "US CHEST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260",
+                        "associatedAppointments": [],
+                        "displayName": "US Chest",
+                        "resultDate": "",
+                        "procedure": "US CHEST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "resultingLab": "",
+                        "orderID": "689905340",
+                        "status": "Completed",
+                        "orderType": "RAD ULTRASOUND",
+                        "associatedDiagnosis": {
+                            "id": "97182",
+                            "description": "SOB (shortness of breath)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.05"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R06.02"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [
+                            "TESTING"
+                        ],
+                        "narrative": [
+                            "TESTING"
+                        ],
+                        "orderDate": "06/01/2017",
+                        "orderTime": "10:56:12",
+                        "contactSerialNumber": "833196366",
+                        "orderingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD0465",
+                        "description": "US CHEST",
+                        "specimen": {
+                            "id": [
+                                "SFU17000000261"
+                            ],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261",
+                        "associatedAppointments": [
+                            {
+                                "appointmentDate": "06/01/2017",
+                                "appointmentTime": "11:00AM",
+                                "appointmentStatus": "Completed",
+                                "contactSerialNumber": "833196366"
+                            }
+                        ],
+                        "displayName": "US Chest",
+                        "resultDate": "06/01/2017",
+                        "procedure": "US CHEST",
+                        "radStatusDescription": "Final",
+                        "resultTime": "10:56:00"
+                    },
+                    {
+                        "authorizingProvider": "RIDLEY, COURTNEY PAIGE",
+                        "resultingLab": "",
+                        "orderID": "689908652",
+                        "status": "",
+                        "orderType": "RAD ULTRASOUND",
+                        "associatedDiagnosis": {
+                            "id": "752897",
+                            "description": "Preglaucoma, unspecified laterality",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "H40.009"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "365.00"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "07/03/2017",
+                        "orderTime": "13:26:07",
+                        "contactSerialNumber": "833198010",
+                        "orderingProvider": "RIDLEY, COURTNEY PAIGE",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0517",
+                        "description": "US TRANSVAGINAL NON OB",
+                        "specimen": {
+                            "id": [
+                                "COU17000000327"
+                            ],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327",
+                        "associatedAppointments": [],
+                        "displayName": "US Transvaginal Non Ob",
+                        "resultDate": "",
+                        "procedure": "US TRANSVAGINAL NON OB",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "RIDLEY, COURTNEY PAIGE",
+                        "resultingLab": "",
+                        "orderID": "689908657",
+                        "status": "",
+                        "orderType": "RAD XRAY/GENERAL",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "07/11/2017",
+                        "orderTime": "14:25:54",
+                        "contactSerialNumber": "833198464",
+                        "orderingProvider": "RIDLEY, COURTNEY PAIGE",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD1368",
+                        "description": "XR CHEST 1 VIEW W LEFT DECUB",
+                        "specimen": {
+                            "id": [
+                                "ABD17000000331"
+                            ],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331",
+                        "associatedAppointments": [],
+                        "displayName": "XR Chest 1 View With Left Decub",
+                        "resultDate": "",
+                        "procedure": "XR CHEST 1 VIEW W LEFT DECUB",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "resultingLab": "",
+                        "orderID": "689908661",
+                        "status": "",
+                        "orderType": "RAD CT",
+                        "associatedDiagnosis": {
+                            "id": "97182",
+                            "description": "SOB (shortness of breath)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.05"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R06.02"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "07/19/2017",
+                        "orderTime": "12:27:56",
+                        "contactSerialNumber": "833198986",
+                        "orderingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0893",
+                        "description": "CT CHEST ABDOMEN PELVIS WO CONTRAST",
+                        "specimen": {
+                            "id": [
+                                "CPC17000000339"
+                            ],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339",
+                        "associatedAppointments": [],
+                        "displayName": "CT Chest Abdomen Pelvis Without Contrast",
+                        "resultDate": "",
+                        "procedure": "CT CHEST ABDOMEN PELVIS WO CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "resultingLab": "",
+                        "orderID": "689908662",
+                        "status": "",
+                        "orderType": "RAD CT",
+                        "associatedDiagnosis": {
+                            "id": "97182",
+                            "description": "SOB (shortness of breath)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.05"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R06.02"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "07/19/2017",
+                        "orderTime": "12:34:28",
+                        "contactSerialNumber": "833198986",
+                        "orderingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0893",
+                        "description": "CT CHEST ABDOMEN PELVIS WO CONTRAST",
+                        "specimen": {
+                            "id": [
+                                "CPC17000000340"
+                            ],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340",
+                        "associatedAppointments": [],
+                        "displayName": "CT Chest Abdomen Pelvis Without Contrast",
+                        "resultDate": "",
+                        "procedure": "CT CHEST ABDOMEN PELVIS WO CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "resultingLab": "",
+                        "orderID": "689908663",
+                        "status": "Canceled",
+                        "orderType": "RAD CT",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "07/19/2017",
+                        "orderTime": "12:35:02",
+                        "contactSerialNumber": "833198989",
+                        "orderingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0893",
+                        "description": "CT CHEST ABDOMEN PELVIS WO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340",
+                        "associatedAppointments": [],
+                        "displayName": "CT Chest Abdomen Pelvis Without Contrast",
+                        "resultDate": "",
+                        "procedure": "CT CHEST ABDOMEN PELVIS WO CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "resultingLab": "",
+                        "orderID": "689908664",
+                        "status": "Canceled",
+                        "orderType": "RAD CT",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "07/19/2017",
+                        "orderTime": "12:35:02",
+                        "contactSerialNumber": "833198989",
+                        "orderingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0893",
+                        "description": "CT CHEST ABDOMEN PELVIS WO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340",
+                        "associatedAppointments": [],
+                        "displayName": "CT Chest Abdomen Pelvis Without Contrast",
+                        "resultDate": "",
+                        "procedure": "CT CHEST ABDOMEN PELVIS WO CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "resultingLab": "",
+                        "orderID": "689908665",
+                        "status": "",
+                        "orderType": "RAD CT",
+                        "associatedDiagnosis": {
+                            "id": "97182",
+                            "description": "SOB (shortness of breath)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.05"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R06.02"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "07/19/2017",
+                        "orderTime": "12:37:06",
+                        "contactSerialNumber": "833198986",
+                        "orderingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0891",
+                        "description": "CT CHEST ABDOMEN W CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340",
+                        "associatedAppointments": [],
+                        "displayName": "CT Chest Abdomen With Contrast",
+                        "resultDate": "",
+                        "procedure": "CT CHEST ABDOMEN W CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "resultingLab": "",
+                        "orderID": "689908666",
+                        "status": "",
+                        "orderType": "RAD CT",
+                        "associatedDiagnosis": {
+                            "id": "97182",
+                            "description": "SOB (shortness of breath)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.05"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R06.02"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "07/19/2017",
+                        "orderTime": "12:55:11",
+                        "contactSerialNumber": "833198986",
+                        "orderingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0071",
+                        "description": "CT CHEST WO CONTRAST",
+                        "specimen": {
+                            "id": [
+                                "CPC17000000341"
+                            ],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341",
+                        "associatedAppointments": [],
+                        "displayName": "CT Chest Without Contrast",
+                        "resultDate": "",
+                        "procedure": "CT CHEST WO CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "resultingLab": "",
+                        "orderID": "689908667",
+                        "status": "Canceled",
+                        "orderType": "RAD CT",
+                        "associatedDiagnosis": {
+                            "id": "97182",
+                            "description": "SOB (shortness of breath)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.05"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R06.02"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "07/19/2017",
+                        "orderTime": "12:55:38",
+                        "contactSerialNumber": "833198990",
+                        "orderingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0071",
+                        "description": "CT CHEST WO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341",
+                        "associatedAppointments": [],
+                        "displayName": "CT Chest Without Contrast",
+                        "resultDate": "",
+                        "procedure": "CT CHEST WO CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "resultingLab": "",
+                        "orderID": "689908668",
+                        "status": "Canceled",
+                        "orderType": "RAD CT",
+                        "associatedDiagnosis": {
+                            "id": "97182",
+                            "description": "SOB (shortness of breath)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.05"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R06.02"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "07/19/2017",
+                        "orderTime": "12:55:38",
+                        "contactSerialNumber": "833198990",
+                        "orderingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0071",
+                        "description": "CT CHEST WO CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341",
+                        "associatedAppointments": [],
+                        "displayName": "CT Chest Without Contrast",
+                        "resultDate": "",
+                        "procedure": "CT CHEST WO CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "resultingLab": "",
+                        "orderID": "689908671",
+                        "status": "",
+                        "orderType": "RAD CT",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "07/20/2017",
+                        "orderTime": "09:10:02",
+                        "contactSerialNumber": "833199076",
+                        "orderingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0891",
+                        "description": "CT CHEST ABDOMEN W CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341",
+                        "associatedAppointments": [],
+                        "displayName": "CT Chest Abdomen With Contrast",
+                        "resultDate": "",
+                        "procedure": "CT CHEST ABDOMEN W CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "resultingLab": "",
+                        "orderID": "689908672",
+                        "status": "",
+                        "orderType": "RAD CT",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "07/20/2017",
+                        "orderTime": "09:11:24",
+                        "contactSerialNumber": "833199077",
+                        "orderingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0891",
+                        "description": "CT CHEST ABDOMEN W CONTRAST",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341",
+                        "associatedAppointments": [],
+                        "displayName": "CT Chest Abdomen With Contrast",
+                        "resultDate": "",
+                        "procedure": "CT CHEST ABDOMEN W CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "resultingLab": "",
+                        "orderID": "689908673",
+                        "status": "",
+                        "orderType": "RAD CT",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "07/20/2017",
+                        "orderTime": "09:11:24",
+                        "contactSerialNumber": "833199077",
+                        "orderingProvider": "RADIANT, CB RAD RIS RADIOLOGIST",
+                        "isAbnormal": "",
+                        "radStatusID": "7",
+                        "procedureCPTCode": "RAD0891",
+                        "description": "CT CHEST ABDOMEN W CONTRAST",
+                        "specimen": {
+                            "id": [
+                                "CPC17000000342"
+                            ],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342",
+                        "associatedAppointments": [
+                            {
+                                "appointmentDate": "07/20/2017",
+                                "appointmentTime": "09:15AM",
+                                "appointmentStatus": "Completed",
+                                "contactSerialNumber": "833199077"
+                            }
+                        ],
+                        "displayName": "CT Chest Abdomen With Contrast",
+                        "resultDate": "",
+                        "procedure": "CT CHEST ABDOMEN W CONTRAST",
+                        "radStatusDescription": "Arrived",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "MILLER, MARY LYNN",
+                        "resultingLab": "",
+                        "orderID": "689908679",
+                        "status": "",
+                        "orderType": "RAD CT",
+                        "associatedDiagnosis": {
+                            "id": "97182",
+                            "description": "SOB (shortness of breath)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.05"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R06.02"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "07/25/2017",
+                        "orderTime": "16:11:29",
+                        "contactSerialNumber": "833199394",
+                        "orderingProvider": "MILLER, MARY LYNN",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0070",
+                        "description": "CT CHEST WWO CONTRAST",
+                        "specimen": {
+                            "id": [
+                                "CPC17000000356"
+                            ],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356",
+                        "associatedAppointments": [],
+                        "displayName": "CT Chest With and Without Contrast",
+                        "resultDate": "",
+                        "procedure": "CT CHEST WWO CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "MILLER, MARY LYNN",
+                        "resultingLab": "",
+                        "orderID": "689908682",
+                        "status": "",
+                        "orderType": "RAD XRAY/GENERAL",
+                        "associatedDiagnosis": {
+                            "id": "97182",
+                            "description": "SOB (shortness of breath)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.05"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R06.02"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "07/26/2017",
+                        "orderTime": "13:51:25",
+                        "contactSerialNumber": "833199444",
+                        "orderingProvider": "MILLER, MARY LYNN",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0576",
+                        "description": "XR CHEST 2 VIEWS PA LATERAL",
+                        "specimen": {
+                            "id": [],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356",
+                        "associatedAppointments": [],
+                        "displayName": "XR Chest 2 Views PA Lateral",
+                        "resultDate": "",
+                        "procedure": "XR CHEST 2 VIEWS PA LATERAL",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    },
+                    {
+                        "authorizingProvider": "MILLER, MARY LYNN",
+                        "resultingLab": "",
+                        "orderID": "689908683",
+                        "status": "Completed",
+                        "orderType": "RAD XRAY/GENERAL",
+                        "associatedDiagnosis": {
+                            "id": "97182",
+                            "description": "SOB (shortness of breath)",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.05"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R06.02"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [
+                            "YTestf'asdasdk"
+                        ],
+                        "orderDate": "07/26/2017",
+                        "orderTime": "13:52:14",
+                        "contactSerialNumber": "833199445",
+                        "orderingProvider": "MILLER, MARY LYNN",
+                        "isAbnormal": "No",
+                        "radStatusID": "99",
+                        "procedureCPTCode": "RAD0576",
+                        "description": "XR CHEST 2 VIEWS PA LATERAL",
+                        "specimen": {
+                            "id": [
+                                "EGD17000000358"
+                            ],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358",
+                        "associatedAppointments": [
+                            {
+                                "appointmentDate": "07/26/2017",
+                                "appointmentTime": "01:55PM",
+                                "appointmentStatus": "Completed",
+                                "contactSerialNumber": "833199445"
+                            }
+                        ],
+                        "displayName": "XR Chest 2 Views PA Lateral",
+                        "resultDate": "07/26/2017",
+                        "procedure": "XR CHEST 2 VIEWS PA LATERAL",
+                        "radStatusDescription": "Final",
+                        "resultTime": "13:52:00"
+                    },
+                    {
+                        "authorizingProvider": "JOHNSON, BRIAN LEE",
+                        "resultingLab": "",
+                        "orderID": "689921674",
+                        "status": "",
+                        "orderType": "RAD CT",
+                        "associatedDiagnosis": {
+                            "id": "",
+                            "description": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "impression": [],
+                        "narrative": [],
+                        "orderDate": "08/14/2017",
+                        "orderTime": "14:53:06",
+                        "contactSerialNumber": "833201086",
+                        "orderingProvider": "JOHNSON, BRIAN LEE",
+                        "isAbnormal": "",
+                        "radStatusID": "",
+                        "procedureCPTCode": "RAD0900",
+                        "description": "CT ABDOMEN WWO CHEST PELVIS W CONTRAST",
+                        "specimen": {
+                            "id": [
+                                "MLC17000000380"
+                            ],
+                            "applicationID": [],
+                            "takenDate": "",
+                            "takenTime": ""
+                        },
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380YUD17000000139MMC17000000228SFU17000000260SFU17000000261COU17000000327ABD17000000331CPC17000000339CPC17000000340CPC17000000341CPC17000000342CPC17000000356EGD17000000358MLC17000000380",
+                        "associatedAppointments": [],
+                        "displayName": "CT Abdomen With and Without Chest and Pelvis With Contrast",
+                        "resultDate": "",
+                        "procedure": "CT ABDOMEN WWO CHEST PELVIS W CONTRAST",
+                        "radStatusDescription": "",
+                        "resultTime": ""
+                    }
+                ],
+                "patientIdentifier": "12601042"
+            }
+        ],
+        "pagingPointer": ""
+    }
+}

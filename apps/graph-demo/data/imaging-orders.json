@@ -1,0 +1,1420 @@
+{
+    "EPIC": {
+        "patient": [
+            {
+                "patientName": "RDDmssharefour, Zztest",
+                "patientIdentifier": "13269322",
+                "imagingOrders": [
+                    {
+                        "orderType": "RAD XRAY/GENERAL",
+                        "displayName": "XR Hand 2 Views Left",
+                        "description": "XR HAND 2 VIEWS LEFT",
+                        "resultDate": "08/26/2010",
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=BHJ0046348",
+                        "procedureCPTCode": "RAD0622",
+                        "authorizingProvider": "CULVER, BRENT D",
+                        "orderTime": "10:49:51",
+                        "contactSerialNumber": "894703634",
+                        "associatedAppointments": [],
+                        "specimen": {
+                            "takenDate": "08/26/2010",
+                            "takenTime": "11:12:00",
+                            "id": [
+                                "BHJ0046348"
+                            ],
+                            "applicationID": [
+                                "SQRAD"
+                            ]
+                        },
+                        "radStatusID": "99",
+                        "associatedDiagnosis": {
+                            "description": "Pain in joint, multiple sites",
+                            "id": "8525",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "719.49"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "719.49"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "M25.50"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "resultTime": "13:49:49",
+                        "isAbnormal": "No",
+                        "orderingProvider": "",
+                        "orderID": "845008691",
+                        "narrative": [],
+                        "procedure": "XR HAND 2 VIEWS LEFT",
+                        "radStatusDescription": "Final",
+                        "impression": [],
+                        "orderDate": "08/26/2010",
+                        "resultingLab": "",
+                        "status": "Completed"
+                    },
+                    {
+                        "orderType": "RAD XRAY/GENERAL",
+                        "displayName": "XR Hand 2 Views Right",
+                        "description": "XR HAND 2 VIEWS RIGHT",
+                        "resultDate": "08/26/2010",
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=URW9392679",
+                        "procedureCPTCode": "RAD0623",
+                        "authorizingProvider": "CULVER, BRENT D",
+                        "orderTime": "10:49:51",
+                        "contactSerialNumber": "894703634",
+                        "associatedAppointments": [],
+                        "specimen": {
+                            "takenDate": "08/26/2010",
+                            "takenTime": "11:12:00",
+                            "id": [
+                                "URW9392679"
+                            ],
+                            "applicationID": [
+                                "SQRAD"
+                            ]
+                        },
+                        "radStatusID": "99",
+                        "associatedDiagnosis": {
+                            "description": "Pain in joint, multiple sites",
+                            "id": "8525",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "719.49"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "719.49"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "M25.50"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "resultTime": "13:47:47",
+                        "isAbnormal": "No",
+                        "orderingProvider": "",
+                        "orderID": "845008694",
+                        "narrative": [],
+                        "procedure": "XR HAND 2 VIEWS RIGHT",
+                        "radStatusDescription": "Final",
+                        "impression": [],
+                        "orderDate": "08/26/2010",
+                        "resultingLab": "",
+                        "status": "Completed"
+                    },
+                    {
+                        "orderType": "General Imaging",
+                        "displayName": "SCANNED RADIOLOGY REPORT",
+                        "description": "SCANNED RADIOLOGY REPORT",
+                        "resultDate": "09/20/2004",
+                        "image_launch_url": "",
+                        "procedureCPTCode": "",
+                        "authorizingProvider": "RADIOLOGY",
+                        "orderTime": "",
+                        "contactSerialNumber": "894703629",
+                        "associatedAppointments": [],
+                        "specimen": {
+                            "takenDate": "",
+                            "takenTime": "",
+                            "id": [],
+                            "applicationID": []
+                        },
+                        "radStatusID": "99",
+                        "associatedDiagnosis": {
+                            "description": "",
+                            "id": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "resultTime": "",
+                        "isAbnormal": "No",
+                        "orderingProvider": "",
+                        "orderID": "845008704",
+                        "narrative": [],
+                        "procedure": "SCANNED RADIOLOGY REPORT",
+                        "radStatusDescription": "Final",
+                        "impression": [],
+                        "orderDate": "09/20/2004",
+                        "resultingLab": "",
+                        "status": "Completed"
+                    },
+                    {
+                        "orderType": "General Imaging",
+                        "displayName": "SCANNED RADIOLOGY REPORT",
+                        "description": "SCANNED RADIOLOGY REPORT",
+                        "resultDate": "09/26/2005",
+                        "image_launch_url": "",
+                        "procedureCPTCode": "",
+                        "authorizingProvider": "RADIOLOGY",
+                        "orderTime": "",
+                        "contactSerialNumber": "894703630",
+                        "associatedAppointments": [],
+                        "specimen": {
+                            "takenDate": "",
+                            "takenTime": "",
+                            "id": [],
+                            "applicationID": []
+                        },
+                        "radStatusID": "99",
+                        "associatedDiagnosis": {
+                            "description": "",
+                            "id": "",
+                            "codeSets": []
+                        },
+                        "readingRadiologist": "",
+                        "resultTime": "",
+                        "isAbnormal": "No",
+                        "orderingProvider": "",
+                        "orderID": "845008706",
+                        "narrative": [],
+                        "procedure": "SCANNED RADIOLOGY REPORT",
+                        "radStatusDescription": "Final",
+                        "impression": [],
+                        "orderDate": "09/26/2005",
+                        "resultingLab": "",
+                        "status": "Completed"
+                    },
+                    {
+                        "orderType": "RAD MRI",
+                        "displayName": "MRI Brain With and Without Contrast",
+                        "description": "MRI BRAIN WWO CONTRAST",
+                        "resultDate": "",
+                        "image_launch_url": "",
+                        "procedureCPTCode": "RAD0188",
+                        "authorizingProvider": "GANSAEUER, MICHAEL A",
+                        "orderTime": "13:28:44",
+                        "contactSerialNumber": "894703658",
+                        "associatedAppointments": [],
+                        "specimen": {
+                            "takenDate": "",
+                            "takenTime": "",
+                            "id": [],
+                            "applicationID": []
+                        },
+                        "radStatusID": "",
+                        "associatedDiagnosis": {
+                            "description": "Multiple sclerosis (CMS/HCC)",
+                            "id": "3484",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "",
+                        "resultTime": "",
+                        "isAbnormal": "",
+                        "orderingProvider": "",
+                        "orderID": "845008737",
+                        "narrative": [],
+                        "procedure": "MRI BRAIN WWO CONTRAST",
+                        "radStatusDescription": "",
+                        "impression": [],
+                        "orderDate": "08/20/2012",
+                        "resultingLab": "",
+                        "status": "Completed"
+                    },
+                    {
+                        "orderType": "RAD MRI",
+                        "displayName": "MRI Brain With and Without Contrast",
+                        "description": "MRI BRAIN WWO CONTRAST",
+                        "resultDate": "08/26/2012",
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=GZV17186323",
+                        "procedureCPTCode": "RAD0188",
+                        "authorizingProvider": "GANSAEUER, MICHAEL A",
+                        "orderTime": "15:41:03",
+                        "contactSerialNumber": "894703663",
+                        "associatedAppointments": [
+                            {
+                                "appointmentTime": "03:30PM",
+                                "contactSerialNumber": "894703663",
+                                "appointmentStatus": "Completed",
+                                "appointmentDate": "08/25/2012"
+                            }
+                        ],
+                        "specimen": {
+                            "takenDate": "08/26/2012",
+                            "takenTime": "13:59:23",
+                            "id": [
+                                "GZV17186323"
+                            ],
+                            "applicationID": []
+                        },
+                        "radStatusID": "99",
+                        "associatedDiagnosis": {
+                            "description": "Multiple sclerosis (CMS/HCC)",
+                            "id": "3484",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "PESTANER, JOHN C.",
+                        "resultTime": "14:09:27",
+                        "isAbnormal": "No",
+                        "orderingProvider": "",
+                        "orderID": "845008750",
+                        "narrative": [
+                            "xxxxxxxxxxx xx xxxxxxxx",
+                            "",
+                            "xxxxxxxxxx xxxxx xxx xxxx xxxxxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxx xx xxxxxx",
+                            "xxxxxxxx xx xxxxx xxx xxxxx xx xxxxxx xxxxx xxx xxxxxxxx xxxxxxxx xxxxx xxx",
+                            "xxxxxxx xxxxxxxxxxx xxxxxxx x xx xxxxxxxx",
+                            "",
+                            "xxxxxxxxxxx xxxxxxxxxx",
+                            "",
+                            "xxxxxxxxx xxx xxxxxxx xx xxxxxxx xxx xxxxxxx xxxxxxxxxx xxx xxxxxxxxx xx xxxx",
+                            "xxx xxxxxxxxxxxxxx",
+                            "",
+                            "xxxxx xxx xxxxxxxxx xxxxx xxxxxx xxxxxxxxxxxx xxxxxxxxxxx xx xxxxxxxxxxx",
+                            "xxxxxxx xxxxxxxxxxxx xx xxxxx xxx xxxxxxxxxxx xxxxxxx xxxxxxxxxx xxxx xxxxxxxx",
+                            "xxxxxxx xxxxxxx xx xxxxxxxx xxxxxxxxxx xxxx xx xxx xxxxxxx xxxxxxx xx xxx",
+                            "xxxxxxx xxxxx xxxxxxxx xx xxx xxxxxx xx xxx xxxxx xxxxxxx xxxxxxxxx xx xxx",
+                            "xxxxxxxx xxxxx xxx xxxxxxxxx xxxxxx xxx xxxxx xx xxxxxxxxxxxx xxxxx xx x xxx",
+                            "xxxxx xx xxxxxx xxxxxxxxxxxxxxxx xx xxx xxxx xxxxxxxxx xxxx xxxxxxxxx xx xxx",
+                            "xxxxxxxxx xxxxx xxx xxxxxxxxxx xxxxx xx xxx xxxxx xxxxxx xxxxxxxx xxx x xxx x",
+                            "xxx xxx xx xxxxxxxxxx xx xxxxx xxxxxxxxx",
+                            "",
+                            "xxxxx xxxxxxx xx xxxxxxxxxxxxx xxxxxxxx xxxxx xx xxxxxxxx xxxxxx xxxxxxxxx xxx",
+                            "xxxxx xx xxx xxxxx xxxxxxxx xxx xxxxxxxxxx xxxxxxxxxx",
+                            "",
+                            "xx xxxxxxxxxxx xxxxx xxxxxxxxxxx xx xxxxxxxxxxxx xxxxxxxxxxxxxx"
+                        ],
+                        "procedure": "MRI BRAIN WWO CONTRAST",
+                        "radStatusDescription": "Final",
+                        "impression": [
+                            "xxxxxxxxxxx",
+                            "xx xxxxxxxxx xxxxx xxxxxx xx xxxxxxxxxxxxxxxx xxxxxxxxxx xxxx xxxxxxx xx",
+                            "xx xxxxxxxx xx xxx xxxxxxxx xxxxx xx xxxxxxxxx xxxxxxx xxx xxxxxxxx xxxxx xx x",
+                            "xxx xxxxx xx xxxxxx xxxxxxxxxxxxxxxx xx xxx xxxx xxxxxxxxx xxxx",
+                            "",
+                            "xxxxxxxx xxx xxxxxx xxx xxxx xxxxxxxxx xx xxxxxxxxx xxxx xx"
+                        ],
+                        "orderDate": "08/25/2012",
+                        "resultingLab": "",
+                        "status": "Completed"
+                    },
+                    {
+                        "orderType": "RAD MRI",
+                        "displayName": "MRI Brain With and Without Contrast",
+                        "description": "MRI BRAIN WWO CONTRAST",
+                        "resultDate": "",
+                        "image_launch_url": "",
+                        "procedureCPTCode": "RAD0188",
+                        "authorizingProvider": "LOBO, SARITA",
+                        "orderTime": "20:04:23",
+                        "contactSerialNumber": "894703675",
+                        "associatedAppointments": [],
+                        "specimen": {
+                            "takenDate": "",
+                            "takenTime": "",
+                            "id": [],
+                            "applicationID": []
+                        },
+                        "radStatusID": "",
+                        "associatedDiagnosis": {
+                            "description": "Multiple sclerosis exacerbation (CMS/HCC)",
+                            "id": "240419",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "PESTANER, JOHN C.",
+                        "resultTime": "",
+                        "isAbnormal": "",
+                        "orderingProvider": "",
+                        "orderID": "845008765",
+                        "narrative": [],
+                        "procedure": "MRI BRAIN WWO CONTRAST",
+                        "radStatusDescription": "",
+                        "impression": [],
+                        "orderDate": "02/26/2013",
+                        "resultingLab": "",
+                        "status": "Completed"
+                    },
+                    {
+                        "orderType": "RAD MRI",
+                        "displayName": "MRI Cervical Spine With and Without Contrast",
+                        "description": "MRI CERVICAL SPINE WWO CONTRAST",
+                        "resultDate": "",
+                        "image_launch_url": "",
+                        "procedureCPTCode": "RAD0176",
+                        "authorizingProvider": "LOBO, SARITA",
+                        "orderTime": "20:04:23",
+                        "contactSerialNumber": "894703675",
+                        "associatedAppointments": [],
+                        "specimen": {
+                            "takenDate": "",
+                            "takenTime": "",
+                            "id": [],
+                            "applicationID": []
+                        },
+                        "radStatusID": "",
+                        "associatedDiagnosis": {
+                            "description": "Multiple sclerosis exacerbation (CMS/HCC)",
+                            "id": "240419",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "PESTANER, JOHN C.",
+                        "resultTime": "",
+                        "isAbnormal": "",
+                        "orderingProvider": "",
+                        "orderID": "845008766",
+                        "narrative": [],
+                        "procedure": "MRI CERVICAL SPINE WWO CONTRAST",
+                        "radStatusDescription": "",
+                        "impression": [],
+                        "orderDate": "02/26/2013",
+                        "resultingLab": "",
+                        "status": "Completed"
+                    },
+                    {
+                        "orderType": "RAD MRI",
+                        "displayName": "MRI Cervical Spine With and Without Contrast",
+                        "description": "MRI CERVICAL SPINE WWO CONTRAST",
+                        "resultDate": "03/01/2013",
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=BMS49570114",
+                        "procedureCPTCode": "RAD0176",
+                        "authorizingProvider": "LOBO, SARITA",
+                        "orderTime": "10:25:15",
+                        "contactSerialNumber": "894703681",
+                        "associatedAppointments": [
+                            {
+                                "appointmentTime": "10:30AM",
+                                "contactSerialNumber": "894703681",
+                                "appointmentStatus": "Completed",
+                                "appointmentDate": "03/01/2013"
+                            }
+                        ],
+                        "specimen": {
+                            "takenDate": "03/01/2013",
+                            "takenTime": "13:01:06",
+                            "id": [
+                                "BMS49570114"
+                            ],
+                            "applicationID": []
+                        },
+                        "radStatusID": "99",
+                        "associatedDiagnosis": {
+                            "description": "Multiple sclerosis exacerbation (CMS/HCC)",
+                            "id": "240419",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "PESTANER, JOHN C.",
+                        "resultTime": "13:06:56",
+                        "isAbnormal": "No",
+                        "orderingProvider": "",
+                        "orderID": "845008791",
+                        "narrative": [
+                            "xxxxxx xxx xxxxx xx xxxxxxxxxxxx",
+                            "",
+                            "xxxxxxxxxx xxxxxxxx xx xxxxx xxx xxxxxxxxxxx xxxxxxx xxxxx xxxxxxxx xxxx xxx",
+                            "xxxxxxxxxxxxx xxxxxxxxxxx xxxxxxx xxxxxxxxxxxxxx xxxxx xxx xxxxxxxx xxxxxxxxxxx",
+                            "xxxxxxx x xx xxxxxxxx",
+                            "",
+                            "xxxxxxxxx xx xxxxxxxxxx xxxxxxx xx xxx xxxxxxxx xxxxx xxx xxxxxxxxxx xxxxxxxxx",
+                            "xxxx xxxxxx xxx xxxxxxxxx xxx xxxxxx xxxxxx xxxxxxx xxxxxx xxx xxxxxxxxxx xx",
+                            "xxx xxxx xxxxxx xxxxxx xxxxxxxxx xx xxxxxx xxxxxxxxxxx",
+                            "",
+                            "xxx xxxxxxxx xxxxxx xxxx xxxxxxxxxxxx xxxxxxxx xxxxxx xxxxxxx xxxx xx",
+                            "xxxxxxxxxxxx xxxxxxx xx xxx xx xxxxx xxxxx xx x x xx xxxxx xx xxxxxxxxxxxx",
+                            "xxxxxxx xxxxxxxxx xx xxx xx xxx xx xxxxx xx xxxxxx xxxxxxxxx xxxxxxxxxxxx",
+                            "xxxxxx xx xxx xxxxxxxxxx xx xxx xxxxxxxx xxxxx xxxxxxxxx xxxxx xxx xx xx",
+                            "xxxxxxx xxxxxxx xxxxx xx xx xxxx xxxxxxx xx xxxxxxxx xxxxxxxxxxxx xx xxx xxxxx",
+                            "xxxxxxxx xxxxxx xxx xxxx xxxx xxxxxxx xxxxxxxx xxxxxxxxxxxx xx xxxxxxxxxxx",
+                            "xxxxxxx xxxxxxxx xxx xxxxxxx xxxxxx xx xxxxxxxxx xx xxxxx xxxxxx",
+                            "",
+                            "xxxxx xx xxxx xxxx xxxxxxxxxx xx xxxx xxxxx xxxxx xxx xxxxxxx xx xxxxx xxxxx xx",
+                            "xxx xxxxxxxx xxxxxxxxxx xx xxxxx xx xxxx xxxxxxxxxx xxx xxxxxxxxxxx xx",
+                            "xxxxxxxxxxx xxxxxxxxx"
+                        ],
+                        "procedure": "MRI CERVICAL SPINE WWO CONTRAST",
+                        "radStatusDescription": "Final",
+                        "impression": [
+                            "xxxxxxxxxxx xxxx xx xxxxxxxxxxxx xxxxxx xx xxx xxxxxxxx xxxx xx xxx xx xxx",
+                            "xxxxx xxxxxxx xxxxxxxxxx xxxx xxxxxxx xxx xx xxxxx xx xxxxxxxxxxx xxxxxxxxxxx",
+                            "",
+                            "xxxxxxxx xxx xxxxxx xxx xxxx xxxxxxxxx xx xxxxxxxx xxxx xx"
+                        ],
+                        "orderDate": "03/01/2013",
+                        "resultingLab": "",
+                        "status": "Completed"
+                    },
+                    {
+                        "orderType": "RAD MRI",
+                        "displayName": "MRI Brain With and Without Contrast",
+                        "description": "MRI BRAIN WWO CONTRAST",
+                        "resultDate": "03/01/2013",
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=KND19709704",
+                        "procedureCPTCode": "RAD0188",
+                        "authorizingProvider": "LOBO, SARITA",
+                        "orderTime": "10:25:32",
+                        "contactSerialNumber": "894703682",
+                        "associatedAppointments": [
+                            {
+                                "appointmentTime": "11:30AM",
+                                "contactSerialNumber": "894703682",
+                                "appointmentStatus": "Completed",
+                                "appointmentDate": "03/01/2013"
+                            }
+                        ],
+                        "specimen": {
+                            "takenDate": "03/01/2013",
+                            "takenTime": "12:46:33",
+                            "id": [
+                                "KND19709704"
+                            ],
+                            "applicationID": []
+                        },
+                        "radStatusID": "99",
+                        "associatedDiagnosis": {
+                            "description": "Multiple sclerosis exacerbation (CMS/HCC)",
+                            "id": "240419",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "PESTANER, JOHN C.",
+                        "resultTime": "13:00:58",
+                        "isAbnormal": "No",
+                        "orderingProvider": "",
+                        "orderID": "845008795",
+                        "narrative": [
+                            "xxxxxxxxxxx xxxxxxxx xxxxxxxxx xxxxxxxxxxxxx xxxxxxxx xxx xxxxxxxxx xxxxx",
+                            "xxxxxxx xxxx xxxx",
+                            "",
+                            "xxxxxxxxxxx xxxxxxxxxx xxx xxxxxxxxxx",
+                            "",
+                            "xxxxxxxxxx xxxxx xxx xxxx xxxxxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxx xx xxxxxx",
+                            "xxxxxxxx xx xxxxx xxx xxxxx xx xxxxxx xxxxx xxx xxxxxxxx xxxxxxxx xxxxx xxx",
+                            "xxxxxxx xxxxxxxxxxx xxxxxxx x xx xxxxxxxx",
+                            "",
+                            "xxxxxxxxx xxxxxxxx xx xxx xxxxxxxx xxxxxx xx xxxxxxxxxxx xxxxxxxx xxxxxxx xxx",
+                            "xxxxxxx xxxxxxxxxx xxx xxxxxx xxxxxx xxxxxxx xxxxx xxxxxxxxxxxx xxx xxxxxxxx",
+                            "xxxx xx xxxxxxxxxxxx xxxxxx xx xxxxx xxx xxxxxxxxxxx xxxxxx xx xxx xxxxxx",
+                            "xxxxxxxxx xxxxxxxxxxxx xxxxx xxxxxxx xxxxxx xxxxxxxx xxxxxxxxx xxx xxxxxxxx",
+                            "xxxxxxxxxx xxx xxxx xxx xxxxxxxxxxxx xx xxx xxxxxxx xx xxxxxxxxxx xx xxx",
+                            "xxxxxxx xxx xxxxxxxx",
+                            "",
+                            "xxxxx xx x xxxxx xx xxxxxxx xxxxxx xxxxxxxxxxxxxxxx xx xxx xxxx xxxxxxxxx xxxxx",
+                            "xx xxxxxxxxx xxx xxxxxxxx xx xxxxx xxxxxxxxx xx xxxxxxxx xxxxxxxxxxxx",
+                            "",
+                            "xx xxxxxxxxxxx xxxx xx xxxxx xxxxxxxxxxx xx xxxxxxxxxxxx xxxxxxx xxxxxxxxxxx"
+                        ],
+                        "procedure": "MRI BRAIN WWO CONTRAST",
+                        "radStatusDescription": "Final",
+                        "impression": [
+                            "xxxxxxxxxxx xxxxxxxx xxxxxxxxxx xxxx xxxxxxx xxx xxx xxxxxxxxxxxxx xxxxxxx",
+                            "xxxxxxxx xx xxx xxxxxxxx xxxxx xxxxx xxxxxxxxxx",
+                            "",
+                            "xxxxxxxx xxx xxxxxx xxx xxxx xxxxxxxxx xx xxxxxxxx xxxx xx"
+                        ],
+                        "orderDate": "03/01/2013",
+                        "resultingLab": "",
+                        "status": "Completed"
+                    },
+                    {
+                        "orderType": "RAD MRI",
+                        "displayName": "MRI Thoracic Spine With and Without Contrast",
+                        "description": "MRI THORACIC SPINE WWO CONTRAST",
+                        "resultDate": "",
+                        "image_launch_url": "",
+                        "procedureCPTCode": "RAD0182",
+                        "authorizingProvider": "BRUNELLI, BRIAN T",
+                        "orderTime": "17:08:42",
+                        "contactSerialNumber": "894703712",
+                        "associatedAppointments": [],
+                        "specimen": {
+                            "takenDate": "",
+                            "takenTime": "",
+                            "id": [],
+                            "applicationID": []
+                        },
+                        "radStatusID": "",
+                        "associatedDiagnosis": {
+                            "description": "Multiple sclerosis (CMS/HCC)",
+                            "id": "3484",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "PESTANER, JOHN C.",
+                        "resultTime": "",
+                        "isAbnormal": "",
+                        "orderingProvider": "",
+                        "orderID": "845008841",
+                        "narrative": [],
+                        "procedure": "MRI THORACIC SPINE WWO CONTRAST",
+                        "radStatusDescription": "",
+                        "impression": [],
+                        "orderDate": "11/13/2013",
+                        "resultingLab": "",
+                        "status": "Completed"
+                    },
+                    {
+                        "orderType": "RAD MRI",
+                        "displayName": "MRI Thoracic Spine With and Without Contrast",
+                        "description": "MRI THORACIC SPINE WWO CONTRAST",
+                        "resultDate": "12/21/2013",
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YHM99195025854",
+                        "procedureCPTCode": "RAD0182",
+                        "authorizingProvider": "BRUNELLI, BRIAN T",
+                        "orderTime": "18:07:49",
+                        "contactSerialNumber": "894703729",
+                        "associatedAppointments": [
+                            {
+                                "appointmentTime": "06:00PM",
+                                "contactSerialNumber": "894703729",
+                                "appointmentStatus": "Completed",
+                                "appointmentDate": "12/20/2013"
+                            }
+                        ],
+                        "specimen": {
+                            "takenDate": "12/21/2013",
+                            "takenTime": "16:21:46",
+                            "id": [
+                                "YHM99195025854"
+                            ],
+                            "applicationID": []
+                        },
+                        "radStatusID": "99",
+                        "associatedDiagnosis": {
+                            "description": "Multiple sclerosis (CMS/HCC)",
+                            "id": "3484",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "PESTANER, JOHN C.",
+                        "resultTime": "16:33:16",
+                        "isAbnormal": "No",
+                        "orderingProvider": "",
+                        "orderID": "845008862",
+                        "narrative": [
+                            "xxxxxx xxx xxxxx xx",
+                            "",
+                            "xxxxxxxxxx xxxxxxxx xx xxxxx xxx xxx xxxxx xx xxxxxxxx xxxxxxx xxxxx",
+                            "xxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxx xxxxxxxxxxxxxxxxx xxxxx xx xxx xxxxxxxxxxxxx",
+                            "xxxxxxxx xxxxxxxxxxx xxxxxxx x xx xxxxxxxx",
+                            "",
+                            "xxxxxxxxx xx xxxxxxxxxx xxxxxxxx xxxxxxxxx xxxx xxxxxx xxx xxxxxxxxx xxx xxxxxxx",
+                            "xxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxx xxxxxx xxx xxxxxxxx xxxxxx xx xxxx xxxxxx",
+                            "xxxxxx",
+                            "",
+                            "xxx xxxxxxxx xxxxxx xxxx xxxxxxxxxxxx xxxxxx xxxxxx xxxxxxxxx xx xxxxxxxxxxx",
+                            "xxxxxxx xx xxxxxx xxx xxxxxxxxxxx xx xxxxxxxx xxxxxxxxxxxx xx xxxxxxxxxxx",
+                            "xxxxxxx xxx xxxxx xxxxxxxx xxxx xx xxxxxx xxxxxxxxxxxx xx xx xx xxxxx xxx",
+                            "xxxxxxxxxxxxx xxxx xx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxx xxx xxxxxx xx xxx xxx",
+                            "xxx xxxxx xxxxx xx xxxxxxxxxxxxx xx xxx xxxxxxx xxx xxxx xx xxxxxx xxxxxxx xx",
+                            "xxxxxxxxxxx xx xxxx xxxxxxx",
+                            "",
+                            "xxxxxxxxxxxxxx xxxxx xxx xxxxxxxxxxxxx xx xxxxx xxxxxxxxx"
+                        ],
+                        "procedure": "MRI THORACIC SPINE WWO CONTRAST",
+                        "radStatusDescription": "Final",
+                        "impression": [
+                            "xxxxxxxxxxx",
+                            "xx xxxxxx xxxxxxxxxx xxxxxxxxxxxx xxxxxx xx xxx xxxxxxxx xxxx xx xxxxxxxx xxxxx",
+                            "xxxxxxx xxxxxxxx xx xxxxxxxx xxxxxx xxxxxxxxxx xxxx xxxxxx xx xxxxxxxxxxxx xxx",
+                            "xxxxxxxx xxx xxxxxxxxxx xxxx xxxxxxx xx xxxxxxxx",
+                            "",
+                            "xxxxxxxx xxx xxxxxx xxx xxxx xxxxxxxxx xx xxxxxxxxxx xxxx xx"
+                        ],
+                        "orderDate": "12/20/2013",
+                        "resultingLab": "",
+                        "status": "Completed"
+                    },
+                    {
+                        "orderType": "RAD XRAY/GENERAL",
+                        "displayName": "XR Chest 2 Views PA Lateral",
+                        "description": "XR CHEST 2 VIEWS PA LATERAL",
+                        "resultDate": "",
+                        "image_launch_url": "",
+                        "procedureCPTCode": "RAD0576",
+                        "authorizingProvider": "TODD, MARILYN",
+                        "orderTime": "16:28:48",
+                        "contactSerialNumber": "894703734",
+                        "associatedAppointments": [],
+                        "specimen": {
+                            "takenDate": "",
+                            "takenTime": "",
+                            "id": [],
+                            "applicationID": []
+                        },
+                        "radStatusID": "",
+                        "associatedDiagnosis": {
+                            "description": "Fatigue",
+                            "id": "97128",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "780.79"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R53.83"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "PESTANER, JOHN C.",
+                        "resultTime": "",
+                        "isAbnormal": "",
+                        "orderingProvider": "",
+                        "orderID": "845008874",
+                        "narrative": [],
+                        "procedure": "XR CHEST 2 VIEWS PA LATERAL",
+                        "radStatusDescription": "",
+                        "impression": [],
+                        "orderDate": "04/06/2014",
+                        "resultingLab": "",
+                        "status": "Completed"
+                    },
+                    {
+                        "orderType": "RAD XRAY/GENERAL",
+                        "displayName": "XR Chest 2 Views PA Lateral",
+                        "description": "XR CHEST 2 VIEWS PA LATERAL",
+                        "resultDate": "04/07/2014",
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=YQY78059885709",
+                        "procedureCPTCode": "RAD0576",
+                        "authorizingProvider": "TODD, MARILYN",
+                        "orderTime": "17:08:54",
+                        "contactSerialNumber": "894703736",
+                        "associatedAppointments": [
+                            {
+                                "appointmentTime": "05:10PM",
+                                "contactSerialNumber": "894703736",
+                                "appointmentStatus": "Completed",
+                                "appointmentDate": "04/06/2014"
+                            }
+                        ],
+                        "specimen": {
+                            "takenDate": "04/07/2014",
+                            "takenTime": "08:07:12",
+                            "id": [
+                                "YQY78059885709"
+                            ],
+                            "applicationID": []
+                        },
+                        "radStatusID": "99",
+                        "associatedDiagnosis": {
+                            "description": "Cough",
+                            "id": "9809",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.2"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.2"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R05"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "PESTANER, JOHN C.",
+                        "resultTime": "08:07:45",
+                        "isAbnormal": "No",
+                        "orderingProvider": "",
+                        "orderID": "845008895",
+                        "narrative": [
+                            "xxxxxxxxxxx xxxxx",
+                            "",
+                            "xxxxxxxxxx xxxxx xx xxx xxxxxxx xxxxxx",
+                            "",
+                            "xxxxxxxxxxxxxxx xxx xxxxxx xxxxxx xxxxxxxxxxxx xxx xxxxxxx xxxxxx xxxxxxx xxxxx",
+                            "xxx xxxxxx xxx xxxx xxxxxxx xxxxxx xxxxxxx xxxxxxxxx xxxxxxxxxxx xx xxxxxx",
+                            "xxxxxx xxxxxxx xxxxxxx xxxxxx xxx xxxxx xxxxx xxx xxxx xxxxxxx xxxxxx xx",
+                            "xxxxxxxxxxx xxxxxxxxxxxx"
+                        ],
+                        "procedure": "XR CHEST 2 VIEWS PA LATERAL",
+                        "radStatusDescription": "Final",
+                        "impression": [
+                            "xxxxxxxxxxx xxxxxxxx xxxxxx",
+                            "",
+                            "xxxxxxxx xxx xxxxxx xxx xxxxxxx xxxxx xx xxxxxxxx xxxx xx"
+                        ],
+                        "orderDate": "04/06/2014",
+                        "resultingLab": "",
+                        "status": "Completed"
+                    },
+                    {
+                        "orderType": "RAD MAMMOGRAPHY",
+                        "displayName": "Mammo Digital Screening Bilateral",
+                        "description": "MAMMO SCREENING BILATERAL DIGITAL",
+                        "resultDate": "",
+                        "image_launch_url": "",
+                        "procedureCPTCode": "RAD0817",
+                        "authorizingProvider": "CRITCHFIELD, AMBER ROSE",
+                        "orderTime": "14:04:54",
+                        "contactSerialNumber": "894703763",
+                        "associatedAppointments": [],
+                        "specimen": {
+                            "takenDate": "",
+                            "takenTime": "",
+                            "id": [],
+                            "applicationID": []
+                        },
+                        "radStatusID": "",
+                        "associatedDiagnosis": {
+                            "description": "Well woman exam with routine gynecological exam",
+                            "id": "154024",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "V72.31"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "Z01.419"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "PESTANER, JOHN C.",
+                        "resultTime": "",
+                        "isAbnormal": "",
+                        "orderingProvider": "",
+                        "orderID": "845008961",
+                        "narrative": [],
+                        "procedure": "MAMMO SCREENING BILATERAL DIGITAL",
+                        "radStatusDescription": "",
+                        "impression": [],
+                        "orderDate": "09/04/2014",
+                        "resultingLab": "",
+                        "status": "Completed"
+                    },
+                    {
+                        "orderType": "RAD MAMMOGRAPHY",
+                        "displayName": "Mammo Digital Screening Bilateral",
+                        "description": "MAMMO SCREENING BILATERAL DIGITAL",
+                        "resultDate": "10/07/2014",
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=IYT61291506605",
+                        "procedureCPTCode": "RAD0817",
+                        "authorizingProvider": "CRITCHFIELD, AMBER ROSE",
+                        "orderTime": "15:36:08",
+                        "contactSerialNumber": "894703776",
+                        "associatedAppointments": [
+                            {
+                                "appointmentTime": "03:30PM",
+                                "contactSerialNumber": "894703776",
+                                "appointmentStatus": "Completed",
+                                "appointmentDate": "10/07/2014"
+                            }
+                        ],
+                        "specimen": {
+                            "takenDate": "10/07/2014",
+                            "takenTime": "17:04:17",
+                            "id": [
+                                "IYT61291506605"
+                            ],
+                            "applicationID": []
+                        },
+                        "radStatusID": "99",
+                        "associatedDiagnosis": {
+                            "description": "Well woman exam with routine gynecological exam",
+                            "id": "154024",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "V72.31"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "Z01.419"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "PESTANER, JOHN C.",
+                        "resultTime": "17:08:22",
+                        "isAbnormal": "No",
+                        "orderingProvider": "",
+                        "orderID": "845009011",
+                        "narrative": [
+                            "xxxxxx xxx xxxxx xxxxxxxx xxxxxxxxxx  xxxx xxxxx xxxxxxxx xxxx xx xxxxxxxx",
+                            "xxxxxx xxxxxx xx xxxxx xxxxxxxxxx xx xxxxxxx xxxxxxxx xxxxx",
+                            "",
+                            "xxxxxxxxxxx xxxx",
+                            "xxxxxxxxxx xxxx xxxxx xxxxxxx xxxxxxxxxxx xxx xxxxxxxxx xxxx xxxxxxxx xxx",
+                            "xxxxxxx xxxxxxxxxxxx xxxxxx xxx xxxxxx xxx xxxx xxxxxxxxx xxxx xx xxxxxxxxxxxxxx",
+                            "xxxxxxxxx xxxxxxxxx",
+                            "",
+                            "xxxxxxxxx xxx xxxxxx xxxxxxxxxx xx xxxxxxxxxxxxxxx xxxxxx xxxxx xxx xxxxxxx",
+                            "xxxxx xxxxxxx  xx xxxxxxxx xxxx xxxxxxx xxxxxxxxxxxxx xxxxxxxxxx xx xxxxxxxxxx",
+                            "xxxxxxxxxxxxxxxxxxx xxx xxxxx  xxxxxxxxx xxxxxx xxxxxxxx xxxxxx xxxxxxxxx xx",
+                            "xxxxxxx xxx xxxxxxx xxxxxxx"
+                        ],
+                        "procedure": "MAMMO SCREENING BILATERAL DIGITAL",
+                        "radStatusDescription": "Final",
+                        "impression": [
+                            "xxxxxxxxxxx xx xxxxxxxx xxx xxxxxxxxxxx xxxxxxxxx xxxxxxx xxxxxxxxx xxxxxxxxxx",
+                            "",
+                            "xxx xxxxxxx xxxxxx",
+                            "",
+                            "xxxxxxx xxxxxxxxx xx xxxxxxxxxxxxxxx xxxxx",
+                            "xxxxxx xxxxxxxxxxx x xxxxxxxx",
+                            "xxxxxxxxxxxxxxx x xxxxxx xxxxxxxxx",
+                            "",
+                            "xxx xx xxx xxxxxxx xx xxxxxxxxxxxxxxx xx xxxxxxxxx xxxxx xxxxxxxx xxx xxxxxxxxx",
+                            "xxxx xxx xxxx xxxx xx xxx xxxxxxx xx xxxxxxxx xx xxxxxxxxxx xxxxxx xxxx xxxxx ",
+                            "",
+                            "xxxx xxxxxxxxx xxxxx xxxx xxxx xxxxxx xxxxxx xx xxxxxx xxxxx xxxxxx xxxxxx xx",
+                            "xxxxxx xxx xx xxx xxxxxxxxx xxxxxxxx xxxxx xxxxxx xxxxxx xxx xxxx xx xxxxxx xx",
+                            "xxxxxxxx xxx xxxxxxx xx xxxx xxxxxxxxx xxx xxx xxxx xx xxxxxxxxxx xxxx xx",
+                            "xxxxxxxxx xxxx xx xxxxxx xxxxxxx xxxx xxxxxxxxxxx xxxxx xxx xxxxxxx xx xxxx",
+                            "xxxxxxxxx xx xxxxx xx xxx xx xxxxx xxxx xxxxxxxxx xxx xx xxxxxx xxxx",
+                            "xxxxxxxxxxxxx xxxx xxxx xxxxxxx xxxxxxxxx xxx xxx xxxxxx xxxxx xxxxxxxxx xxxxxxx",
+                            "xxx xxxxx xxx xxxx x xxxxxx xx xxxx xxxxxxx xxx xxxx xx xxxx xxxxxxxxxx ",
+                            "",
+                            "",
+                            "xxxxxxxx xxx xxxxxx xxx xxxxxx xxxxxxx xx xxxxxxxxx xxxx xx"
+                        ],
+                        "orderDate": "10/07/2014",
+                        "resultingLab": "",
+                        "status": "Completed"
+                    },
+                    {
+                        "orderType": "RAD XRAY/GENERAL",
+                        "displayName": "XR Hand 3 or More Views Right",
+                        "description": "XR HAND 3 OR MORE VIEWS RIGHT",
+                        "resultDate": "",
+                        "image_launch_url": "",
+                        "procedureCPTCode": "RAD0625",
+                        "authorizingProvider": "HALPERN, STEPHEN J",
+                        "orderTime": "11:48:37",
+                        "contactSerialNumber": "894703834",
+                        "associatedAppointments": [],
+                        "specimen": {
+                            "takenDate": "",
+                            "takenTime": "",
+                            "id": [],
+                            "applicationID": []
+                        },
+                        "radStatusID": "",
+                        "associatedDiagnosis": {
+                            "description": "Degenerative arthritis of finger, right",
+                            "id": "802847",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "M19.041"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "715.94"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "PESTANER, JOHN C.",
+                        "resultTime": "",
+                        "isAbnormal": "",
+                        "orderingProvider": "",
+                        "orderID": "845009236",
+                        "narrative": [],
+                        "procedure": "XR HAND 3 OR MORE VIEWS RIGHT",
+                        "radStatusDescription": "",
+                        "impression": [],
+                        "orderDate": "08/27/2015",
+                        "resultingLab": "",
+                        "status": "Canceled"
+                    },
+                    {
+                        "orderType": "RAD ULTRASOUND",
+                        "displayName": "US Pelvic (Non OB) Complete",
+                        "description": "US PELVIC NON OB COMPLETE",
+                        "resultDate": "",
+                        "image_launch_url": "",
+                        "procedureCPTCode": "RAD0505",
+                        "authorizingProvider": "ROBINSON, MEGAN MICHELLE",
+                        "orderTime": "15:26:09",
+                        "contactSerialNumber": "894703855",
+                        "associatedAppointments": [],
+                        "specimen": {
+                            "takenDate": "",
+                            "takenTime": "",
+                            "id": [],
+                            "applicationID": []
+                        },
+                        "radStatusID": "",
+                        "associatedDiagnosis": {
+                            "description": "Dyspareunia",
+                            "id": "6448",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "625.0"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "625.0"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "N94.1"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "IMO0002"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "PESTANER, JOHN C.",
+                        "resultTime": "",
+                        "isAbnormal": "",
+                        "orderingProvider": "",
+                        "orderID": "845009351",
+                        "narrative": [],
+                        "procedure": "US PELVIC NON OB COMPLETE",
+                        "radStatusDescription": "",
+                        "impression": [],
+                        "orderDate": "02/26/2016",
+                        "resultingLab": "",
+                        "status": "Canceled"
+                    },
+                    {
+                        "orderType": "RAD XRAY/GENERAL",
+                        "displayName": "XR Chest 2 Views PA Lateral",
+                        "description": "XR CHEST 2 VIEWS PA LATERAL",
+                        "resultDate": "",
+                        "image_launch_url": "",
+                        "procedureCPTCode": "RAD0576",
+                        "authorizingProvider": "EVANS, CHARIE MARIE",
+                        "orderTime": "12:24:50",
+                        "contactSerialNumber": "894703876",
+                        "associatedAppointments": [],
+                        "specimen": {
+                            "takenDate": "",
+                            "takenTime": "",
+                            "id": [],
+                            "applicationID": []
+                        },
+                        "radStatusID": "",
+                        "associatedDiagnosis": {
+                            "description": "Multiple sclerosis (CMS/HCC)",
+                            "id": "3484",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "PESTANER, JOHN C.",
+                        "resultTime": "",
+                        "isAbnormal": "",
+                        "orderingProvider": "",
+                        "orderID": "845009427",
+                        "narrative": [],
+                        "procedure": "XR CHEST 2 VIEWS PA LATERAL",
+                        "radStatusDescription": "",
+                        "impression": [],
+                        "orderDate": "07/18/2016",
+                        "resultingLab": "",
+                        "status": ""
+                    },
+                    {
+                        "orderType": "RAD MRI",
+                        "displayName": "MRI Brain With and Without Contrast",
+                        "description": "MRI BRAIN WWO CONTRAST",
+                        "resultDate": "",
+                        "image_launch_url": "",
+                        "procedureCPTCode": "RAD0188",
+                        "authorizingProvider": "BRUNELLI, BRIAN T",
+                        "orderTime": "11:14:38",
+                        "contactSerialNumber": "894703878",
+                        "associatedAppointments": [],
+                        "specimen": {
+                            "takenDate": "",
+                            "takenTime": "",
+                            "id": [],
+                            "applicationID": []
+                        },
+                        "radStatusID": "",
+                        "associatedDiagnosis": {
+                            "description": "Multiple sclerosis (CMS/HCC)",
+                            "id": "3484",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "PESTANER, JOHN C.",
+                        "resultTime": "",
+                        "isAbnormal": "",
+                        "orderingProvider": "",
+                        "orderID": "845009447",
+                        "narrative": [],
+                        "procedure": "MRI BRAIN WWO CONTRAST",
+                        "radStatusDescription": "",
+                        "impression": [],
+                        "orderDate": "07/21/2016",
+                        "resultingLab": "",
+                        "status": "Completed"
+                    },
+                    {
+                        "orderType": "RAD MRI",
+                        "displayName": "MRI Brain With and Without Contrast",
+                        "description": "MRI BRAIN WWO CONTRAST",
+                        "resultDate": "08/29/2016",
+                        "image_launch_url": "http://viewer.sutterhealth.org/vslink/v1/viewstudy.asp?acc=FCB92250088616",
+                        "procedureCPTCode": "RAD0188",
+                        "authorizingProvider": "BRUNELLI, BRIAN T",
+                        "orderTime": "15:38:39",
+                        "contactSerialNumber": "894703891",
+                        "associatedAppointments": [
+                            {
+                                "appointmentTime": "03:30PM",
+                                "contactSerialNumber": "894703891",
+                                "appointmentStatus": "Completed",
+                                "appointmentDate": "08/29/2016"
+                            }
+                        ],
+                        "specimen": {
+                            "takenDate": "08/29/2016",
+                            "takenTime": "17:06:19",
+                            "id": [
+                                "FCB92250088616"
+                            ],
+                            "applicationID": []
+                        },
+                        "radStatusID": "99",
+                        "associatedDiagnosis": {
+                            "description": "Multiple sclerosis (CMS/HCC)",
+                            "id": "3484",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "340"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "G35"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "PESTANER, JOHN C.",
+                        "resultTime": "17:11:11",
+                        "isAbnormal": "No",
+                        "orderingProvider": "",
+                        "orderID": "845009478",
+                        "narrative": [
+                            "xxxxxxxxxxx xxxxxxxxx xx",
+                            "",
+                            "xxxxxxxxxx xxxxx xxx xxxx xxxxxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxx xx xxxxxx",
+                            "xxxxxxxx xx xxxxx xxx xxxxx xx xxxxxx xxxxx xxx xxxxxxxx xxxxxxxx xxxxx xxx",
+                            "xxxxxxx xxxxxxxxxxx xxxxxxx x xx xxxxxxxx",
+                            "",
+                            "xxxxxxxxxxx xxxxxxxx",
+                            "",
+                            "xxxxxxxxx",
+                            "",
+                            "xxxxxxx xxxxxx xxxxx",
+                            "",
+                            "xxxxxxxxxxx xxxxxxx",
+                            "",
+                            "xxxxxxxxxxx xxxxxxx xxxxxxx xxxxxxxxxx xxx xxxxxxxxx xx xxxx xxx xxxxxxxxxxxxxx",
+                            "xx xxxxxxxxxxxxxx",
+                            "",
+                            "xxxxxxxx xxxxxxxxxxx xx xxxxxxxxxxx xxxxxx xxxxxxxx xx xxxxxxxx xxxxx xxxxxxxx",
+                            "xxxxx xx xxxxxxxxxxxxxx xx xx xxx xxxxx xxxxxx xx xxx xxxxxx xxxxxxxxx",
+                            "xxxxxxxxxxx xxx xxxxxxxxxxxxxxx xxxxx xxxxxx xxxxx xxxxxx xxxx xxx",
+                            "xxxxxxxxxxxxxx xx xxx xxxxx xxxx xxxxxx xx xxxxxxxxxxxx xx xxxxxxxxx",
+                            "xxxxxxxxxxxx",
+                            "",
+                            "xxxxxxxxxx xxxxxx xxxxxx xxxxxxxxx xxx xxxx",
+                            "",
+                            "xxxxxxxxxxxx xxxxxxxxxxx xxxxx",
+                            "",
+                            "xxxxxxx xxxxxxxxx xxxxxxx",
+                            "",
+                            "xxxxxxxx xxxxxxx xxxxxx xxxx xxxxxx",
+                            "",
+                            "xxxxxxxxxxx xxxxxx xxxxxx xxx xxxxxxxxx xxxx",
+                            "",
+                            "xxxxxxxx xxx xxxxx xxxxx xxxxxxx",
+                            "",
+                            "xxxxxxxxx xxxxxxx xxx xxxxxxx xxx xxxxxx xxxxxxx",
+                            "",
+                            "xxxxxxx xxxxxxx",
+                            "",
+                            "xxxxx xxxxxxxx xxxxxx xxxxxxxxxxxxx"
+                        ],
+                        "procedure": "MRI BRAIN WWO CONTRAST",
+                        "radStatusDescription": "Final",
+                        "impression": [
+                            "xxxxxxxxxxx xx xxxxxxx xxxxxxxx xxxxxxxxxx xxxx xxxxxxx xxx",
+                            "",
+                            "xxxxxxxx xxx xxxxxx xxx xxxx xxxxxxxxx xx xxxxxxxxx xxxx xx"
+                        ],
+                        "orderDate": "08/29/2016",
+                        "resultingLab": "",
+                        "status": "Completed"
+                    },
+                    {
+                        "orderType": "RAD XRAY/GENERAL",
+                        "displayName": "XR Chest 2 Views PA Lateral",
+                        "description": "XR CHEST 2 VIEWS PA LATERAL",
+                        "resultDate": "",
+                        "image_launch_url": "",
+                        "procedureCPTCode": "RAD0576",
+                        "authorizingProvider": "EVANS, CHARIE MARIE",
+                        "orderTime": "14:26:48",
+                        "contactSerialNumber": "894703926",
+                        "associatedAppointments": [],
+                        "specimen": {
+                            "takenDate": "",
+                            "takenTime": "",
+                            "id": [],
+                            "applicationID": []
+                        },
+                        "radStatusID": "",
+                        "associatedDiagnosis": {
+                            "description": "Cough",
+                            "id": "9809",
+                            "codeSets": [
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.2"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-9-CM",
+                                    "mappedCode": [
+                                        "786.2"
+                                    ]
+                                },
+                                {
+                                    "code": "ICD-10-CM",
+                                    "mappedCode": [
+                                        "R05"
+                                    ]
+                                }
+                            ]
+                        },
+                        "readingRadiologist": "PESTANER, JOHN C.",
+                        "resultTime": "",
+                        "isAbnormal": "",
+                        "orderingProvider": "",
+                        "orderID": "845009665",
+                        "narrative": [],
+                        "procedure": "XR CHEST 2 VIEWS PA LATERAL",
+                        "radStatusDescription": "",
+                        "impression": [],
+                        "orderDate": "03/13/2017",
+                        "resultingLab": "",
+                        "status": ""
+                    }
+                ]
+            }
+        ],
+        "recordCount": "22",
+        "errResult": null,
+        "pagingPointer": ""
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "cds": [
+      {
+        "learn_more": "",
+        "publication": "",
+        "label": "review_relapses",
+        "title": "Review Cyanocobalamin",
+        "info": [
+          "This is a demo project. It contains review information on Cyanocobalamin vitamins. This is a demo project. It contains review information on Cyanocobalamin vitamins."
+        ]
+      },
+      {
+        "learn_more": "",
+        "publication": "http://www.google.com",
+        "label": "review_mri_images",
+        "title": "Review Cholecalciferol",
+        "info": [
+          "This is a demo project. It contains review information on Cholecalciferol vitamins. This is a demo project. It contains review information on Cholecalciferol vitamins."
+        ]
+      },
+      {
+        "learn_more": "",
+        "publication": "",
+        "label": "review_symptom_status",
+        "title": "Review Niacin",
+        "info": [
+          "This is a demo project. It contains review information on Niacin vitamins. This is a demo project. It contains review information on Cholecalciferol vitamins."
+        ]
+      },
+      {
+        "learn_more": "http://www.google.com",
+        "publication": "http://www.google.com",
+        "label": "review_ms_type_status",
+        "title": "Review Test",
+        "info": [
+          "This is a demo project. It contains review information on Test. This is a demo project. It contains review information on Test."
+        ]
+      },
+      {
+        "learn_more": "",
+        "publication": "http://www.google.com",
+        "label": "review_dmts",
+        "title": "Review Amoxicillin",
+        "info": [
+          "This is a demo project. It contains review information on Amoxicillin antibiotics. This is a demo project. It contains review information on Amoxicillin antibiotics."
+        ]
+      },
+      {
+        "learn_more": "",
+        "publication": "",
+        "label": "review_monitoring_labs",
+        "title": "Review Labs",
+        "info": [
+          "This is a demo project. It contains review information on Labs. This is a demo project. It contains review information on Labs."
+        ]
+      },
+      {
+        "learn_more": "",
+        "publication": "",
+        "label": "review_vitamin_d",
+        "title": "Review Metronidazole",
+        "info": [
+          "This is a demo project. It contains review information on Metronidazole antibiotics. This is a demo project. It contains review information on Metronidazole antibiotics."
+        ]
+      },
+      {
+        "learn_more": "",
+        "publication": "",
+        "label": "review_other_meds",
+        "title": "Review Ciprofloxacin",
+        "info": [
+          "This is a demo project. It contains review information on Ciprofloxacin antibiotics. This is a demo project. It contains review information on Ciprofloxacin antibiotics."
+        ]
+      },
+      {
+        "learn_more": "",
+        "publication": "",
+        "label": "review_symptoms_referrals",
+        "title": "Review Icons",
+        "info": [
+          "This is a demo project. It contains review information on Icons. This is a demo project. It contains review information on Icons."
+        ]
+      },
+      {
+        "learn_more": "",
+        "publication": "http://www.google.com",
+        "label": "review_vaccinations",
+        "title": "Review Vaccinations",
+        "info": [
+          "This is a demo project. It contains review information on Vaccinations. This is a demo project. It contains review information on Vaccinations."
+        ]
+      }
+    ]
+  }
