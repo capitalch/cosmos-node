@@ -30,9 +30,9 @@ app.post('/', (req, res, next) => {
     res.json({ status: 'ok' });
 })
 
-app.get('/', (req, res, next) => {
-    res.json({ status: 'ok' });
-})
+// app.get('/', (req, res, next) => {
+//     res.json({ status: 'ok' });
+// })
 
 app.get('/contacts/:num', (req, res, next) => {
     const num = req.params['num'];
