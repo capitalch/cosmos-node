@@ -16,12 +16,10 @@
         "apiUrl": "/tools/doc"
     },
     "routes": [
-        "./apps/graph-demo",
         "./api/test",
-        "./apps/qx-demo",        
-        
         "./tools",
         "./apps/tear",
+        "./apps/qx-demo",
         "./apps/eshop",
         "./apps/xlinkserver"
     ],

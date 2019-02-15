@@ -1,11 +1,8 @@
 "use strict";
 var express = require('express');
-// var fs = require('fs');
 var Q = require('q');
 var router = express.Router();
-// var config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 const config = require('../config.json');
-// var util = require('util');
 var def = require('./definitions');
 var messages = require('./messages');
 var pg = require('pg');

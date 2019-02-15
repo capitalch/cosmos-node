@@ -2,8 +2,8 @@
 const path = require('path');
 const router = require('./artifacts/router');
 let express = require('express');
-let app = express();
-app.use(router);
+// let app = express();
+// app.use(router);
 router.use(express.static(path.join(__dirname, '/public/neuroshare-questionnaire')));
 
 
