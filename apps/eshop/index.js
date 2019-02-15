@@ -3,13 +3,6 @@
 const path = require('path');
 const postgres = require('./artifacts/postgres');
 let express = require('express');
-// let app = express();
-// app.use(postgres);
-
-const router = require('./artifacts/router');
-
-// app.use(bodyParser.json({limit: '50mb'}));
-// app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 const p = path.join(__dirname, 'public','eshop');
 postgres.use(express.static(path.join(__dirname, 'public','eshop')));
 

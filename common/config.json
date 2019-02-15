@@ -19,8 +19,9 @@
         "./api/test",
         "./tools",
         "./apps/tear",
-        "./apps/qx-demo",
+        
         "./apps/eshop",
+        "./apps/qx-demo",
         "./apps/xlinkserver"
     ],
     "logging": {
