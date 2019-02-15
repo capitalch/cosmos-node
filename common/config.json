@@ -16,10 +16,9 @@
         "apiUrl": "/tools/doc"
     },
     "routes": [
-        "./apps/graph-demo",
         "./api/test",
         "./apps/qx-demo",        
-        
+        "./apps/graph-demo",
         "./tools",
         "./apps/tear",
         "./apps/eshop",
