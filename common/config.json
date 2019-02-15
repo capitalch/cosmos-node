@@ -17,11 +17,6 @@
     },
     "routes": [
         "./api/test",
-<<<<<<< HEAD
-=======
-        "./apps/qx-demo",        
-        "./apps/graph-demo",
->>>>>>> 133090a2c223c22863a372f77faa94e01389e901
         "./tools",
         "./apps/tear",
         "./apps/qx-demo",
