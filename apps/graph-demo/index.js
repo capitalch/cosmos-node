@@ -2,14 +2,14 @@
 const path = require('path');
 // const router = require('./router');
 let express = require('express');
-const router = express.Router();
+const router1 = express.Router();
 let app = express();
-app.use(router);
-router.use(express.static(path.join(__dirname, '/public/graph')));
+app.use(router1);
+router1.use(express.static(path.join(__dirname, '/public/graph')));
 
 
 
-router.get('/apps/graph', (req, res, next) => {
+router1.get('/', (req, res, next) => {
     try {
         res.sendFile(path.join(__dirname, '/public/graph', '/index.html'));
     } catch (error) {
@@ -18,7 +18,7 @@ router.get('/apps/graph', (req, res, next) => {
     }
 });
 
-router.get(['/api/graph/:id','/:id'], (req, res,next) => {
+router1.get(['/api/graph/:id','/:id'], (req, res,next) => {
     const page = req.params.id;
     const file = path.join(__dirname, 'data', page.concat('.json'));
     try {
@@ -31,21 +31,21 @@ router.get(['/api/graph/:id','/:id'], (req, res,next) => {
     }
 });
 
-router.put(['/api/graph/put-timeout-test','/put-timeout-test'], function (req, res) {
+router1.put(['/api/graph/put-timeout-test','/put-timeout-test'], function (req, res) {
     res.header("Content-Type", 'application/json');
     setTimeout(() => {
         res.send({ ok: true });
     }, 120000);
 });
 
-router.post(['/api/graph/post-timeout-test', '/post-timeout-test'], function (req, res) {
+router1.post(['/api/graph/post-timeout-test', '/post-timeout-test'], function (req, res) {
     res.header("Content-Type", 'application/json');
     setTimeout(() => {
         res.send({ ok: true });
     }, 120000);
 });
 
-router.put(['/api/graph/empty-check', '/empty-check'], function (req, res) {
+router1.put(['/api/graph/empty-check', '/empty-check'], function (req, res) {
     // res.header("Content-Type", 'application/json');
     // console.log("success");
     setTimeout(() => {
@@ -53,7 +53,7 @@ router.put(['/api/graph/empty-check', '/empty-check'], function (req, res) {
     }, 100);
 });
 
-router.post(['/api/graph/empty-check', '/empty-check'], function (req, res) {
+router1.post(['/api/graph/empty-check', '/empty-check'], function (req, res) {
     // res.header("Content-Type", 'application/json');
     // console.log("success");
     setTimeout(() => {
@@ -61,7 +61,7 @@ router.post(['/api/graph/empty-check', '/empty-check'], function (req, res) {
     }, 100);
 });
 
-router.delete(['/api/graph/empty-check', '/empty-check'], function (req, res) {
+router1.delete(['/api/graph/empty-check', '/empty-check'], function (req, res) {
     // res.header("Content-Type", 'application/json');
     // console.log("success");
     setTimeout(() => {
@@ -70,24 +70,24 @@ router.delete(['/api/graph/empty-check', '/empty-check'], function (req, res) {
 });
 
 
-router.put(['/api/graph/relapses', '/relapses', '/api/graph/cds', '/cds'], function (req, res) {
+router1.put(['/api/graph/relapses', '/relapses', '/api/graph/cds', '/cds'], function (req, res) {
     // console.log("success");
     setTimeout(() => {
         res.send();
     }, 100);
 });
 
-router.post(['/api/graph/relapses', '/relapses', '/api/graph/cds', '/cds' ], function (req, res) {
+router1.post(['/api/graph/relapses', '/relapses', '/api/graph/cds', '/cds' ], function (req, res) {
     // console.log("success");
     setTimeout(() => {
         res.send();
     }, 100);
 });
 
-router.delete(['/api/graph/relapses', '/relapses'], function (req, res) {
+router1.delete(['/api/graph/relapses', '/relapses'], function (req, res) {
     setTimeout(() => {
         res.send();
     }, 100);
 });
 
-module.exports = router;
+module.exports = router1;
