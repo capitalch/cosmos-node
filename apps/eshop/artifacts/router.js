@@ -3,8 +3,8 @@ var express = require('express');
 var fs = require('fs');
 // var http = require('http');
 var router = express.Router();
-var config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
-var util = require('util');
+// var config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
+// var util = require('util');
 var def = require('./definitions');
 var messages = require('./messages');
 

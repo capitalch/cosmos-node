@@ -38,12 +38,33 @@ app.get('/contacts/:num', (req, res, next) => {
     res.sendFile(path1);
 })
 
+// app.post('/genders1', (req, res, next) => {
+//     res.json(
+//         [{
+//             name: 'Male',
+//             value: 'M',
+//             id: 'male1'
+//         }, {
+//             name: 'Female',
+//             value: 'F',
+//             id: 'female1'
+//         }, {
+//             name: 'Trans',
+//             value: 'T',
+//             id: 'trans1'
+//         }, {
+//             name: 'Alien',
+//             value: 'A',
+//             id: 'alien1'
+//         }]);
+// })
+
 app.post('/authenticate', (req, res, next) => {
     login.authenticate(req, res, next);
 })
 
 //provide urls in the config file for which you want to do authentication
-app.use(config.common.authUrls, login.verify)
+app.use(config.common.authUrls, login.verify);
 
 
 app.post('/register', (req, res, next) => {
