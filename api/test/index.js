@@ -1,10 +1,6 @@
 "use strict";
 const router = require("express").Router();
 
-// test.get('/api/test', (req, res) => {
-//     console.log('/api/test');
-// });
-
 router.post("/test/genders", (req, res) => {
   const genders = {
     M: "Male",
@@ -17,5 +13,10 @@ router.post("/test/genders", (req, res) => {
 router.get("/test/test", (req, res) => {
   res.json({ status: "Success" });
 });
+
+router.post('/test/test', (req, res) => {
+  const ret = { test: 'ok' };
+  res.json(ret);
+})
 
 module.exports = router;
