@@ -1,6 +1,6 @@
 {
     "common": {
-        "port": 3000,
+        "port": 3002,
         "mode": "debug",
         "host": "http://localhost:3000",
         "authUrls": [

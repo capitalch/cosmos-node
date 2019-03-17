@@ -38,6 +38,26 @@ app.get('/contacts/:num', (req, res, next) => {
     res.sendFile(path1);
 })
 
+app.get('/:type', (req, res, next) => {
+    const type = req.params['type'];
+    const typeObj = {
+        'india-states': 'india-states.json',
+        'india-cities': 'india-cities.json',
+        'contacts': 'contacts40.json'
+    }
+    const fileName = typeObj[type];
+    if (fileName) {
+        const path1 = path.join(__dirname, 'data', fileName);
+        res.sendFile(path1);
+    } else {
+        res.json({ error: "Error in parameters" })
+    }
+})
+
+app.post('/submit', (req, res, next) => {
+    res.json(req.body);
+})
+
 // app.post('/genders1', (req, res, next) => {
 //     res.json(
 //         [{
