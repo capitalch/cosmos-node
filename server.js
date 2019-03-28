@@ -26,10 +26,6 @@ var allowCrossDomain = function (req, res, next) {
 };
 app.use(allowCrossDomain);
 
-app.post('/', (req, res, next) => {
-    res.json({ status: 'ok' });
-})
-
 app.get('/contacts/:num', (req, res, next) => {
     const num = req.params['num'];
     let fileName;
@@ -38,7 +34,7 @@ app.get('/contacts/:num', (req, res, next) => {
     res.sendFile(path1);
 })
 
-app.get('/:type', (req, res, next) => {
+app.get('/api/:type', (req, res, next) => {
     const type = req.params['type'];
     const typeObj = {
         'india-states': 'india-states.json',
@@ -58,34 +54,13 @@ app.post('/submit', (req, res, next) => {
     res.json(req.body);
 })
 
-// app.post('/genders1', (req, res, next) => {
-//     res.json(
-//         [{
-//             name: 'Male',
-//             value: 'M',
-//             id: 'male1'
-//         }, {
-//             name: 'Female',
-//             value: 'F',
-//             id: 'female1'
-//         }, {
-//             name: 'Trans',
-//             value: 'T',
-//             id: 'trans1'
-//         }, {
-//             name: 'Alien',
-//             value: 'A',
-//             id: 'alien1'
-//         }]);
-// })
+config.routes.forEach(element => {
+    app.use(require(element));
+});
 
 app.post('/authenticate', (req, res, next) => {
     login.authenticate(req, res, next);
 })
-
-//provide urls in the config file for which you want to do authentication
-// app.use(config.common.authUrls, login.verify);
-
 
 app.post('/register', (req, res, next) => {
     login.register(req, res, next);
@@ -94,10 +69,6 @@ app.post('/register', (req, res, next) => {
 app.get('/authenticate', (req, res, next) => {
     res.json('ok');
 })
-
-config.routes.forEach(element => {
-    app.use(require(element));
-});
 
 process.on('uncaughtException', function (err) {
     const errorObject = {
