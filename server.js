@@ -34,7 +34,7 @@ app.get('/contacts/:num', (req, res, next) => {
     res.sendFile(path1);
 })
 
-app.get('/api/:type', (req, res, next) => {
+app.get('/data/:type', (req, res, next) => {
     const type = req.params['type'];
     const typeObj = {
         'india-states': 'india-states.json',

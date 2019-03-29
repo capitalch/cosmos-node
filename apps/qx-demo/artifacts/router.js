@@ -116,16 +116,16 @@ router.get('/api/reset', (req, res, next) => {
     }
 });
 
-// router.get('/api/test', (req, res, next) => {
-//     try {
-//         res.json({
-//             'status': 'ok'
-//         });
-//     } catch (error) {
-//         let err = new def.NError(500, messages.errInternalServerError, error.message);
-//         next(err);
-//     }
-// });
+router.get('/api/test', (req, res, next) => {
+    try {
+        res.json({
+            'status': 'ok'
+        });
+    } catch (error) {
+        let err = new def.NError(500, messages.errInternalServerError, error.message);
+        next(err);
+    }
+});
 
 module.exports = router;
 
