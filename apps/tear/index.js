@@ -36,7 +36,7 @@ pool.connect(
         if (err) {
             logger.doLog('error', err.message, err);
             ibuki.emit('error:any>handler', err);
-            // console.log(err);
+            console.log(err);
         } else {
             logger.doLog('info', messages.messTearDatabaseConnected);
             console.log('tear database connected');
@@ -45,7 +45,7 @@ pool.connect(
 )
 
 tear.get('/apps/tear', (req, res) => {
-    res.sendfile(path.join(__dirname, 'public', 'tear.html'));
+    res.sendFile(path.join(__dirname, 'public', 'tear.html'));
 })
 
 tear.get('/apps/tear/api/reportA', (req, res) => {
