@@ -3,10 +3,10 @@
     "env": "development",
     "db": {
         "user": "postgres",
-        "database": "ecomm",
-        "password": "qXxzcLWbFQ",
-        "port": 5432,
-        "host":"103.217.220.164"
+        "database": "eshop",
+        "password": "HdB74nsana",
+        "port": 11041,
+        "host":"node15512-chisel.cloudjiffy.net"
     },
     "db1": {
         "user": "postgres",

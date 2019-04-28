@@ -18,8 +18,8 @@ const dbConfig = {
   password: config.db.password,
   port: config.db.port,
   host: config.db.host,
-  max: 3, // max number of clients in the pool
-  idleTimeoutMillis: 3000 // how long a client is allowed to remain idle before being closed
+  max: 10, // max number of clients in the pool
+  idleTimeoutMillis: 30000 // how long a client is allowed to remain idle before being closed
 };
 
 const pool = new Pool(dbConfig);
@@ -218,9 +218,9 @@ router.get('/db/test', (req, res, next) => {
   try {
     var config = {
       user: 'postgres', // name of the user account
-      database: 'ecomm', // name of the database
-      password: 'su$hant123',
-      port: 5433,
+      database: 'eshop', // name of the database
+      password: 'HdB74nsana',
+      port: 11041,
       max: 10, // max number of clients in the pool
       idleTimeoutMillis: 30000 // how long a client is allowed to remain idle before being closed
     }
