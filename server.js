@@ -8,6 +8,7 @@ const login = require('./common/login');
 const logger = require('./common/logger')('system');
 const express = require('express');
 const app = express();
+const mailer = require('./tools/mail/mailer');
 
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
@@ -50,6 +51,10 @@ app.get('/data/:type', (req, res, next) => {
     }
 })
 
+app.post('/email', (req, res, next) => {
+    mailer.sendMail({req,res,next});
+})
+
 app.post('/submit', (req, res, next) => {
     res.json(req.body);
 })
@@ -88,7 +93,7 @@ const server = app.listen(process.env.PORT || config.common.port, () => {
 
 // middleware for error handling
 app.use((err, req, res, next) => {
-    res.statusCode ? (res.statusCode === 200) && res.status(500) : res.status(500);
+    // res.statusCode ? (res.statusCode === 200) && res.status(500) : res.status(500);
     const errorObject = {
         statusCode: res.statusCode,
         message: err.message || messages.errUnknown,
