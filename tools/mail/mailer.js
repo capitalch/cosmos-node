@@ -21,12 +21,11 @@ function getTransporter(mailData) {
 mailer.sendMail = (data) => {
     const mailData = data.req.body;
     const transporter = getTransporter(mailData);
-    const senderMail = mailData.senderMail || '';
     const mailOptions = {
-        from: mailData.from || settings.default.from,
+        from: settings.default.from,
         to: mailData.to || settings.default.to,
         subject: mailData.subject || settings.default.subject,
-        text:  (senderMail && senderMail.concat('\r\n',mailData.text)) || settings.default.text
+        text:  (mailData.text) || settings.default.text
     }
 
     transporter.sendMail(mailOptions, function (error, info) {
