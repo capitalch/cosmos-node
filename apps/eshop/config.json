@@ -5,8 +5,8 @@
         "user": "postgres",
         "database": "eshop",
         "password": "HdB74nsana",
-        "port": 11041,
-        "host":"node15512-chisel.cloudjiffy.net"
+        "port": 5432,
+        "host":"103.217.220.230"
     },
     "db1": {
         "user": "postgres",

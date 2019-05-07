@@ -1,5 +1,5 @@
 {
-	"host":"http://chisel.cloudjiffy.net",
+	"host":"http://localhost:3002",
 	"defaultEndPoint":"db/sql/generic",
 	"post:add:sub:cart":"db/addsubcart"
 }
