@@ -7,6 +7,89 @@ pwd: VuTZhqCym1
 --truncate table web_site_ip
 --TRUNCATE table web_site_ip RESTART IDENTITY CASCADE;
 -- update web_site_ip set hits = 1
+//database objects for database postgres
+-- Table: public.web_site
+
+-- DROP TABLE public.web_site;
+
+CREATE TABLE public.web_site
+(
+    id integer NOT NULL DEFAULT nextval('web_site_id_seq'::regclass) ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
+    site_name text COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT web_site_pkey PRIMARY KEY (id),
+    CONSTRAINT web_site_site_name_key UNIQUE (site_name)
+
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.web_site
+    OWNER to postgres;
+
+-- Table: public.web_site_ip
+
+-- DROP TABLE public.web_site_ip;
+
+CREATE TABLE public.web_site_ip
+(
+    id integer NOT NULL DEFAULT nextval('web_site_ip_id_seq'::regclass) ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
+    web_site_id integer NOT NULL,
+    ip_address text COLLATE pg_catalog."default" NOT NULL,
+    last_time timestamp without time zone NOT NULL DEFAULT now(),
+    hits integer NOT NULL DEFAULT 1,
+    CONSTRAINT web_site_ip_pkey PRIMARY KEY (id),
+    CONSTRAINT web_site_ip_web_site_id_ip_address_key UNIQUE (web_site_id, ip_address)
+,
+    CONSTRAINT web_site_ip_web_site_id_fkey FOREIGN KEY (web_site_id)
+        REFERENCES public.web_site (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.web_site_ip
+    OWNER to postgres;
+
+-- FUNCTION: public.f_total_web_site_hit(text, text)
+
+-- DROP FUNCTION public.f_total_web_site_hit(text, text);
+
+CREATE OR REPLACE FUNCTION public.f_total_web_site_hit(
+	asite_name text,
+	aip_address text)
+    RETURNS integer
+    LANGUAGE 'plpgsql'
+
+    COST 100
+    VOLATILE 
+AS $BODY$declare
+	total integer;
+	mid integer;
+BEGIN
+   select id into mid from web_site where site_name = asite_name;
+   if mid is null then
+   		total:=0;
+   else
+   		insert into web_site_ip(web_site_id,ip_address) 
+			values (mid, aip_address) 
+				ON CONFLICT (web_site_id, ip_address) DO UPDATE
+    				SET last_time = now(), hits = web_site_ip.hits + 1;
+   		SELECT count(*) into total FROM web_site_ip
+			where web_site_id = mid;
+   end if;
+   
+   RETURN total;
+END;$BODY$;
+
+ALTER FUNCTION public.f_total_web_site_hit(text, text)
+    OWNER TO postgres;
+
+
 
 //works
                                     1. Logger
