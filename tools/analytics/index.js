@@ -5,7 +5,7 @@ const postgres = require('../../common/postgres');
 analytics.get('/tools/analytics/hitcount', async (req, res, next) => {
 	try {
 		let hits = 0;
-		const dip = req.header('x-forwarded-for') ||  req.connection.remoteAddress;
+		const ip = req.header('x-forwarded-for') ||  req.connection.remoteAddress;
 		const site = req.query.site;
 		if (site) {
 			const ret = await postgres.exec(
