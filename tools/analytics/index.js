@@ -5,10 +5,7 @@ const postgres = require('../../common/postgres');
 analytics.get('/tools/analytics/hitcount', async (req, res, next) => {
 	try {
 		let hits = 0;
-		let ip = req.ip;
-		if (!ip || ip === '::1') {
-			ip = '127.0.0.1';
-		}
+		const dip = req.header('x-forwarded-for') ||  req.connection.remoteAddress;
 		const site = req.query.site;
 		if (site) {
 			const ret = await postgres.exec(
@@ -16,7 +13,7 @@ analytics.get('/tools/analytics/hitcount', async (req, res, next) => {
 					database: 'postgres',
 					text: 'id:total-web-site-hit',
 					values: {
-						asite_name: 'capital-chowringhee.com',
+						asite_name: site,
 						aip_address: ip
 					}
 				},
