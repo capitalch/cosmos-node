@@ -20,7 +20,7 @@ const sql = {
     `
 
     , 'id:total-web-site-hit':`
-    select f_total_web_site_hit(:asite_name,:aip_address);
+    select f_total_web_site_hit(:asite_name,:aip_address) as hits;
     `
 }
 
