@@ -18,6 +18,10 @@ const sql = {
     , 'id:get-password':`
     select "password", "jRule","jInfo" from "Users" where "userName" = :userName;
     `
+
+    , 'id:total-web-site-hit':`
+    select f_total_web_site_hit(:asite_name,:aip_address);
+    `
 }
 
 module.exports = sql;

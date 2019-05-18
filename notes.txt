@@ -1,5 +1,12 @@
 //database
 pwd: VuTZhqCym1
+-- select f_total_web_site_hit('capital-chowringhee.com','192.168.20.4')
+-- INSERT INTO web_site_ip (web_site_id, ip_address) VALUES ('1', '192.168.0.1')
+--     ON CONFLICT (web_site_id, ip_address) DO UPDATE
+--     SET last_time = now(), hits = web_site_ip.hits + 1;
+--truncate table web_site_ip
+--TRUNCATE table web_site_ip RESTART IDENTITY CASCADE;
+-- update web_site_ip set hits = 1
 
 //works
                                     1. Logger

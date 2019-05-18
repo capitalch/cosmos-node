@@ -65,31 +65,3 @@ postgres.exec = async (queryObject, context, isFireAndForget, responseOnSuccess)
     }
 }
 module.exports = postgres;
-
-//deprecated
-//
-// const dbConfig = {
-//     user: config.user, // name of the user account
-//     database: config.database, // name of the database
-//     password: config.password,
-//     port: config.dbPort,
-//     max: 10, // max number of clients in the pool
-//     idleTimeoutMillis: 30000 // how long a client is allowed to remain idle before being closed
-// };
-
-
-// pool.query(pzQueryObject)
-//     .then(r => {
-//         context.res.json(r.rows);
-//         logger.doLog('info', messages.messQueryExecuted, { database: dbConfig.database, text: queryObject.text });
-//     })
-//     .catch(e => {
-//         context.res.locals.message = messages.errQueryFalied(dbConfig.database)
-//         context.next(e.message);
-//     });
-// try {
-
-// } catch (e) {
-//     context.res.locals.message = messages.errQueryFalied(dbConfig.database)
-//     context.next(e.message);
-// }

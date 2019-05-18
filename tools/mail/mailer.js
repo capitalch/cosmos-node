@@ -1,7 +1,6 @@
 "use strict";
 const nodemailer = require('nodemailer');
 // const logger = require('../../common/logger')('tools');
-const ibuki = require('../../common/ibuki');
 const settings = require('./settings.json');
 const {messages} = require('../../common/messages');
 
@@ -46,22 +45,3 @@ mailer.sendMail = (data) => {
 module.exports = mailer;
 
 //deprecated
-
-// const handler = require('../../common/handler');
-// const catchError = require('rxjs/operators').catchError;
-// const of = require('rxjs').of;
-// const throwError = require('rxjs').throwError;
-// const of = require('rxjs/observable').of;
-
-// const sub1 = ibuki.filterOn('send-mail:tools.index>mailer')
-//     .subscribe(d => {
-//         try {
-//             mailer.sendMail(d);
-//         } catch (err) {
-//             d.data.error = err;
-//             ibuki.emit('error:any>handler', d.data);
-//         }
-//     }, error => {
-//         d.data.error = error;
-//         ibuki.emit('error:any>handler', d.data);
-//     });

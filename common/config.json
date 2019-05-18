@@ -29,11 +29,11 @@
         "timeFormat": "YYYY-MM-DD hh:mm:ss"
     },
     "system:postgres": {
-        "user": "webadmin",
+        "user": "postgres",
         "database": "postgres",
-        "password": "4267aF3IQN",
+        "password": "su$hant123",
         "port": "5432",
-        "host": "103.217.220.32",
+        "host": "localhost",
         "max": 10,
         "idleTimeoutMillis": 30000
     },

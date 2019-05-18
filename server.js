@@ -6,8 +6,11 @@ const ibuki = require('./common/ibuki');
 const { statusCodes, messages } = require('./common/messages');
 const login = require('./common/login');
 const logger = require('./common/logger')('system');
+const postgres = require('./common/postgres');
 const express = require('express');
+const expressip = require('express-ip');
 const app = express();
+app.use(expressip().getIpInfoMiddleware);
 const mailer = require('./tools/mail/mailer');
 
 app.use(bodyParser.json()); // for parsing application/json
@@ -50,9 +53,32 @@ app.get('/data/:type', (req, res, next) => {
         res.json({ error: "Error in parameters" })
     }
 })
+/*
+context schema is {req:{},res:{},next:{}}
+queryObject schema is 
+{
+    database: databaseName
+    text:'sql command or id of sql command starting with id:xxxx', 
+    values: parameters object
+}
+if text starts with id like query is id:get:items this is treated as id of sql otherwise it is treated as sql command
+*/
+app.get('/hits', async (req, res, next) => {
+    console.log(req.ipInfo);
+    try {
+        const result = await postgres.exec(
+            { database: '', text: 'id:total-web-site-hit', values: { asite_name: 'capital-chowringhee.com', aip_address: '192.168.20.1' } }
+            , { req, res, next },
+            false
+        )
+    } catch (e) {
+        console.log(e);
+    }
+    res.end('ip found');
+})
 
 app.post('/email', (req, res, next) => {
-    mailer.sendMail({req,res,next});
+    mailer.sendMail({ req, res, next });
 })
 
 app.post('/submit', (req, res, next) => {
