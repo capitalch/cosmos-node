@@ -2,11 +2,11 @@
 const analytics = require('express').Router();
 const postgres = require('../../common/postgres');
 
-analytics.get('/tools/analytics/hitcount', async (req, res, next) => {
+analytics.get(['/tools/analytics/hitcount','/tools/analytics/hitcount/:site'], async (req, res, next) => {
 	try {
 		let hits = 0;
 		const ip = req.header('x-forwarded-for') ||  req.connection.remoteAddress;
-		const site = req.query.site;
+		const site = req.query.site || req.params.site;
 		if (site) {
 			const ret = await postgres.exec(
 				{
