@@ -30,7 +30,7 @@
     },
     "system:postgres": {
         "user": "postgres",
-        "database": "postgres",
+        "database": "admin",
         "password": "su$hant123",
         "port": "5432",
         "host": "localhost",

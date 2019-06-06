@@ -8,6 +8,7 @@ const mailer = require('./mail/mailer');
 const config = require('../common/config.json');
 const postgres = require('../common/postgres');
 const analytics = require('./analytics');
+const comments = require('./comments');
 
 tools.get('/tools', (req, res) => {
     console.log('/tools');
@@ -18,6 +19,7 @@ tools.get('/tools', (req, res) => {
 const pathToSwaggerUi = path.join(__dirname, 'swagger');
 tools.use(express.static(pathToSwaggerUi));
 tools.use(analytics);
+tools.use(comments);
 
 tools.get('/tools/doc/:spec', (req, res, next) => {
     const swaggerFilename = req.params.spec;

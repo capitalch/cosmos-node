@@ -52,7 +52,7 @@ postgres.exec = async (queryObject, context, isFireAndForget, responseOnSuccess)
 		poolObject[database] || (poolObject[database] = new Pool(dbConfigTemp));
 		const pool = poolObject[database];
 		const isId = queryObject.text.startsWith('id');
-		isId && (queryObject.text = sql[queryObject.text]);
+		isId && (queryObject.text = queryObject.functionParams ? sql[queryObject.text](queryObject.functionParams): sql[queryObject.text]);
 		const pzQueryObject = getParameterizedQuery(context, queryObject);
 
 		if (isFireAndForget) {
