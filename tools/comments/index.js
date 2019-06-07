@@ -3,7 +3,7 @@ const comments = require('express').Router();
 const postgres = require('../../common/postgres');
 
 comments.get(['/tools/comments', '/tools/comments/:site/:page'], async (req, res, next) => {
-    // try {
+    try {
         const site = req.query.site || req.params.site;
         const page = req.query.page || req.params.page;
         if (site) {
@@ -12,17 +12,17 @@ comments.get(['/tools/comments', '/tools/comments/:site/:page'], async (req, res
                 {
                     database: 'admin',
                     text: 'id:new-comment',
-                    values: {webSite:'sushantagrawal.com'}
+                    values: {webSite:'sushantagrawal.com1'}
                 },
                 { req, res, next },
                 false
             );
         }
         res.json({ status: 'success' });
-    // } catch (e) {
-    //     console.log(e);
-    //     next(e);
-    // }
+    } catch (e) {
+        console.log(e);
+        next(e);
+    }
 });
 
 module.exports = comments;

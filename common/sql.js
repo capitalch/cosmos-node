@@ -23,14 +23,18 @@ const sql = {
     select f_total_web_site_hit(:asite_name,:aip_address) as hits;
     `
 
-    , 'id:new-comment': (...args)=>`
+    , 'id:new-comment': (values)=>`
     do $$
         declare 
             webSitePageId int;
             webSiteId int;
         begin
-            select id into webSiteId from web_site where site_name = '${webSite}';
+            select id into webSiteId from web_site where site_name = '${values.webSite}';
+            if(webSiteId is null) then
+                raise notice 'web site not found';
+            end if;
             select id into webSitePageId from web_site_page where web_page = 'test2' and web_site_id = webSiteId ;
+            --raise info 'reached 1';
             if(webSitePageId is null) then
                 insert into web_site_page(web_site_id,web_page) values (webSiteId,'test2') returning id into webSitePageId;
             end if;

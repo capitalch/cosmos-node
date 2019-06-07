@@ -92,7 +92,7 @@ postgres.execCodeBlock = async (queryObject, context) => {
 	} catch (error) {
 		// context.res.locals.message = messages.errQueryExecution(dbConfigTemp.database);
 		context.res.locals.message = error.message;
-		context.next(error);
+		throw(error);
 	}
 }
 
