@@ -23,13 +23,13 @@ const sql = {
     select f_total_web_site_hit(:asite_name,:aip_address) as hits;
     `
 
-    , 'id:new-comment': (myName)=>`
+    , 'id:new-comment': (...args)=>`
     do $$
         declare 
             webSitePageId int;
             webSiteId int;
         begin
-            select id into webSiteId from web_site where site_name = '${myName}';
+            select id into webSiteId from web_site where site_name = '${webSite}';
             select id into webSitePageId from web_site_page where web_page = 'test2' and web_site_id = webSiteId ;
             if(webSitePageId is null) then
                 insert into web_site_page(web_site_id,web_page) values (webSiteId,'test2') returning id into webSitePageId;

@@ -31,6 +31,16 @@ function getParameterizedQuery(context, queryObject) {
 let dbConfig = config['system:postgres'];
 const poolObject = {};
 poolObject[dbConfig.database] = new Pool(dbConfig);
+
+function getPool(queryObject) {
+	const dbConfigTemp = Object.assign({}, dbConfig);
+	const database = queryObject.database || dbConfig.database;
+	dbConfigTemp.database = database;
+	poolObject[database] || (poolObject[database] = new Pool(dbConfigTemp));
+	const pool = poolObject[database];
+	return pool;
+}
+
 /*
 context schema is {req:{},res:{},next:{}}
 queryObject schema is 
@@ -42,19 +52,17 @@ queryObject schema is
 if text starts with id like query is id:get:items this is treated as id of sql otherwise it is treated as sql command
 */
 postgres.exec = async (queryObject, context, isFireAndForget, responseOnSuccess) => {
-	const dbConfigTemp = Object.assign({}, dbConfig);
-	const database = queryObject.database || dbConfig.database;
-	dbConfigTemp.database = database;
 	try {
 		if (isFireAndForget === undefined) {
 			isFireAndForget = true;
 		}
-		poolObject[database] || (poolObject[database] = new Pool(dbConfigTemp));
-		const pool = poolObject[database];
+		const pool = getPool(queryObject);
 		const isId = queryObject.text.startsWith('id');
-		isId && (queryObject.text = queryObject.functionParams ? sql[queryObject.text](queryObject.functionParams): sql[queryObject.text]);
+		// isId && (queryObject.text = (queryObject.params ? sql[queryObject.text](queryObject.params) : sql[queryObject.text]));
+		isId && (queryObject.text = sql[queryObject.text]);
 		const pzQueryObject = getParameterizedQuery(context, queryObject);
-
+		//pzQueryObject is an object with text and values property. text is sql with placeholders and values is an array with parameters.
+		//pool.query(pzQueryObject) is standard method of pg i.e node-postgres 
 		if (isFireAndForget) {
 			let r = await pool.query(pzQueryObject);
 			responseOnSuccess && (r = responseOnSuccess);
@@ -63,8 +71,29 @@ postgres.exec = async (queryObject, context, isFireAndForget, responseOnSuccess)
 			return pool.query(pzQueryObject);
 		}
 	} catch (error) {
-		context.res.locals.message = messages.errQueryExecution(dbConfigTemp.database);
+		// context.res.locals.message = messages.errQueryExecution(dbConfigTemp.database);
+		context.res.locals.message = error.message;
 		context.next(error);
 	}
 };
+
+/*  execCodeBlock executes the anonymous code blocks. You cannot use standard parameterized queries like pool.exec(someQueryObject)
+where someQueryObject has text and values property as per pg i.e node-postgres. The text is standard sql with placeholders
+and values is parameters array. The anonymous code blocks in postgres does not entertain patameters. They are written in PL/PG.
+You need to use format function or can also use ES6 templates. For that the sql.id returns a function with some parameters
+which at run time replaces the ${} constructs using ES6 template string interpolation.
+*/
+postgres.execCodeBlock = async (queryObject, context) => {
+	try {
+		const pool = getPool(queryObject);
+		const sqlCodeBlock = sql[queryObject.text](queryObject.values);
+		const cbQueryObject = { text: sqlCodeBlock, values: [] };
+		return pool.query(cbQueryObject);
+	} catch (error) {
+		// context.res.locals.message = messages.errQueryExecution(dbConfigTemp.database);
+		context.res.locals.message = error.message;
+		context.next(error);
+	}
+}
+
 module.exports = postgres;
