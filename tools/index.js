@@ -9,6 +9,7 @@ const config = require('../common/config.json');
 const postgres = require('../common/postgres');
 const analytics = require('./analytics');
 const comments = require('./comments');
+const generateToken = require('./generate-token');
 
 tools.get('/tools', (req, res) => {
     console.log('/tools');
@@ -20,6 +21,7 @@ const pathToSwaggerUi = path.join(__dirname, 'swagger');
 tools.use(express.static(pathToSwaggerUi));
 tools.use(analytics);
 tools.use(comments);
+tools.use(generateToken);
 
 tools.get('/tools/doc/:spec', (req, res, next) => {
     const swaggerFilename = req.params.spec;
@@ -38,12 +40,13 @@ tools.get('/tools/swagger/:spec', (req, res) => {
 })
 
 tools.get('/tools/sql', (req, res, next) => {
-    postgres.exec({req, res, next}, { 
-        database:'postgres'
+    postgres.exec({ req, res, next }, {
+        database: 'postgres'
         , text: 'id:get-all-contacts-on-table-name'
-        , values: { 
+        , values: {
             table: 'contacts'
-        } });
+        }
+    });
 })
 
 tools.post('/tools/mail', (req, res, next) => {

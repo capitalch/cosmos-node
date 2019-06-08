@@ -18,7 +18,9 @@ const messages = {
     errUserNameOrPasswordNotFound: `User name or password is not found`,
     errAuthentication: `Authentication error`,
     errRegisterUserPwd: `User name and password could not be registered at server`,
-    errNoToken:`No authentication token is available with request`,
+    errNoToken: `No authentication token is available with request`,
+    errNoDirt: `No dirt parameter is found in your query to generate token`,
+    errInvalidToken: `Invalid token`,
     messUrlNotFoundDetails: 'The url you are referring is not found',
     messFeaturesLoaded: 'Features are loaded successfully',
     messServerRunningAtPort: `Server is running at port: ${port}`,
@@ -30,16 +32,16 @@ const messages = {
     messNotFound: 'Server has not found the url given by user',
     messQueryExecuted: `database query was successfully executed`
 };
-const statusCodes= {
+const statusCodes = {
     ok: 200,
     created: 201,
-    badRequest:400,
-    unAuthorized:401,
+    badRequest: 400,
+    unAuthorized: 401,
     paymentRequired: 402,
     forbidden: 403,
-    notFound:404,
-    methodNotAllowed:405,
-    notAcceptable:406,
+    notFound: 404,
+    methodNotAllowed: 405,
+    notAcceptable: 406,
     internalServerError: 500,
     serviceUnAvailable: 503,
 }
