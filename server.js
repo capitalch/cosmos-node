@@ -98,15 +98,13 @@ const server = app.listen(process.env.PORT || config.common.port, () => {
 app.use((err, req, res, next) => {
     // res.statusCode ? (res.statusCode === 200) && res.status(500) : res.status(500);
     const errorObject = {
-        statusCode: res.statusCode,
+        statusCode: statusCodes.internalServerError,
         message: err.message || messages.errUnknown,
         context: res.locals.message || ''
     };
     logger.doLog('error', messages.errFail, errorObject);
     if (!res.finished) {
-        // Object.assign(err,errorObject)
-        // res.json(errorObject);
-        res.send(errorObject);
+        res.status(statusCodes.internalServerError).json(errorObject);
     }
 });
 

@@ -23,7 +23,7 @@ const sql = {
     select f_total_web_site_hit(:asite_name,:aip_address) as hits;
     `
 
-    , 'id:new-comment': ({ webSite, page, mname, email, visitorSite, comment }) => `
+    , 'id:new-comment': ({ webSite, page, mname, email, visitorSite, comment, parentId }) => `
     do $$
         declare 
             pageId int;
@@ -37,9 +37,17 @@ const sql = {
             if(pageId is null) then
                 insert into pages(web_site_id,page) values (siteId,'${page}') returning id into pageId;
             end if;
-            insert into comments(page_id,email,mname,visitor_web_site,jcomment) values (
-                pageId, '${email}', '${mname}', '${visitorSite}', '${JSON.stringify(comment)}');
+            insert into comments(page_id,email,mname,visitor_web_site,comment, parent_id) values (
+                pageId, '${email}', '${mname}', '${visitorSite}', '${comment}', NULLIF('${parentId}','')::integer );
         end $$;
+    `
+
+    , 'id:delete-comment': `
+        delete from comments where id = :commentId;
+    `
+
+    , 'id:get-comments':`
+        select mname, comment from comments 
     `
 
 }

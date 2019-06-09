@@ -21,6 +21,7 @@ const messages = {
     errNoToken: `No authentication token is available with request`,
     errNoDirt: `No dirt parameter is found in your query to generate token`,
     errInvalidToken: `Invalid token`,
+    errMalformedValues:`Query information is invalid or in incorrect format`,
     messUrlNotFoundDetails: 'The url you are referring is not found',
     messFeaturesLoaded: 'Features are loaded successfully',
     messServerRunningAtPort: `Server is running at port: ${port}`,
