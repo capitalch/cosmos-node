@@ -17,7 +17,7 @@ comments.get('/tools/comments/:site/:page', async (req, res, next) => {
             util.throw(messages.errInvalidToken);
         }
         if (site && page) {
-            const ret = await postgres.exec({
+            let ret = await postgres.exec({
                 database: 'admin',
                 text: 'id:get-comments',
                 values: {
@@ -25,7 +25,14 @@ comments.get('/tools/comments/:site/:page', async (req, res, next) => {
                     page: page
                 }
             }, { req, res, next }, false)
-            res.status(200).json(ret.rows )
+            // copied tree making code from internet
+            const nest = (items, id = null, link = 'parent_id') =>
+                items
+                    .filter(item => item[link] === id)
+                    .map(item => ({ ...item, children: nest(items, item.id) }))
+
+            const result = (ret.rows && ret.rows.length > 0) ? nest(ret.rows) : []
+            res.status(200).json(result)
         } else {
             util.throw(messages.errMalformedValues)
         }
