@@ -47,7 +47,7 @@ const sql = {
     `
 
     , 'id:get-comments':`
-        select id, parent_id,mname, comment from comments 
+        select id, parent_id,mname, comment, commented_on from comments 
     `
 
 }
