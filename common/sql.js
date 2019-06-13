@@ -38,7 +38,7 @@ const sql = {
                 insert into pages(web_site_id,page) values (siteId,'${page}') returning id into pageId;
             end if;
             insert into comments(page_id,email,mname,visitor_web_site,comment, parent_id) values (
-                pageId, '${email}', '${mname}', '${visitorSite}', '${comment}', NULLIF('${parentId}','')::integer );
+                pageId, '${email}', '${mname}', '${visitorSite}', '${comment}', NULLIF('${parentId}','null')::integer );
         end $$;
     `
 
@@ -47,7 +47,8 @@ const sql = {
     `
 
     , 'id:get-comments':`
-        select id, parent_id,mname, comment, commented_on from comments 
+        select count(*) from comments;
+        select id, parent_id,mname, comment, commented_on from comments order by id desc;
     `
 
 }

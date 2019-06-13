@@ -81,6 +81,7 @@ comments.post('/tools/comments/:site/:page', async (req, res, next) => {
         }
         const payload = req.body;
         if (site && page && payload && payload.values) {
+            (payload.parent_id === '') && (payload.parent_id = null)
             const values = {
                 webSite: site
                 , page: page
