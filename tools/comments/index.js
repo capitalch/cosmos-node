@@ -113,4 +113,5 @@ module.exports = comments;
                             3. The main server.js error handling area
                             4. modify index.js from tools folder
                             5. In tools comments folder and index.js
+                            6. sql.js change
 */
