@@ -3,7 +3,7 @@ const comments = require('express').Router();
 const postgres = require('../../common/postgres');
 const jwt = require('jsonwebtoken');
 const util = require('../../common/util');
-const { messages, statusCodes } = require('../../common/messages');
+const { messages } = require('../../common/messages');
 const config = require('../../common/config.json');
 
 comments.get('/tools/comments/:site/:page', async (req, res, next) => {
@@ -108,7 +108,9 @@ comments.post('/tools/comments/:site/:page', async (req, res, next) => {
 module.exports = comments;
 
 /*deployment
-1. messages.js : errInvalidToken
-2. In tools generate-token.js
-3. The main server.js error handling area
+                            1. messages.js : errInvalidToken
+                            2. In tools generate-token.js
+                            3. The main server.js error handling area
+                            4. modify index.js from tools folder
+                            5. In tools comments folder and index.js
 */
