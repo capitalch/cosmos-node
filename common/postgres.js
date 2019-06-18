@@ -1,5 +1,4 @@
 'use strict';
-// const pg = require('pg');
 const { messages, statusCodes } = require('./messages');
 const logger = require('./logger')('postgres');
 const { Pool } = require('pg');

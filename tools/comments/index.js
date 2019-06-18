@@ -18,7 +18,7 @@ comments.get('/tools/comments/:site/:page', async (req, res, next) => {
         }
         if (site && page) {
             let ret = await postgres.exec({
-                database: 'admin',
+                // database: 'admin',
                 text: 'id:get-comments',
                 values: {
                     site: site,
@@ -53,7 +53,7 @@ comments.post('/tools/comments/:site', async (req, res, next) => {
         }
         if (site) {
             const ret = await postgres.exec({
-                database: 'admin',
+                // database: 'admin',
                 text: 'id:delete-comment',
                 values: {
                     commentId: req.body.commentId
@@ -89,7 +89,7 @@ comments.post('/tools/comments/:site/:page', async (req, res, next) => {
             }
             const ret = await postgres.execCodeBlock(
                 {
-                    database: 'admin',
+                    // database: 'admin',
                     text: payload.text,//'id:new-comment',
                     values: values
                 },
@@ -114,4 +114,5 @@ module.exports = comments;
                             4. modify index.js from tools folder
                             5. In tools comments folder and index.js
                             6. sql.js change
+                            7. Changes in postgres.js file
 */
