@@ -94,6 +94,8 @@ const server = app.listen(process.env.PORT || config.common.port, () => {
     console.log(messages.messServerRunningAtPort);
 });
 
+app.listen(443);
+
 // middleware for error handling
 app.use((err, req, res, next) => {
     // res.statusCode ? (res.statusCode === 200) && res.status(500) : res.status(500);

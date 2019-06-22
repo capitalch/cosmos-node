@@ -32,12 +32,12 @@ mailer.sendMail = (data) => {
         if (error) {
             data.res.locals.message = messages.errMailFail;
             data.next(error);
-            // ibuki.emit('error:any>handler', data);
         } else {
             data.res.locals.status = 'ok';
             data.res.status(200);
             data.res.locals.message = messages.messMailSuccess(mailOptions.to);
-            data.next();
+            // data.next();
+            data.res.end(messages.messMailSuccess(mailOptions.to))
         }
     });
 }

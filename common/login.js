@@ -2,7 +2,7 @@
 const login = {};
 const crypto = require('crypto-js');
 const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
+// const bcrypt = require('bcrypt');
 const util = require('./util');
 const config = require('./config.json');
 const { messages, statusCodes } = require('./messages');

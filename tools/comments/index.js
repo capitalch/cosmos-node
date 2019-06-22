@@ -32,7 +32,7 @@ comments.get('/tools/comments/:site/:page', async (req, res, next) => {
                     .map(item => ({ ...item, children: nest(items, item.id) }))
 
             const result = (ret.rows && ret.rows.length > 0) ? nest(ret.rows) : []
-            res.status(200).json(result)
+            res.json(result)
         } else {
             util.throw(messages.errMalformedValues)
         }
