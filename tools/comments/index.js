@@ -18,7 +18,7 @@ comments.get('/tools/comments/:site/:page', async (req, res, next) => {
         }
         if (site && page) {
             let ret = await postgres.exec({
-                // database: 'admin',
+                database: 'admin',
                 text: 'id:get-comments',
                 values: {
                     site: site,

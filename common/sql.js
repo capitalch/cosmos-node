@@ -48,7 +48,15 @@ const sql = {
 
     , 'id:get-comments':`
         --select count(*) from comments;
-        select id, parent_id,mname, comment, commented_on from comments order by id desc;
+        --select id, parent_id, mname, comment, commented_on from comments order by id desc;
+        select c.id, c.parent_id, mname, comment, commented_on 
+		from web_site w 
+			inner join pages p 
+				on w.id = p.web_site_id
+			inner join comments c
+				on p.id = c.page_id
+			where site_name=:site and page = :page and isapproved = true
+			order by id desc;
     `
 
 }
